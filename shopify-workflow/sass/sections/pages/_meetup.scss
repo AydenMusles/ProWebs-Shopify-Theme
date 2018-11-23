@@ -1,0 +1,502 @@
+//=============================================================================
+// Variables!
+//=============================================================================
+.btn-green {
+  background-color: #94be46;
+  color: #fff;
+  border: 1px solid #94be46;
+  font-size: 1.0625rem;
+  font-family: "Karla Bold";
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 75px;
+  display: inline-block;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: transparent;
+    color: #94be46;
+  }
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #50416b;
+  border: 1px solid #51416b;
+  font-size: 17px;
+  font-family: "Karla Bold";
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 75px;
+  display: inline-block;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #51416b;
+    color: #fff;
+  }
+}
+
+//=============================================================================
+// Meetup Cover!
+//=============================================================================
+.meetup-cover {
+  position: relative;
+  padding-top: 56.25%;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 150%;
+  }
+
+  .background-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 55px;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+      padding: 0 12px;
+    }
+
+    .title {
+      font-family: "Poppins";
+      margin: 0;
+      @include fluid-type(320px, 1440px, 30px, 47px);
+    }
+
+    .subtitle {
+      font-family: "Karla Bold";
+      margin: 0.7rem 0 1.5rem 0;
+      @include fluid-type(320px, 1440px, 18px, 21px);
+    }
+
+    .button-wrapper {
+      display: flex;
+
+      @media screen and (max-width: 400px) {
+        .btn-green {
+          padding: 16px 30px;
+        }
+      }
+    }
+  }
+}
+
+//=============================================================================
+// Meetup Image w Rich Text!
+//=============================================================================
+.meetup-imagewRichText {
+  position: relative;
+  padding-top: 41.6%;
+
+  @media screen and (max-width: 815px) {
+    padding-top: 50%;
+  }
+
+  @media (min-width: 540px) and (max-width: 711px) {
+    padding-top: 71.6%;
+  }
+
+  @media screen and (max-width: 539px) {
+    padding-top: 175%;
+  }
+
+  .background-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 55px;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+      padding: 0 12px;
+    }
+
+    .container {
+      max-width: 575px;
+      margin: 0;
+
+      @media screen and (max-width: 815px) {
+        max-width: 500px;
+      }
+    }
+
+    .title {
+      font-family: "Poppins";
+      margin: 0 0 1.875rem;
+      @include fluid-type(320px, 1440px, 28px, 40px);
+    }
+
+    .content-text p {
+      line-height: 31px;
+      letter-spacing: -0.37px;
+      @include fluid-type(320px, 1440px, 16px, 18px);
+    }
+  }
+}
+
+//=============================================================================
+// Meetup Image Overlay w Rich Text!
+//=============================================================================
+.meetup-imageOwRichText {
+  position: relative;
+  padding-top: 41.6%;
+
+  @media screen and (max-width: 815px) {
+    padding-top: 50%;
+  }
+
+  @media (min-width: 540px) and (max-width: 711px) {
+    padding-top: 71.6%;
+  }
+
+  @media screen and (max-width: 539px) {
+    padding-top: 175%;
+  }
+
+  .background-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 55px;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+      padding: 0 12px;
+    }
+
+    .container {
+      max-width: 575px;
+      margin: 0;
+    }
+
+    .title {
+      font-family: "Poppins";
+      margin: 0 0 1.875rem;
+      @include fluid-type(320px, 1440px, 28px, 40px);
+    }
+
+    .content-text p {
+      @include fluid-type(320px, 1440px, 16px, 18px);
+    }
+  }
+}
+
+//=============================================================================
+// Meetup Video Play List!
+//=============================================================================
+.meetup-videoPlayList {
+  position: relative;
+  padding-top: 42.99%;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 56.25%;
+  }
+
+  .video-wrapper {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//=============================================================================
+// Meetup Map!
+//=============================================================================
+.meetup-map {
+  position: relative;
+  padding-top: 28.6%;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 56.25%;
+  }
+
+  .map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//=============================================================================
+// Meetup Information!
+//=============================================================================
+.meetup-information {
+  padding: 55px 0;
+
+  .information-title {
+    text-align: center;
+    color: #554671;
+    font-family: "Poppins";
+    letter-spacing: -0.71px;
+    @include fluid-type(320px, 1440px, 30px, 40px);
+  }
+
+  .wrapper-items {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    @media (max-width: 767px) {
+      max-width: 90%;
+    }
+
+    .item {
+      padding: 0.5rem 1rem;
+      margin: 0 auto;
+      width: 25%;
+
+      @media (max-width: 650px) {
+        width: 80%;
+        text-align: center;
+      }
+
+      @media (min-width: 651px) and (max-width: 768px) {
+        width: 50%;
+        text-align: center;
+      }
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        width: 33%;
+        text-align: center;
+      }
+
+      img {
+        max-width: 30px;
+        height: auto;
+      }
+
+      .title {
+        font-family: "Poppins";
+        color: #50426b;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.15px;
+        @include fluid-type(320px, 1440px, 16px, 17px);
+      }
+
+      .item_content {
+        font-family: "Karla Bold";
+        color: #a6a6a6;
+        letter-spacing: -0.11px;
+        line-height: 24px;
+        @include fluid-type(320px, 1440px, 15px, 17px);
+      }
+    }
+  }
+}
+
+//=============================================================================
+// Meetup Sponsors!
+//=============================================================================
+.meetup-sponsors {
+  padding: 55px 0;
+
+  .sponsors-title {
+    text-align: center;
+    color: #554671;
+    font-family: "Poppins";
+    letter-spacing: -1.18px;
+    @include fluid-type(320px, 1440px, 30px, 41px);
+  }
+
+  .wrapper-items {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    @media (max-width: 767px) {
+      max-width: 90%;
+    }
+
+    .item {
+      padding: 0.5rem 1rem;
+      margin: 0 auto;
+      width: 20%;
+
+      picture {
+        height: 70px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      img {
+        display: block;
+        max-width: 150px;
+        height: auto;
+      }
+
+      @media (max-width: 650px) {
+        width: 80%;
+        text-align: center;
+
+        picture {
+          justify-content: center;
+        }
+      }
+
+      @media (min-width: 651px) and (max-width: 768px) {
+        width: 50%;
+        text-align: center;
+
+        picture {
+          justify-content: center;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        width: 33%;
+        height: auto;
+        text-align: center;
+
+        picture {
+          justify-content: center;
+        }
+      }
+
+      .item_content {
+        margin-top: 0.5rem;
+        font-family: "Karla Regular";
+        color: #949494;
+        letter-spacing: -0.27px;
+        line-height: 22px;
+        @include fluid-type(320px, 1440px, 15px, 17px);
+      }
+    }
+  }
+}
+
+//=============================================================================
+// Meetup Asked Questions!
+//=============================================================================
+.meetup-asked {
+  padding: 55px 0;
+
+  .asked-title {
+    text-align: center;
+    color: #554671;
+    font-family: "Poppins";
+    letter-spacing: -1.15px;
+    max-width: 80%;
+    margin: 0 auto;
+    @include fluid-type(320px, 1440px, 30px, 40px);
+  }
+
+  .wrapper-items {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    @media (max-width: 767px) {
+      max-width: 90%;
+    }
+
+    .item {
+      padding: 0.5rem 1rem;
+      width: 33%;
+
+      @media (max-width: 650px) {
+        width: 100%;
+      }
+
+      @media (min-width: 651px) and (max-width: 768px) {
+        width: 50%;
+      }
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        width: 33%;
+      }
+
+      img {
+        max-width: 30px;
+        height: auto;
+      }
+
+      .title {
+        font-family: "Poppins";
+        color: #50426b;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        letter-spacing: -0.47px;
+        @include fluid-type(320px, 1440px, 16px, 16px);
+      }
+
+      .item_content {
+        font-family: "Karla Regular";
+        color: #a6a6a6;
+        letter-spacing: -0.44px;
+        line-height: 31px;
+        @include fluid-type(320px, 1440px, 15px, 15px);
+      }
+    }
+  }
+
+  .wrapper-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 400px) {
+      .btn-green {
+        padding: 16px 30px;
+      }
+    }
+  }
+}
