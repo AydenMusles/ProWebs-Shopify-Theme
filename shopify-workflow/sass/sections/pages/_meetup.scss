@@ -5,7 +5,7 @@
   background-color: #94be46;
   color: #fff;
   border: 1px solid #94be46;
-  font-size: 1.0625rem;
+  font-size: 14px;
   font-family: "Karla Bold";
   font-weight: bold;
   font-style: normal;
@@ -25,13 +25,13 @@
   background-color: #fff;
   color: #50416b;
   border: 1px solid #51416b;
-  font-size: 17px;
+  font-size: 14px;
   font-family: "Karla Bold";
   font-weight: bold;
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 16px 75px;
+  padding: 16px 45px;
   display: inline-block;
   transition: 0.3s;
 
@@ -81,8 +81,8 @@
     }
 
     .subtitle {
-      font-family: "Karla Bold";
-      margin: 0.7rem 0 1.5rem 0;
+      font-family: "Karla Regular";
+      margin: 78px 0 50px 0;
       @include fluid-type(320px, 1440px, 18px, 21px);
     }
 
@@ -103,19 +103,6 @@
 //=============================================================================
 .meetup-imagewRichText {
   position: relative;
-  padding-top: 41.6%;
-
-  @media screen and (max-width: 815px) {
-    padding-top: 50%;
-  }
-
-  @media (min-width: 540px) and (max-width: 711px) {
-    padding-top: 71.6%;
-  }
-
-  @media screen and (max-width: 539px) {
-    padding-top: 175%;
-  }
 
   .background-wrapper {
     position: absolute;
@@ -125,24 +112,21 @@
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: -1;
   }
 
   .text-wrapper {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0 55px;
     width: 100%;
+    padding: 100px 55px;
 
     @media screen and (max-width: 767px) {
-      padding: 0 12px;
+      padding: 100px 12px;
     }
 
     .container {
-      max-width: 575px;
+      max-width: 570px;
       margin: 0;
 
       @media screen and (max-width: 815px) {
@@ -157,6 +141,7 @@
     }
 
     .content-text p {
+      color: #2a2a2a;
       line-height: 31px;
       letter-spacing: -0.37px;
       @include fluid-type(320px, 1440px, 16px, 18px);
@@ -169,19 +154,19 @@
 //=============================================================================
 .meetup-imageOwRichText {
   position: relative;
-  padding-top: 41.6%;
+  // padding-top: 41.6%;
 
-  @media screen and (max-width: 815px) {
-    padding-top: 50%;
-  }
+  // @media screen and (max-width: 815px) {
+  //   padding-top: 50%;
+  // }
 
-  @media (min-width: 540px) and (max-width: 711px) {
-    padding-top: 71.6%;
-  }
+  // @media (min-width: 540px) and (max-width: 711px) {
+  //   padding-top: 71.6%;
+  // }
 
-  @media screen and (max-width: 539px) {
-    padding-top: 175%;
-  }
+  // @media screen and (max-width: 539px) {
+  //   padding-top: 175%;
+  // }
 
   .background-wrapper {
     position: absolute;
@@ -196,15 +181,16 @@
   .text-wrapper {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0 55px;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // padding: 0 55px;
+    padding: 100px 55px;
     width: 100%;
 
     @media screen and (max-width: 767px) {
-      padding: 0 12px;
+      padding: 100px 12px;
     }
 
     .container {
@@ -250,10 +236,10 @@
 //=============================================================================
 .meetup-map {
   position: relative;
-  padding-top: 28.6%;
+  padding-top: 31.6%;
 
   @media screen and (max-width: 767px) {
-    padding-top: 56.25%;
+    padding-top: 70.25%;
   }
 
   .map {
@@ -291,9 +277,13 @@
       max-width: 90%;
     }
 
+    @media (max-width: 650px) {
+      justify-content: center;
+    }
+
     .item {
-      padding: 0.5rem 1rem;
-      margin: 0 auto;
+      padding: 1rem;
+      //margin: 0 auto;
       width: 25%;
 
       @media (max-width: 650px) {
@@ -314,6 +304,7 @@
       img {
         max-width: 30px;
         height: auto;
+        display: inline-block;
       }
 
       .title {
@@ -327,10 +318,14 @@
 
       .item_content {
         font-family: "Karla Bold";
-        color: #a6a6a6;
+        color: #2a2a2a;
         letter-spacing: -0.11px;
         line-height: 24px;
         @include fluid-type(320px, 1440px, 15px, 17px);
+
+        p {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -362,9 +357,13 @@
       max-width: 90%;
     }
 
+    @media (max-width: 650px) {
+      justify-content: center;
+    }
+
     .item {
-      padding: 0.5rem 1rem;
-      margin: 0 auto;
+      padding: 1rem;
+      //margin: 0 auto;
       width: 20%;
 
       picture {
@@ -411,7 +410,7 @@
       .item_content {
         margin-top: 0.5rem;
         font-family: "Karla Regular";
-        color: #949494;
+        color: #2a2a2a;
         letter-spacing: -0.27px;
         line-height: 22px;
         @include fluid-type(320px, 1440px, 15px, 17px);
@@ -480,7 +479,7 @@
 
       .item_content {
         font-family: "Karla Regular";
-        color: #a6a6a6;
+        color: #2a2a2a;
         letter-spacing: -0.44px;
         line-height: 31px;
         @include fluid-type(320px, 1440px, 15px, 15px);
@@ -492,6 +491,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
 
     @media screen and (max-width: 400px) {
       .btn-green {
