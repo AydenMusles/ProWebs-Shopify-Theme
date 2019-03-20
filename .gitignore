@@ -1,0 +1,10 @@
+/assets
+/config
+/layout
+/locales
+/sections
+/snippets
+/templates
+/config.yml
+theme.lock
+.DS_Store
