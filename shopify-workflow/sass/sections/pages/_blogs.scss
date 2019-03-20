@@ -1,0 +1,135 @@
+.getmore-page-blogs {
+  section.blogs-section {
+    padding: 0 !important;
+  }
+
+  .grid.sticky__sidebar,
+  .article-list-grid {
+    margin-left: 0;
+  }
+
+  .blog-title {
+    color: #56476f;
+    font-family: 'Karla Bold';
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    margin: 0 0 40px 16px;
+    text-transform: uppercase;
+  }
+
+  .blogs-page-grid {
+    padding: 53px 32px 73px 32px !important;
+    width: 100%;
+  
+    .article-list-grid {
+      .article-item-content {
+        padding: 0 16px;
+        width: 33.33%;
+      }
+
+      .bl--title a {
+        &:hover {
+          color: #94BE46;
+        }
+      }
+
+      .blog-grid-modify {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+      }
+
+      .grid__item.share-wrapper {
+        padding-left: 0;
+      }
+
+      .blog-author-and-date {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+    }
+  
+    .article__image {
+      max-height: 191px;
+    }
+
+    .grid__item-details {
+      width: 100%;
+    }
+  }
+  
+  #section-vertical-border {
+    position: relative;
+
+    &:before,
+    &:after {
+      background-color: #c5c5c5;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 32px;
+      position: absolute;
+      right: 32px;
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+  }
+
+  #shopify-section-electric__newsletterform {
+    .section.large {
+      background-color: #1e1e1e !important;
+
+      .section-title,
+      .section-content,
+      .form-control input,
+      .form-control input::placeholder,
+      .electric-btn {
+        color: #ffffff !important;
+      }
+
+      .electric-btn {
+        border: solid 1px #ffffff;
+        width: auto;
+
+        &:hover {
+          background-color: #ffffff;
+          color: #51426b !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .getmore-page-blogs {
+    .blogs-page-grid {
+      .article-list-grid {
+        .article-item-content {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .getmore-page-blogs {
+    .container-standard {
+      padding: 0;
+    }
+
+    .blogs-page-grid {
+      padding-left: 0 !important;
+      padding-right: 0 !important; 
+    }
+  }
+}
