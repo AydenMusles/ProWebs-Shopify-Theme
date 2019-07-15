@@ -1,0 +1,40 @@
+<section class="section" style="background-color: {{ section.settings.section_background }}">
+    <div class="container-large">
+        <div class="text-center">
+            <h2 class="section-title">{{ section.settings.heading }}</h2>
+        </div>
+        <div class="text-column">
+            {{ section.settings.section_content }}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Column text",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Section Title"
+        },
+        {
+            "type": "richtext",
+            "id": "section_content",
+            "label": "Section Content"
+        },
+        {
+            "type": "color",
+            "id": "section_background",
+            "label": "Section Color",
+            "default": "#fff"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Column text",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,105 @@
+<section class="section section-extend-bottom" style="background-color: {{ section.settings.section_background }}" >
+
+    <div class="container-fluid">
+
+        <div class="section-title text-center" style="color: {{ section.settings.text_color }}">
+            {{ section.settings.heading }}
+        </div>
+
+        <div class="media-row">
+            <div class="media-box relative">
+                <div class="box-img box-img--absolute">
+                    {% if section.settings.video_url != empty %}
+
+                        {% if section.settings.video_url %}
+                          {% if section.settings.video_url.type == 'youtube' %}
+                            <!-- <iframe width="560" height="315" src="//www.youtube.com/embed/{{ section.settings.video_url.id }}?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen  {{ block.shopify_attributes }}></iframe> -->
+                            <iframe width="600" height="340" src="https://www.youtube.com/embed/+lastest?list={{ section.settings.channelId }}" frameborder="0" allowfullscreen></iframe>
+                          {% endif %}
+                          {% if section.settings.video_url.type == 'vimeo' %}
+                            <iframe src="//player.vimeo.com/video/{{ section.settings.video_url.id }}?color=00ff00" width="500" height="232" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen  {{ section.shopify_attributes }}></iframe>
+                          {% endif %}
+                        {% else %}
+                          <iframe width="600" height="340" src="https://www.youtube.com/embed/+lastest?list={{ section.settings.channelId }}" frameborder="0" allowfullscreen></iframe>
+                        {% endif %}
+
+                    {% else %}
+                        <img src="{{ section.settings.item_image | img_url: '4472x4472'  }}"
+                             alt="{{ section.settings.heading }}">
+                    {% endif %}
+                </div>
+            </div> <!-- media-box -->
+
+            <div class="text-box text-md-center">
+
+                <div class="width-limiter--small" style="color: {{ section.settings.text_color }}">
+                    {{ section.settings.section_content }}
+                    <div class="space-y-20">
+                        <a class="electric-btn outlined-white small" href="{{ section.settings.url }}" target="_blank">
+                            {{ section.settings.linktext }}
+                        </a>
+                    </div>
+                </div>
+
+            </div> <!-- .text-box -->
+        </div> <!-- .row -->
+    </div>
+
+</section>
+
+{% schema %}
+{
+    "name": "Media section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Section Title"
+        },
+        {
+            "type": "richtext",
+            "id": "section_content",
+            "label": "Section Content"
+        },
+        {
+            "type": "image_picker",
+            "id": "item_image",
+            "label": "Item image"
+        },
+        {
+            "type": "color",
+            "id": "section_background",
+            "label": "Section Color",
+            "default": "#FBFBFB"
+        },
+        {
+            "type": "text",
+            "id": "channelId",
+            "label": "Playlist Id"
+        },
+        {
+            "type": "color",
+            "id": "text_color",
+            "label": "Section Text Color",
+            "default": "#000"
+        },
+        {
+            "type": "text",
+            "id": "linktext",
+            "label": "Link text",
+            "default": "View more"
+        },
+        {
+            "type": "text",
+            "id": "url",
+            "label": "Url"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Media section",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

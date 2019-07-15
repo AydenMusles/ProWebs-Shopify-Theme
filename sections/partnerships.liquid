@@ -1,0 +1,96 @@
+{% for block in section.blocks %}
+    <div class="grid-item" {{ block.shopify_attributes }}>
+    {% case block.type %}
+
+        {% when 'fullheightsection' %}
+        {% include 'e_snippet__topbanner' %}
+
+        {% when 'collstext' %}
+        {% include 'e_snippet__collstext' %}
+
+    {% endcase %}
+    </div>
+{% endfor %}
+
+
+
+{% schema %}
+{
+    "blocks": [
+        {
+            "name": "Electric",
+            "type": "fullheightsection",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Heading",
+                    "default": "Need help growing your Shopify sales?"
+                },
+                {
+                    "type": "text",
+                    "id": "subheading",
+                    "label": "Subheading",
+                    "default": "We Are Shopify Experts"
+                },
+                {
+                    "type":      "range",
+                    "id":        "image_transparency",
+                    "min":       0,
+                    "max":       1,
+                    "step":      0.1,
+                    "label":     "Image Transparency",
+                    "default":   0.2
+                },
+                {
+                    "type": "color",
+                    "id": "section_background",
+                    "label": "Section Color",
+                    "default": "#51426B"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "background",
+                    "label": "background Image"
+                }
+            ]
+        },
+        {
+            "name": "Collumn formatted text",
+            "type": "collstext",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "Text"
+                },
+                {
+                    "type": "color",
+                    "id": "section_background",
+                    "label": "Section Color",
+                    "default": "#FFFFFF"
+                },
+                {
+                    "type":      "range",
+                    "id":        "text_collumns_count",
+                    "min":       1,
+                    "max":       4,
+                    "step":      1,
+                    "label":     "Text collumns count",
+                    "default":   2
+                },
+                {
+                    "type":      "range",
+                    "id":        "font_size",
+                    "min":        12,
+                    "max":        20,
+                    "step":       1,
+                    "unit":       "px",
+                    "label":     "Font size",
+                    "default":   16
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

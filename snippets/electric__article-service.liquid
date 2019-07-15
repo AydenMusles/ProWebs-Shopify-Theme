@@ -1,0 +1,30 @@
+<article class="article article--row mb3 lg--mb0">
+    <div class="grid flex-center ser service-item">
+        <div class="grid__item dt--six-twelfths">
+            <div class="width-limiter--middle box-center">
+                <a class="article__thumb" href="{{ article.url }}">
+                    {% if article.image %}
+                        <div class="service-item--thumb" style="background-image: url({{ article | img_url: '640x448', crop: 'center'  }})">
+
+                        </div>
+                    {% endif %}
+                </a>
+            </div>
+        </div>
+        <div class="grid__item dt--six-twelfths">
+            <div class="width-limiter--middle box-center section-box-text clearfix ">
+                <div class="width-limiter--small width-limiter--small-lg article_item-intro">
+                    {% assign article_blog = article.url  | split: '/' %}
+                    {% assign blog_slug = article_blog[2] %}
+                    {% assign blog_title = blogs[blog_slug].title %}
+                    <h3 class="article__item__title">{{ article.title }}</h3>
+                    <p class="article__item__excerpt">{{ article.excerpt }}</p>
+                    <a href="{{ article.url }}" class="electric-btn outlined-violet small">
+                        View more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>

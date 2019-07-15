@@ -1,0 +1,85 @@
+<section class="banner" style="background-color: {{ section.settings.section_background }}">
+
+    <div class="banner--image" style="  background-image: url('{{ section.settings.background | img_url: '4472x4472' }}');
+                                        opacity: {{ section.settings.image_transparency }};
+                                    "></div>
+
+    <div class="full-height-inner">
+        <div class="container banner--container">
+            <div class="hf-text">
+                <div class="banner--text">
+                    <h1>{{ section.settings.title }}</h1>
+                    <hr class="divider">
+                    {% if section.settings.subheading != "" %}
+                        <p>{{ section.settings.subheading }}</p>
+                    {% endif %}
+                </div>
+
+                {% if section.settings.linktext != "" %}
+                    <a class="electric-btn" href="{{ section.settings.url }}" data-action="toggle-modal" data-target="#GetProposalForm" >
+                        {{ section.settings.linktext }}
+                    </a>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% schema %}
+{
+    "name": "Electric",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Need help growing your Shopify sales?"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "We Are Shopify Experts"
+        },
+        {
+            "type": "text",
+            "id": "linktext",
+            "label": "Link text",
+            "default": "We Are Shopify Experts"
+        },
+        {
+            "type": "text",
+            "id": "url",
+            "label": "Url"
+        },
+        {
+            "type":      "range",
+            "id":        "image_transparency",
+            "min":       0,
+            "max":       1,
+            "step":      0.1,
+            "label":     "Image Transparency",
+            "default":   0.2
+        },
+        {
+            "type": "color",
+            "id": "section_background",
+            "label": "Section Color",
+            "default": "#51426B"
+        },
+        {
+            "type": "image_picker",
+            "id": "background",
+            "label": "background Image"
+        }
+    ],
+    "presets": [
+        {
+        "name": "Full Height Banner",
+        "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

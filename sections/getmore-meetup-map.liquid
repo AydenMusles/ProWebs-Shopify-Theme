@@ -1,0 +1,36 @@
+<!-- /sections/getmore-meetup-map.liquid -->
+
+{%- assign idMap = section.settings.id_map -%}
+
+<section class="getmore meetup-map">
+  <iframe class="map" src="https://www.google.com/maps/embed?pb={{ idMap }}" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+{% schema %}
+  {
+    "name": "Map",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Map"
+      },
+      {
+        "type": "text",
+        "id": "id_map",
+        "default": "!1m18!1m12!1m3!1d3763.098954772696!2d-99.17478868509369!3d19.40812998689823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffea68dc3b7f%3A0xec5833d19300fd22!2sGet+More!5e0!3m2!1ses-419!2smx!4v1542908554645",
+        "label": "Map ID"
+      }
+    ],
+    "presets": [
+    {
+      "name": "Map",
+      "category": "GETMORE"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

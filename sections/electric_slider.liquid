@@ -1,0 +1,142 @@
+<section class="section {{ section.settings.section_vertical_size }}" style="background-color: {{ section.settings.section_background }}" >
+    <div class="container-fluid">
+
+        <div class="text-center">
+            <h2 class="section-title">{{ section.settings.slider_title }}</h2>
+        </div>
+
+        <div class="slide-wrapper-outer">
+
+            <div class="slide-wrapper">
+                <div id="simple-slider" class="owl-carousel">
+                    {% for item in section.blocks %}
+                        <div class="slide-item">
+                            <div class="text-entry slide-content">
+                                <div class="quotations-marks"><span>"</span><span>"</span></div>
+                                {{ item.settings.slide_content }}
+                            </div>
+                            {% if item.settings.person_name != '' and  item.settings.person_position != '' and  item.settings.person_image != ''  %}
+                            <div class="slide-bottom">
+                                <div class="person">
+                                    <div class="person-image">
+                                        <div class="person-position">
+                                            {{ item.settings.person_name }}
+                                        </div>
+                                        <div class="person-image-box">
+                                            <img src="{{ item.settings.person_image | img_url: '4472x4472' }}" alt="{{ item.settings.person_name }}">
+                                        </div>
+                                        <div class="person-name">
+                                            {{ item.settings.person_position }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <button data-slide-action="prev"><img src="{{ "arrow-left.svg" | asset_url }}"></button>
+            <button data-slide-action="next"><img src="{{ "arrow-right.svg" | asset_url }}"></button>
+
+        </div>
+    </div>
+</section>
+
+
+{% javascript %}
+
+    $(document).ready(function(){
+
+        var sliderElement = $('#simple-slider');
+        sliderElement.owlCarousel({
+            margin: 0,
+            nav:    false,
+            items:  1,
+            responsive: {
+                0: {
+                    dots: true,
+                    loop: false
+                },
+                640: {
+                    dots: false,
+                    loop: true
+                }
+            }
+        });
+
+        $('[data-slide-action]').on('click', function(){
+            var direction = $(this).data('slide-action');
+            var action = direction + '.owl.carousel';
+            sliderElement.trigger(action);
+        });
+
+    });
+
+{% endjavascript %}
+
+
+{% schema %}
+{
+    "name": "Slider",
+    "settings": [
+        {
+            "type": "text",
+            "id": "slider_title",
+            "label": "Slider title"
+        },
+        {
+            "type": "color",
+            "id": "section_background",
+            "label": "Section Color",
+            "default": "#FFF"
+        },
+        {
+            "type": "select",
+            "id": "section_vertical_size",
+            "options": [
+               { "value": "small", "label": "small"},
+               { "value": "middle", "label": "middle"},
+               { "value": "large", "label": "large"}
+            ],
+            "label": "Products per page",
+            "default":   "middle"
+         }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "Slide",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "slide_content",
+                    "label": "Slide Content"
+                },
+                {
+                    "type": "text",
+                    "id": "person_name",
+                    "label": "Person Name"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "person_image",
+                    "label": "Person Image"
+                },
+                {
+                    "type": "text",
+                    "id": "person_position",
+                    "label": "Person Position"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Simple Slider",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

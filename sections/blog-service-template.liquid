@@ -1,0 +1,50 @@
+<!-- /templates/blog.liquid -->
+{% comment %}
+
+  Loop through a defined number of articles with the 'paginate' tag.
+  Don't forget to close the tag after your loop.
+
+{% endcomment %}
+
+{% paginate blog.articles by section.settings.no_posts %}
+
+
+<section class="section">
+    <div class="container-standard services-list">
+
+        {% for article in blog.articles %}
+            {% include 'electric__article-service' %}
+        {% endfor %}
+
+    </div>
+</section>
+
+{% endpaginate %}
+
+{% schema %}
+  {
+    "name": "Blog pages",
+    "class": "section-blog",
+    "settings": [
+     {
+        "type":      "range",
+        "id":        "no_posts",
+        "min":       6,
+        "max":        24,
+        "step":       6,
+        "label":     "No of posts per page",
+        "default":   6
+     },
+     {
+       "type": "checkbox",
+       "id": "enable_tag_filter",
+       "label": "Enable filtering by tag"
+     },
+     {
+       "type": "checkbox",
+       "id": "show_rss_icon",
+       "label": "Show RSS subscribe icon"
+     }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,152 @@
+<!-- /sections/getmore-testimonials.liquid -->
+  {%- assign backgroundColor = section.settings.background_color -%}
+  {%- assign backgroundImage = section.settings.background_image -%}
+  
+  {%- assign buttonText = section.settings.button_text -%}
+  {%- assign buttonURL = section.settings.button_url -%}
+  {%- assign sectionTitle = section.settings.title -%}
+  {%- assign sectionTitleColor = section.settings.sectionTitle_color -%}
+  
+  {%- assign authorColor = section.settings.author_color -%}
+  {%- assign companyColor = section.settings.company_color -%}
+  {%- assign testimonialColor = section.settings.testimonials_color -%}
+
+
+<section class="getmore caseStudies">
+  <h4 class="title">{{ sectionTitle }}</h4>
+    <div class="wrapper-items">
+
+    {% for item in section.blocks %}
+      <div class="item">
+        <div class="wrapper-content">
+          <div class="profile">
+            <a href="{{ item.settings.url }}" class="picture" target="_blank">
+              <img src="{{ item.settings.author_image | img_url: 'master' }}" alt="">
+            </a>
+            <div class="author">
+              <p class="name">{{ item.settings.author_company  }}</p>
+              <div class="company">{{ item.settings.testimonial }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+
+  <style>
+    {% if backgroundImage %}
+    .caseStudies {
+      background: url("{{ backgroundImage | img_url: '2000x' | format: 'pjpg' }}");
+      background-size: cover;
+      background-position: center center;
+    }
+    {% endif %}
+
+    {% if backgroundColor %}
+    .caseStudies {
+      background: {{ backgroundColor }}
+    }
+    {% endif %}
+
+    .caseStudies .title {
+      color: {{ sectionTitleColor }}
+    }
+
+    .caseStudies .wrapper-content .text {
+      color: {{ testimonialColor }}
+    }
+
+    .caseStudies .wrapper-content .name {
+      color: {{ authorColor }}
+    }
+
+    .caseStudies .wrapper-content .company {
+      color: {{ companyColor }}
+    }
+  </style>
+</section>
+
+{% schema %}
+  {
+    "name": "Case Studies",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section title"
+      },
+      {
+        "type": "color",
+        "id": "sectionTitle_color",
+        "label": "Section Title color",
+        "default": "#50426b"
+      },
+      {
+        "type": "header",
+        "content": "Background"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Image"
+      },      
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#50426b"
+      },
+      {
+        "type": "header",
+        "content": "Cases Studies"
+      },
+      {
+        "type": "color",
+        "id": "company_color",
+        "label": "Company color",
+        "default": "#262626"
+      },
+      {
+        "type": "color",
+        "id": "testimonials_color",
+        "label": "Text color",
+        "default": "#262626"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "url",
+            "label": "Url"
+          },
+          {
+            "type": "image_picker",
+            "id": "author_image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "author_company",
+            "label": "Company"
+          },
+          {
+            "type": "richtext",
+            "id": "testimonial",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Case Studies",
+      "category": "GETMORE SECTIONS"
+    }
+  ]
+  }
+{% endschema %}

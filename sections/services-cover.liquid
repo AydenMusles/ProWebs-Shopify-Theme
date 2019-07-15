@@ -1,0 +1,137 @@
+<!-- /sections/getmore-meetup-cover.liquid -->
+
+{%- assign imageBackground = section.settings.image_background -%}
+{%- assign imageOpacity = section.settings.image_opacity -%}
+{%- assign colorBackground = section.settings.color_background -%}
+
+{%- assign textTitle = section.settings.text_title -%}
+{%- assign textSubtitle = section.settings.text_subtitle -%}
+{%- assign textParagraph = section.settings.text_paragraph -%}
+{%- assign textAlign = section.settings.text_align -%}
+{%- assign textColor = section.settings.text_color -%}
+
+{%- assign buttonText = section.settings.button_text -%}
+{%- assign buttonUrl = section.settings.button_url -%}
+{%- assign buttonAlign = section.settings.button_align -%}
+
+<section class="getmore services-cover" style="background-color:{{ colorBackground }}">
+  <div class="background-wrapper" style="background-image:url({{ imageBackground | img_url: '2880x' | format: 'pjpg' }}); opacity:{{ imageOpacity }}"></div>
+  <div class="text-wrapper">
+    <h1 class="title" style="color:{{ textColor }}; text-align:{{ textAlign }}">{{ textTitle }}</h1>
+    <hr class="divider">
+    <h2 class="subtitle" style="color:{{ textColor }}; text-align:{{ textAlign }}">{{ textSubtitle }}</h2>
+    {%- if buttonText != blank -%}
+      <div class="button-wrapper" style="justify-content:{{ buttonAlign }}">
+        <a href="{{ buttonUrl }}" class="btn-green">{{ buttonText }}</a>
+      </div>
+    {%- endif -%}
+    <div class="textParagraph-container {{ textAlign }}">{{ textParagraph }}</div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Cover",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Image Background"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_background",
+        "label": "Select Image"
+      },
+      {
+        "type": "range",
+        "id": "image_opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "Image Opacity",
+        "default": 0.2
+      },
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Background Color",
+        "default": "#51426b"
+      },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "text",
+        "id": "text_title",
+        "default": "Network & Learn.",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "text_subtitle",
+        "default": "The official Shopify Meetup in Columbus, Ohio.",
+        "label": "Subtitle"
+      },
+      {
+        "type": "richtext",
+        "id": "text_paragraph",
+        "default": "<p>The official Shopify Meetup in Columbus, Ohio.</p>",
+        "label": "paragraph"
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "options": [
+          { "value": "left", "label": "Left"},
+          { "value": "center", "label": "Center"},
+          { "value": "right", "label": "Right"}
+        ],
+        "label": "Align Text"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Button"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "default": "Click to attend",
+        "label": "Text"
+      },
+      {
+        "id": "button_url",
+        "type": "url",
+        "label": "Button link"
+      },
+      {
+        "type": "select",
+        "id": "button_align",
+        "options": [
+          { "value": "flex-start", "label": "Left"},
+          { "value": "center", "label": "Center"},
+          { "value": "flex-end", "label": "Right"}
+        ],
+        "label": "Align Text"
+      }
+    ],
+    "presets": [
+    {
+      "name": "Cover",
+      "category": "GETMORE"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

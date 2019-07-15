@@ -1,0 +1,123 @@
+<section class="section bg--section m0 f--main">
+  <div class="wrapper section--wrapper text-align--center">
+    <h1 class="t--section-title text-align--center f--main font-size--l lg--font-size--xl m0 py3">
+      {{ 'general.404.title' | t }}
+    </h1>
+
+    <p>{{ 'general.404.subtext_html' | t }}</p>
+    
+    <div class="one-whole pt4">
+      <form action="/search" method="get" class="input-group search-bar" role="search">
+        <input type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" class="input-group-field input-underline input-underline--primary search-input" aria-label="{{ 'general.search.placeholder' | t }}">
+        <span class="input-group-btn">
+          <button type="submit" class="btn icon-fallback-text">
+            <img src="{{ 'search-icon.png' | asset_img_url: 'master' }}" />
+          </button>
+        </span>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- Blog section  -->
+<div class="et">
+<section class="section">
+    <div class="container-standard">
+
+        <div class="grid">
+            <div class="grid__item one-whole">
+                     <div class="grid article-list-grid">
+                       
+                       <div class="grid__item one-whole text-center"><h1>LATEST BLOG POSTS</h1></div>
+                       
+                          {% for article in blogs.articles.articles limit: 6 %}
+                                            
+                                <div class="grid__item md-dn--one-whole lg--one-third">
+                                    <article class="blog-list-item">
+                                        <div>
+                                            <a href="{{ article.url }}" class="bl--thumb">
+                                                {% if article.image %}
+                                                    <img
+                                                        data-sizes="auto"
+                                                        alt="{{ article.image.alt }}"
+                                                        src="{{ article | img_url: '1200x' }}"
+                                                        data-src="{{ article | img_url: '600x'  }}"
+                                                        data-srcset="{{ article | img_url: '600x'  }} 600w,
+                                                                     {{ article | img_url: '900x'  }} 900w,
+                                                                       {{ article | img_url: '1200x'  }} 1200w"
+                                                        class="lazyload article__image full blur-up" />
+                                                {% endif %}
+                                            </a>
+                                            <div class="bl--list-content">
+                                                <div class="bl--content--top">
+                                                    <div class="grid">
+                                                        <div class="grid__item one-half">
+                                                        </div>
+                                                        <div class="grid__item one-half text-right">
+                                                            <span class="bl__author"><i class="eeyeicon-i-user"></i> {{ article.author }}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h3 class="bl--title">
+                                                    <a href="{{ article.url }}">
+                                                        {{ article.title }}
+                                                    </a>
+                                                </h3>
+                                                <div class="bl--introtext">
+                                                    {{ article.excerpt }}
+                                                    <div class="article-tag-list hide">
+                                                        {% for tag in article.tags %}
+                                                            <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}">#{{ tag }}</a>
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
+                                                <div class="bl--content--bottom">
+                                                    <div class="grid">
+                                                        <div class="grid__item lg--two-sixths share-wrapper">
+                                                            {% include 'electric__share' %}
+                                                        </div>
+                                                        <div class="grid__item lg--two-sixths text-center">
+                                                            <!-- <span><i class="eeyeicon-i-eye"></i> 242</span> -->
+                                                        </div>
+                                                        <div class="grid__item lg--two-sixths text-right">
+                                                            <span>
+                                                                <i class="eeyeicon-i-clock"></i>
+                                                                {% include 'date', date_object: article.published_at  %}
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                           
+                        {% endfor %}
+                    </div> <!-- /.grid -->
+
+              </div>
+
+        </div>
+    </div> <!-- /.container-standard -->
+</section>  <!-- /section.section -->
+</div>
+{% include 'SEOManager-404' %}
+
+<style>
+  
+
+header.site-header.f--main {
+  background-color:#51426b;
+    position:relative;
+}
+  
+.search-input {
+  max-width:230px;
+  width:100%;
+  margin-bottom:0;
+  margin-right: -10px;
+  
+  }
+  
+</style>

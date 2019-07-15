@@ -1,0 +1,61 @@
+<!-- /sections/getmore-meetup-sponsors.liquid -->
+
+<section class="getmore meetup-sponsors">
+  <h4 class="sponsors-title">{{ section.settings.title }}</h4>
+  <div class="wrapper-items">
+    {% for item in section.blocks %}
+      <div class="item">
+        <picture>
+        {%- assign wImage = item.settings.image.width | append: 'x' -%}
+          <img src="{{ item.settings.image | img_url: wImage | format: 'pjpg' }}" alt="{{ item.settings.sponsors_title }}">
+        </picture>
+        <div class="item_content">
+          {{ item.settings.sponsors_content }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Sponsors w Icon",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "sponsors_content",
+            "label": "Content"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Sponsors w Icon",
+      "category": "GETMORE"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

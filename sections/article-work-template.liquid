@@ -1,0 +1,203 @@
+<!-- /templates/article.liquid -->
+{% comment %}
+
+  Comments will not appear right after they are submitted, either to be checked for spam
+  or to await moderation. When a comment is submitted, the browser is redirected to a page
+  that includes the new comment id in its URL.
+    Example: http://shopname.myshopify.com/blogs/news/2022072-my-post?comment=3721372
+
+  More information:
+    - http://docs.shopify.com/themes/liquid-variables/comment
+
+{% endcomment %}
+
+{% assign number_of_comments = article.comments_count %}
+
+{% comment %}
+  If a comment was just submitted and it has no blank fields, we have an extra comment to count.
+{% endcomment %}
+{% if comment and comment.created_at %}
+  {% assign number_of_comments = article.comments_count | plus: 1 %}
+{% endif %}
+
+    <section class="banner banner-page" style="background-color: #51426B ">
+        <div class="banner--image" style="background-image: url({{ article | img_url: '1600x'  }}); opacity:0.3; "></div>
+        <div class="full-height-inner">
+            <div class="container banner--container banner--container--large">
+                <div class="text-center color-white">
+                    <div class="banner--text">
+                        <h1>{{ article.title }}</h1>
+                        <hr class="divider">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg--section article article-service py4" itemscope itemtype="http://schema.org/Article">
+      <div class="wrapper section--wrapper">
+        <div class="container-middle-plus">
+            <div class="service-entry futura-headings"  itemprop="articleBody">
+              {{ article.content }}
+            </div>
+        </div>
+      </div>
+    </section>
+
+{% if section.settings.show_related_products %}
+{% include 'articles__related-products' %}
+{% endif %}
+
+{% if section.settings.show_related_articles %}
+{% include 'articles__related-articles' %}
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Article pages",
+    "class": "section-article",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_share_links",
+        "label": "Show share links"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_tags",
+        "label": "Show tags"
+      },
+      {
+         "type":    "header",
+         "content": "Related products"
+      },
+      {
+         "type":      "text",
+         "id":        "related_products_heading",
+         "label":     "Title",
+         "info":      "Title for related products sectin",
+         "default":   "Related Products"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_related_products",
+        "label": "Enable related products",
+        "info":   "Show products that share the same tag as the article."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_description_related",
+        "label": "Show excerpt on related products",
+        "info":   "Shown if there is only 1 related product"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_quantity",
+        "label": "Show quantity on related products",
+        "info":   "Shown if there is only 1 related product"
+      },
+      {
+         "type":    "header",
+         "content": "Related articles"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_related_articles",
+        "label": "Enable related articles",
+        "info":   "Show related articles from the same blog."
+      }
+    ],
+   "name": "Newsletter",
+   "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Sign up to our newsletter"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Receive special offers and first look at new products."
+    }
+  ]
+
+
+  }
+{% endschema %}
+
+<style>
+
+ .grid.news-section  {
+    margin-left:0px;
+  }
+  .blog--news--content
+  {padding-right:32px;}
+
+  input[type='email']::-moz-placeholder
+  {
+    color: #fff !important;
+    opacity:1;
+  }
+  input[type='email']::-webkit-input-placeholder {
+    color: #fff !important;
+    opacity:1;
+  }
+  input[type='text']::-moz-placeholder
+  {
+    color: #fff !important;
+    opacity:1;
+  }
+  input[type='text']::-webkit-input-placeholder
+  {
+    color: #fff !important;
+    opacity:1;
+  }
+ .input-height{height:37px;}
+
+ @media only screen and (min-width:320px) and (max-width:767px)
+  {
+    .newsletter__form {
+      max-width: 360px;
+      width: 100%;}
+    .btn.newsletter__submit {float:none;}
+  }
+ @media only screen and (min-width:768px)
+  {
+    .btn.newsletter__submit {float:right;}
+    input#drip-last-name {margin-left: 8px; width:48%;}
+    input#drip-first-name {margin-right:8px; width:48%;}
+  }
+ @media screen and (min-width:1025px) and (max-width:1173px)
+  {
+    .blog--news--content
+    { max-width:50%;
+      padding-left:64px;
+      padding-right:64px;}
+    input#drip-last-name {margin-left: 6px; width:48%;}
+    input#drip-first-name {margin-right: 6px; width:48%;}
+    input#drip-email{width:60%;}
+  }
+ @media screen and (min-width:1174px)
+  {
+    .blog--news--content
+    { max-width:50%;
+      padding-left:64px;
+      padding-right:64px;}
+
+    input#drip-email{width:68%;}
+  }
+ @media screen and (max-width:1024px){ .rte--article p {max-width:100%;}}
+
+ @media screen and (min-width:1025px)
+  {
+    .article-comment-width {max-width:50%;}
+  }
+ @media screen and (min-width:768px) and (max-width:1024px)
+  {
+    .article-comment-width {max-width:100%;   }
+
+  }
+
+  </style>

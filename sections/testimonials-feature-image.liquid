@@ -1,0 +1,199 @@
+
+{% assign placeholder = false %}
+{% if block.settings.image %}
+  {% assign image_src = block.settings.image | img_url: '1600x1600' %}
+{% else %}
+  {% assign placeholder = true %}
+{% endif %}
+{% assign main_text =  block.settings.main_text | escape %}
+{% assign sub_text =  block.settings.sub_text | escape %}
+{% assign cta_text = block.settings.cta_text | escape %}
+{% assign cta_url = block.settings.cta_url %}
+{% assign title_text = block.settings.title %}
+
+
+<section class="feature-image section m0 section--feature-image bg--section">
+ {% for block in section.blocks %}
+   
+   <div  class="p0 clearfix relative feature-image__container pb1">
+     
+    <div class="full bg-cover  blur-up lazyload"
+          style="background: url('{{ block.settings.image | img_url: '100x' }}') no-repeat center center"
+          data-bgset="{{ block.settings.image | img_url: '800x' }} 800w, {{ block.settings.image | img_url: '1200x' }} 1200w, {{ block.settings.image | img_url: '1600x' }} 1600w"
+          data-sizes="auto">
+    </div>
+     {% comment %}
+    {% if placeholder %}
+    <div class="placeholder full">
+      
+      {{ 'lifestyle-1' | placeholder_svg_tag }}
+      
+      </div>
+    {% else %}
+     
+    <div  class="full bg-cover  blur-up lazyload"
+          style="background: url('{{ block.settings.image | img_url: '100x' }}') no-repeat center center"
+          data-bgset="{{ block.settings.image | img_url: '800x' }} 800w, {{ block.settings.image | img_url: '1200x' }} 1200w, {{ block.settings.image | img_url: '1600x' }} 1600w"
+          data-sizes="auto">
+    </div>
+    {% endif %}
+      {% endcomment %}
+
+    <div class="absolute top--0 left--0 full p2 dt--p4">
+      <div class="table full">
+        <div class="table-cell {{ block.settings.content_position }}">
+         
+          {% if block.settings.main_text != '' %}
+          <h4 class="md--font-size--s lg--font-size--l regular f--main color--{{ block.settings.text_color }}">{{ block.settings.main_text }}</h4>
+          {% endif %}
+
+          {% if block.settings.sub_text != '' %}
+          <h2 class="f--title font-size--xxxl lg--font-size--xxxxxl color--{{ block.settings.text_color }} mt2">{{ block.settings.sub_text }}</h2>
+          {% endif %}
+
+          {% if block.settings.cta_url != blank %}
+          <a href="{{ block.settings.cta_url }}" class="btn bg--{{ block.settings.text_color }} color--{{ block.settings.text_color }}-overlay feature-image__btn font-size--s mt3">{{ block.settings.cta_text }}</a>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+   
+  
+  </div>
+     
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Image with text overlay",
+   "settings": [
+    
+    ],
+   "blocks": [
+      {
+        "type": "image",
+        "name": "Testimonial ",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "select",
+            "id": "alignment",
+            "label": "Image alignment",
+            "default": "top",
+            "options": [
+              {
+                "value": "top",
+                "label": "Top"
+              },
+              {
+                "value": "center",
+                "label": "Middle"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom"
+              }
+            ]
+          },
+         
+         {
+           "type": "text",
+           "id": "sub_text",
+           "label": "Sub text",
+           "default": "Subheading goes here",
+           "info": "Optional"
+         },
+          {
+            "type": "text",
+            "id": "main_text",
+            "label": "Main Text",
+            "default": "Tell your brand's story"
+          },
+          
+         {
+         "type": "url",
+         "id": "cta_url",
+         "label": "Optional: Call to action URL"
+         },
+        {
+          "type": "text",
+          "id": "cta_text",
+          "label": "Call to action button text",
+          "default": "Shop Now"
+        },
+        {
+         "type": "select",
+          "id": "text_color",
+         "options": [
+        { "value": "primary", "label": "Primary"},
+        { "value": "main-accent", "label": "Main Accent"},
+        { "value": "shop-accent ", "label": "Shop Accent"},
+        { "value": "secondary-accent", "label": "Secondary Accent"},
+        { "value": "white ", "label": "White"},
+        { "value": "black", "label": "Black"}
+       ],
+     "label": "Text and button color"
+     },
+     {
+      "type": "select",
+      "id": "content_position",
+      "label": "Content Position",
+      "options": [
+        {
+          "value": "text-align--left align--top",
+          "label": "Top Left"
+        },
+        {
+          "value": "text-align--center align--top",
+          "label": "Top Center"
+        },
+        {
+          "value": "text-align--right align--top",
+          "label": "Top Right"
+        },
+        {
+          "value": "text-align--left align--middle",
+          "label": "Middle Left"
+        },
+        {
+          "value": "text-align--center align--middle",
+          "label": "Middle Center"
+        },
+        {
+          "value": "text-align--right align--middle",
+          "label": "Middle Right"
+        },
+        {
+          "value": "text-align--left align--bottom",
+          "label": "Bottom Left"
+        },
+        {
+          "value": "text-align--center align--bottom",
+          "label": "Bottom Center"
+        },
+        {
+          "value": "text-align--right align--bottom",
+          "label": "Bottom Right"
+        }
+      ],
+      "default":   "text-align--center align--middle"
+    }
+           
+        ]
+      }
+    ],
+  "presets": [
+    {
+      "name": "Image with text overlay",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}
+

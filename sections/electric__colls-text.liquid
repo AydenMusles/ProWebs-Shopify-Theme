@@ -1,0 +1,61 @@
+<section class="section section-large"  style="background-color: {{ section.settings.section_background }}">
+    <style media="screen">
+        .collumn-text {
+            -webkit-column-count: {{ section.settings.text_collumns_count }};
+            column-count: {{ section.settings.text_collumns_count }};
+            -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+            -moz-column-gap: 30px; /* Firefox */
+            column-gap: 30px;
+        }
+        @media (max-width: 767px) {
+            .collumn-text {
+                -webkit-column-count: 1;
+                column-count: 1;
+                -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+                -moz-column-gap: 0px; /* Firefox */
+                column-gap: 0px;
+            }
+        }
+    </style>
+    <div class="container-large">
+        <div class="collumn-text">
+            {{ section.settings.text }}
+        </div>
+    </div>
+
+</section>
+
+
+{% schema %}
+{
+    "name": "Collumn formatted text",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "color",
+            "id": "section_background",
+            "label": "Section Color",
+            "default": "#FFFFFF"
+        },
+        {
+            "type":      "range",
+            "id":        "text_collumns_count",
+            "min":       1,
+            "max":       4,
+            "step":      1,
+            "label":     "Text collumns count",
+            "default":   2
+        }
+    ],
+    "presets": [
+        {
+            "name": "Collumn formatted text",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,56 @@
+{% layout none %}
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- Helpers ================================================== -->
+  {% include 'social-meta-tags' %}
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="theme-color" content="{{ settings.color_primary }}">
+
+{{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+
+{% include 'shogun-products', content: page %}
+
+<section class="section section-page bg--section m0 pt3 pb4">
+  <div class="wrapper section--wrapper">
+
+    <h1 class="font-size--xxl lg--font-size--xxxxl f--title m0 mt2 px2 text-align--center">{{ page.title }}</h1>
+    <hr class="rule bg--main-accent my3 mx--auto" />
+    {% comment %}
+      Regular page content goes here.
+    {% endcomment %}
+    <div class="rte rte--page">
+  
+      {{ page.content }}
+    </div>
+    </div>
+</section>
+
+<style>
+  body {
+    background-color: #e85555;
+  }
+  .section-page {background-color:#e85555; color:#fff;}
+  .section-page hr { background-color:#fff;}
+  input.submit-btn {background-color: #fff;border:0; color: #e85555;padding: 10px 50px;}
+  input.submit-btn:hover {background-color:#000;color:#fff; border:0; }
+ 
+  input#drip-email {color: #fff;}
+  input#drip-first-name {color: #fff;} 
+  input#drip-last-name {color: #fff;}
+/*   input {
+    padding:8px 0 4px;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  } */
+ input {
+padding: 8px;
+text-align: center;
+border: 1px solid;
+width: 300px;
+ }
+</style>

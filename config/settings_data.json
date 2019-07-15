@@ -1,0 +1,3578 @@
+{
+  "current": {
+    "color_primary": "#2a2a2a",
+    "color_main_accent": "#2a2a2a",
+    "color_secondary_accent": "#94be47",
+    "color_shop_accent": "#51426b",
+    "color_borders": "#2a2a2a",
+    "color_nav_button": "#fffafa",
+    "color_body_bg": "#f6f6f6",
+    "color_section_bg": "#51426b",
+    "color_newsletter": "#e85555",
+    "color_newsletter_content": "#ffffff",
+    "social_icon_color": "#2a2a2a",
+    "color_footer_bg": "shop-accent",
+    "color_footer_accent": "secondary-accent",
+    "main_typeface": "Google_Karla_sans",
+    "header_typeface": "Google_Poppins_sans",
+    "body_typeface": "Google_Karla_sans",
+    "header_font_weight": "700",
+    "header_text_transform": "none",
+    "section_title_typeface": "headings",
+    "section_title_font_weight": "700",
+    "section_title_text_transform": "none",
+    "navigation_font_weight": "700",
+    "navigation_text_transform": "none",
+    "buttons_font_weight": "700",
+    "buttons_text_transform": "Uppercase",
+    "meta_font_weight": "400",
+    "meta_text_transform": "Uppercase",
+    "favicon": "shopify:\/\/shop_images\/ee-favicon-2019.png",
+    "date_format": "standard",
+    "cart_notes_enable": true,
+    "cart_vendor_enable": false,
+    "ajax_cart_method": "page",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "https:\/\/twitter.com\/electriceye614",
+    "social_facebook_link": "https:\/\/www.facebook.com\/electriceyeagency\/",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/electriceyeagency\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCoIDYbz6QemLNgDWbj-7kTA",
+    "social_vimeo_link": "",
+    "recurring-orders-loading": "Loading subscription info...",
+    "recurring-orders-inherit-classes": false,
+    "recurring-orders-additional-button-classes": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#51426b",
+    "checkout_button_color": "#51426b",
+    "checkout_error_color": "#e85555",
+    "color_body_text": "#333333",
+    "color_footer_social_link": "#bbbbbb",
+    "color_footer_text": "#636363",
+    "color_secondary": "#bbb",
+    "favicon_enable": false,
+    "footer_newsletter_enable": true,
+    "footer_social_enable": true,
+    "logo_use_image": false,
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/ee-logo-white.png",
+          "logo_max_width": 150,
+          "mob_logo": "shopify:\/\/shop_images\/ee-logo-white.png",
+          "main_linklist": "main-menu",
+          "show_search": true,
+          "secondary_linklist": "",
+          "show_search_sidebar": false,
+          "show_social_sidebar": true,
+          "shopify_logo_img": "",
+          "shopify_logo_link": ""
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "title": "Hey, want to know a secret?",
+          "text": "Hey, want to know a secret?"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "main_linklist": "footer",
+          "secondary_linklist": "our-services",
+          "last_linklist": "information",
+          "extra_information": "<p><a href=\"https:\/\/www.google.com\/maps\/place\/Electric+Eye\/@39.9830065,-83.0014602,15z\/data=!4m5!3m4!1s0x0:0xee4e9975e668fca8!8m2!3d39.9830065!4d-83.0014602\" title=\"https:\/\/www.google.com\/maps\/place\/Electric+Eye\/@39.9830065,-83.0014602,15z\/data=!4m5!3m4!1s0x0:0xee4e9975e668fca8!8m2!3d39.9830065!4d-83.0014602\">Electric Eye Agency, LLC<\/a><\/p>\n<p><a href=\"https:\/\/www.google.com\/maps\/place\/Electric+Eye\/@39.9830065,-83.0014602,15z\/data=!4m5!3m4!1s0x0:0xee4e9975e668fca8!8m2!3d39.9830065!4d-83.0014602\" title=\"https:\/\/www.google.com\/maps\/place\/Electric+Eye\/@39.9830065,-83.0014602,15z\/data=!4m5!3m4!1s0x0:0xee4e9975e668fca8!8m2!3d39.9830065!4d-83.0014602\">421 W. State St<\/a><\/p>\n<p><a href=\"https:\/\/www.google.com\/maps\/place\/Electric+Eye\/@39.9830065,-83.0014602,15z\/data=!4m5!3m4!1s0x0:0xee4e9975e668fca8!8m2!3d39.9830065!4d-83.0014602\" title=\"https:\/\/www.google.com\/maps\/place\/Electric+Eye\/@39.9830065,-83.0014602,15z\/data=!4m5!3m4!1s0x0:0xee4e9975e668fca8!8m2!3d39.9830065!4d-83.0014602\">Columbus, Ohio, USA&nbsp;43215<\/a><\/p>\n<p><a href=\"mailto:info@electriceye.io\" title=\"mailto:info@electriceye.io\">info@electriceye.io<\/a><\/p>\n<p><a href=\"tel:614.669.5598\" title=\"tel:614.669.5598\">614.669.5598<\/a><\/p>",
+          "show_theme_credit": false,
+          "show_social_icons": true
+        }
+      },
+      "collection-template__list": {
+        "type": "collection-template__list",
+        "settings": {
+          "no_posts": "4",
+          "alternate_rows": false,
+          "enable_tag_filter": false,
+          "enable_sort_filter": false,
+          "show_description": true
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "no_posts": 24,
+          "enable_tag_filter": false,
+          "enable_sort_filter": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity": false,
+          "show_share_links": true,
+          "show_tags": true,
+          "show_related_products": false,
+          "show_related_articles": true,
+          "blog_1": "",
+          "blog_2": "",
+          "blog_3": "",
+          "blog_4": "",
+          "blog_5": ""
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "no_posts": 6,
+          "enable_tag_filter": false,
+          "show_rss_icon": false,
+          "background": "shopify:\/\/shop_images\/ee-blog-banner.jpg",
+          "blog_subheading": "Electric Eye in the news",
+          "blog_subtext": "News, Tips, and more from Shopify Experts"
+        }
+      },
+      "testimonials-feature-image": {
+        "type": "testimonials-feature-image",
+        "blocks": {
+          "1518718625340": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "top",
+              "sub_text": "-Micah B.",
+              "main_text": "\"Our overall experience with Shawn and Chase of Electric Eye has been amazing. They're experts in their field and have really helped us grow our online business.\"",
+              "cta_url": "https:\/\/onlyny.com\/",
+              "cta_text": "Only NY",
+              "text_color": "white",
+              "content_position": "text-align--right align--bottom"
+            }
+          },
+          "1516220047920": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "top",
+              "sub_text": "-Isaac Nichols",
+              "main_text": "\"When my company was transitioning from Squarespace to Shopify, Electric Eye took the reins and made the transition fast, smooth and efficient. They were also very knowledgable with online commerce in general and I have gained significant revenue by following their lead and asking for advice.\"",
+              "cta_url": "https:\/\/group-partner.com\/",
+              "cta_text": "GROUP PARTNER",
+              "text_color": "white",
+              "content_position": "text-align--right align--bottom"
+            }
+          },
+          "1516286355875": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "top",
+              "sub_text": "-Lester Wasserman",
+              "main_text": "\"Working with Electric Eye has furthered our web business beyond my original expectations. Thanks to Electric Eye and their advertising techniques, we can pinpoint the precise customers we are looking to target and really go after the business.\"",
+              "cta_url": "https:\/\/www.westnyc.com\/",
+              "cta_text": "West Nyc",
+              "text_color": "white",
+              "content_position": "text-align--center align--bottom"
+            }
+          },
+          "1516931998487": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "top",
+              "sub_text": "-Alex Lira",
+              "main_text": "\"Before working with Electric Eye our Ad strategy and practices were a complete mess. They were able to help restructure our strategy and implement best practices that have put us on track to have the most profitable year in the history of our company.\"",
+              "cta_url": "https:\/\/absolutemerch.com\/",
+              "cta_text": "Absolute Merch",
+              "text_color": "primary",
+              "content_position": "text-align--right align--bottom"
+            }
+          },
+          "1519241323844": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "center",
+              "sub_text": "- Dionte Johnson",
+              "main_text": "\"The fellas over at Electric Eye have been great to work with. They are very knowledgeable, efficient, and patient. They are direct with their abilities, and get tasks handled quickly. Shawn and Chase helped fulfill all of my SEO and digital marketing requests, and even helped me learn about more opportunities for improvement for my shop that I had not known existed. I'd recommend them to anyone.\"",
+              "cta_url": "https:\/\/soleclassics.com\/",
+              "cta_text": "Sole Classics",
+              "text_color": "white",
+              "content_position": "text-align--center align--middle"
+            }
+          },
+          "1516286930992": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "top",
+              "sub_text": "-Kyoko Seki",
+              "main_text": "\"Shawn and Chase were great to work with! <br>They are very knowledgeable and created an awesome site for us.\"",
+              "cta_url": "https:\/\/mrlybrand.com\/",
+              "cta_text": "mrly",
+              "text_color": "primary",
+              "content_position": "text-align--center align--bottom"
+            }
+          },
+          "1519237734687": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "top",
+              "sub_text": "-Mike Ryan",
+              "main_text": "\"Chase and Shawn are a great team to work with. They are knowledgable and experienced and went the extra mile to make sure our marketing efforts were successful. We will continue to use them in the future.\"",
+              "cta_url": "https:\/\/www.guitargrip.com\/",
+              "cta_text": "Guitar Grip",
+              "text_color": "white",
+              "content_position": "text-align--center align--bottom"
+            }
+          },
+          "1516286655255": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "top",
+              "sub_text": "-Floyd Johnson",
+              "main_text": "\"Working with Electric Eye has been nothing short of exceptional. Within the timeframe of our business relationship I've witnessed firsthand our sales increase. I'll look forward to continue to work and grow with Electric Eye in the future.",
+              "cta_url": "https:\/\/ohioagainsttheworld.com\/",
+              "cta_text": "Ohio Against The World",
+              "text_color": "white",
+              "content_position": "text-align--right align--bottom"
+            }
+          },
+          "1517525850566": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "top",
+              "sub_text": "-Courtenay Nearburg",
+              "main_text": "Chase and Shawn specialize in Facebook\/Instagram marketing and are most definitely experts on Shopify...they have been so helpful and flexible with their services, customizing to our small business' needs. Highly recommended!",
+              "cta_url": "https:\/\/krammer-stoudt.com\/",
+              "cta_text": "Krammer + Stoudt",
+              "text_color": "white",
+              "content_position": "text-align--center align--bottom"
+            }
+          },
+          "1516286159317": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "top",
+              "sub_text": "-Annette Grant",
+              "main_text": "\"Electric Eye's expertise was instrumental in the initial design and set up of our store. They have continued to help boost our sales and further grow our loyal customer base with their elite understanding of Shopify. We look forward to our continued success with them as a part of our team.\"",
+              "cta_url": "https:\/\/oldschoolgym.com\/",
+              "cta_text": "Old School Gym",
+              "text_color": "white",
+              "content_position": "text-align--left align--bottom"
+            }
+          },
+          "1516863474641": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "alignment": "top",
+              "sub_text": "-Mandy N.",
+              "main_text": "After a long search for the right development team, I was so happy to find Chase + Shawn. Not only are they attentive and punctual, they think beyond the initial scope of the project to be sure no opportunities are missed for a great user experience. I'm excited to work with them again on more projects going forward.",
+              "cta_url": "https:\/\/ithoughtofyou.com\/",
+              "cta_text": "I Thought Of You",
+              "text_color": "main-accent",
+              "content_position": "text-align--center align--bottom"
+            }
+          }
+        },
+        "block_order": [
+          "1518718625340",
+          "1516220047920",
+          "1516286355875",
+          "1516931998487",
+          "1519241323844",
+          "1516286930992",
+          "1519237734687",
+          "1516286655255",
+          "1517525850566",
+          "1516286159317",
+          "1516863474641"
+        ],
+        "settings": {}
+      },
+      "video-for-page": {
+        "type": "video-for-page",
+        "blocks": {
+          "1516264875087": {
+            "type": "youtube_playlist",
+            "settings": {
+              "youtube_playlist_id": "UUoIDYbz6QemLNgDWbj-7kTA"
+            }
+          }
+        },
+        "block_order": [
+          "1516264875087"
+        ],
+        "settings": {}
+      },
+      "expert-feature-image": {
+        "type": "expert-feature-image",
+        "settings": {
+          "feature_image": "",
+          "sub_text": "Electric Eye are certified Shopify Experts, so you can be assured your project will run smoothly. We guarantee it, literally. Whether you are looking to jump start your new e-commerce business or migrate an existing one, Electric Eye is here to help you every step of the way.",
+          "main_text": "Why wait?",
+          "cta_url": "https:\/\/electriceye.typeform.com\/to\/DyevER",
+          "cta_text": "Start Today",
+          "text_color": "primary",
+          "content_position": "text-align--left align--top"
+        }
+      },
+      "expert-featured-content": {
+        "type": "expert-featured-content",
+        "settings": {
+          "rich_text": "<p>A good design does wonders for sales. From setting up premium themes to custom theme development, Electric Eye will design your Shopify site to succeed from the start.<\/p>\n<p>Already have a Shopify store, but not impressed by its performance? Many times a pre-existing Shopify store can beneﬁt from an overhaul. Improving your existing Shopify store can lead increased conversions.<\/p>\n<p>Every business has unique problems that need custom solutions. Electric Eye will solve your Shopify issue with custom development.<\/p>\n<p><\/p>",
+          "rich_text_mobile": "",
+          "font_size": "featured-content__title--small",
+          "text_color": "primary",
+          "highlight_color": "primary"
+        }
+      },
+      "expert-newsletter": {
+        "type": "expert-newsletter",
+        "settings": {
+          "title": "Sign up to our newsletter",
+          "text": "Receive special offers and first look at new products."
+        }
+      },
+      "plus-feature-image": {
+        "type": "plus-feature-image",
+        "settings": {
+          "feature_image": "",
+          "sub_text": "Unfortunately, traditional enterprise ecommerce solutions are just broken. Antiquated technologies, costly custom builds, crashed sites during crucial hours, and infrastructure that burns through server resources.  The good news is Shopify Plus is not one of these old solutions.  Electric Eye utilizes Shopify Plus to give you a multi-channel platform with unmatched scalability so you can grow your business, instead of worrying about your website.",
+          "main_text": "Shopify Plus + Electric Eye",
+          "cta_url": "https:\/\/electriceye.typeform.com\/to\/DyevER",
+          "cta_text": "Get Plus",
+          "text_color": "white",
+          "content_position": "text-align--center align--middle"
+        }
+      },
+      "plus-featured-content": {
+        "type": "plus-featured-content",
+        "settings": {
+          "rich_text": "<p>Customization<\/p>\n<p>Shopify Plus allows customization of your store design, checkout pages, and backend. If you dream it up, we can make it happen with our Shopify certified development team.<\/p>\n<p><\/p>\n<p>Easy Management<\/p>\n<p>With an easy to use backend, there&rsquo;s no need to hire third party management to run your daily operations. Members of your staff can easily learn to upload and manage products without code. Save time and money on repetitive IT tasks like maintaining performance and monitoring risks.<\/p>\n<p><\/p>\n<p>Sell Everywhere<\/p>\n<p>Launch new sales channels across social, mobile, and in real life with a single click. Go global through dedicated storefronts in multiple languages and currencies. Set up wholesale for high-volume buyers easily.<\/p>",
+          "rich_text_mobile": "",
+          "font_size": "featured-content__title--small",
+          "text_color": "primary",
+          "highlight_color": "primary"
+        }
+      },
+      "plus-newsletter": {
+        "type": "plus-newsletter",
+        "settings": {
+          "title": "Sign up to our newsletter",
+          "text": "Receive special offers and first look at new products."
+        }
+      },
+      "feature-section": {
+        "type": "feature-section",
+        "blocks": {
+          "1516105273108": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Reliablity",
+              "text": "<p>Enjoy 99.97% uptime and never experience site crashes again.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516105582874": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Scalability",
+              "text": "<p>Unlimited bandwidth and transactions for fast growing businesses.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516105609170": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Security",
+              "text": "<p>Level 1 PCI DSS complaint for keeping your shoppers safe.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516106873759": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Speed",
+              "text": "<p>A cloud based solution that retains customers with quick page loads.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516106958734": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Integrations",
+              "text": "<p>Integrate with most major platforms, thousands of apps and 16 sales channels.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516107153143": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Support",
+              "text": "<p>24\/7 priority support and a dedicated Merchant Success Manager.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1516105273108",
+          "1516105582874",
+          "1516105609170",
+          "1516106873759",
+          "1516106958734",
+          "1516107153143"
+        ],
+        "settings": {
+          "title": "Shopify Plus Advantages",
+          "align_text": "center",
+          "color_title": "#e8b951"
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "title": "Hey, want to know a secret?",
+          "text": "We publish weekly Shopify related tips, tricks, and more. Get our amazing content straight to your inbox. Sign up now!"
+        }
+      },
+      "plus-feature": {
+        "type": "plus-feature",
+        "blocks": {
+          "1516197133714": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Reliablity",
+              "text": "<p>Enjoy 99.97% uptime and never experience site crashes again.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516197338978": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Scalability",
+              "text": "<p>Unlimited bandwidth and transactions for fast growing businesses.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516197386528": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Security",
+              "text": "<p>Level 1 PCI DSS complaint for keeping your shoppers safe.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516197412781": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Speed",
+              "text": "<p>A cloud based solution that retains customers with quick page loads.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516197446005": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Integrations",
+              "text": "<p>Integrate with most major platforms, thousands of apps and 16 sales channels.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516197476315": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Support",
+              "text": "<p>24\/7 priority support and a dedicated Merchant Success Manager.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1516197133714",
+          "1516197338978",
+          "1516197386528",
+          "1516197412781",
+          "1516197446005",
+          "1516197476315"
+        ],
+        "settings": {
+          "title": "Shopify Plus Advantages",
+          "align_text": "center",
+          "color_title": "#94be47"
+        }
+      },
+      "expert-feature": {
+        "type": "expert-feature",
+        "blocks": {
+          "1516281746070": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Strategy",
+              "text": "<p>Plan your project with pros so you don't waste time and money.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516281790236": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Scalability",
+              "text": "<p>Build your team without hiring costly salaried designers and developers.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516281855618": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Knowledge",
+              "text": "<p>We've worked on many stores and&nbsp;know Shopify inside out.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516281880622": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Speed",
+              "text": "<p>We take care of issues quickly so you don't lose sales.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516281907171": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Time",
+              "text": "<p>Free up your time so you can&nbsp;focus on marketing and product.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1516281934222": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "",
+              "title": "Support",
+              "text": "<p>We are here for you in case anything on your site breaks.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1516281746070",
+          "1516281790236",
+          "1516281855618",
+          "1516281880622",
+          "1516281907171",
+          "1516281934222"
+        ],
+        "settings": {
+          "title": "Why hire a Shopify Expert?",
+          "align_text": "center",
+          "color_title": "#94be47"
+        }
+      },
+      "video-for-meetup": {
+        "type": "video-for-meetup",
+        "blocks": {
+          "1529586314826": {
+            "type": "youtube_playlist",
+            "settings": {
+              "youtube_playlist_id": "PLnlgpjce9npiRrdw0ImbFq3mX3rLtsSzU"
+            }
+          }
+        },
+        "block_order": [
+          "1529586314826"
+        ],
+        "settings": {}
+      },
+      "1533537722768": {
+        "type": "electric__full-page-banner",
+        "settings": {
+          "title": "Websites That Sell.",
+          "subheading": "Electric Eye helps brands grow with stunning ecommerce design and smart marketing.",
+          "linktext": "Talk to Experts",
+          "url": "http:\/\/electriceye.io\/connect",
+          "image_transparency": 0.2,
+          "section_background": "#272728",
+          "background": "shopify:\/\/shop_images\/homepage-test.jpg"
+        }
+      },
+      "1533545344904": {
+        "type": "electric__gray-text-section",
+        "settings": {
+          "heading": "What We Do",
+          "section_content": "Electric Eye are ecommerce designers, developers, and marketers that are passionate about increasing your profits. We offer a variety of services that are custom tailored to grow your business.",
+          "linktext": "Learn More",
+          "url": "",
+          "section_background": "#f0f0f0",
+          "enable_bottom_divider": true,
+          "section_vertical_size": "middle"
+        }
+      },
+      "1533547221726": {
+        "type": "electric__box-repeater",
+        "blocks": {
+          "1533547230518": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__01_design.svg",
+              "item_title": "Design",
+              "item_content": "We’ll deliver a professional looking website, customized for your brand."
+            }
+          },
+          "1533547420830": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__02_development.svg",
+              "item_title": "Development",
+              "item_content": "We execute customized \nfeatures to meet your unique business needs."
+            }
+          },
+          "1533547441440": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__03_marketing.svg",
+              "item_title": "Marketing",
+              "item_content": "Acquire customers and retain them. We target the right audiences to maximize ROI."
+            }
+          },
+          "1533547458901": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__04_automation.svg",
+              "item_title": "Automation",
+              "item_content": "We improve your businesses efficiencies and marketing efforts with automation."
+            }
+          },
+          "1533547477486": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__05_store_setups.svg",
+              "item_title": "Store Setups",
+              "item_content": "We set up Shopify stores comprehensively and efficiently for a quick-to-market solution."
+            }
+          },
+          "1533547495710": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__06_strategy.svg",
+              "item_title": "Strategy",
+              "item_content": "Rely on us to actualize the path toward meeting your business goals and objectives."
+            }
+          }
+        },
+        "block_order": [
+          "1533547230518",
+          "1533547420830",
+          "1533547441440",
+          "1533547458901",
+          "1533547477486",
+          "1533547495710"
+        ],
+        "settings": {
+          "linktext": "Learn More",
+          "url": "https:\/\/electriceye.io\/pages\/about",
+          "section_background": "#ffffff"
+        }
+      },
+      "1533551578560": {
+        "type": "electric__full-width-items",
+        "blocks": {
+          "1533551698922": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/012A5427.jpg",
+              "item_background": "#312b3b",
+              "image_transparency": 0.6,
+              "item_title": "Only NY",
+              "item_content": "<p>Helped streetwear brand achieve 15x average return with Facebook Ads and increase online sales by 45%.<\/p>\n<p><\/p>",
+              "linktext": "Read More",
+              "url": "https:\/\/electriceye.io\/blogs\/work\/only-ny-redesign"
+            }
+          },
+          "1539005065274": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/group-partner-case-study-2_a76c075c-3301-4e6b-99df-bfc6f14a1730.jpg",
+              "item_background": "#312b3b",
+              "image_transparency": 0.8,
+              "item_title": "Group Partner",
+              "item_content": "<p>Increased total orders by 93% with a migration from Squarespace to Shopify and website redesign.<\/p>",
+              "linktext": "Read More",
+              "url": "https:\/\/electriceye.io\/blogs\/work\/group-partner"
+            }
+          },
+          "1539005191738": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/muscle-feast-homepage-case-study.jpg",
+              "item_background": "#312b3b",
+              "image_transparency": 0.6,
+              "item_title": "Muscle Feast",
+              "item_content": "<p>Increased sales by 21% with a website redesign, Automated Email and Social Marketing for protein supplement brand.<\/p>\n<p><\/p>",
+              "linktext": "Read More",
+              "url": "https:\/\/electriceye.io\/blogs\/work\/muscle-feast"
+            }
+          }
+        },
+        "block_order": [
+          "1533551698922",
+          "1539005065274",
+          "1539005191738"
+        ],
+        "settings": {
+          "verticalBlocksGutters": "normal"
+        }
+      },
+      "1533554202136": {
+        "type": "electric_slider",
+        "blocks": {
+          "1533554209301": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>Working with Electric Eye has furthered our web business beyond my original expectations. Thanks to Electric Eye and their techniques, we can pinpoint the precise customers we are looking to target and really go after the business.<\/p>",
+              "person_name": "Lester Wasserman",
+              "person_image": "shopify:\/\/shop_images\/person.png",
+              "person_position": "West NYC"
+            }
+          },
+          "1536857651420": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>Electric Eye is great to work with! They are extremely knowledgable about Shopify, were very responsive when I would have a question or need help on something, and met all of their deadlines. I would highly recommend working with them.<\/p>",
+              "person_name": "Lauren Snyder",
+              "person_image": "shopify:\/\/shop_images\/lauren-snyder_c201cab2-aea8-45ee-8874-2b46d01a8a0f.jpg",
+              "person_position": "The Primary Essentials"
+            }
+          },
+          "1533732071330": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>Our overall experience with Electric Eye has been amazing. They're experts in their field and have really helped us grow our online business.<\/p>",
+              "person_name": "Micah Belamarich",
+              "person_image": "shopify:\/\/shop_images\/micah-testimonial-2_76603fff-9dc9-441d-a52f-e2ea403f3ee2.png",
+              "person_position": "Only NY"
+            }
+          },
+          "1536857370413": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"We contracted Electric Eye and could not be happier with the result. They have been extremely helpful and competent through the entire process, a wealth of knowledge in helping us leverage the Shopify platform.&nbsp;\"<\/p>",
+              "person_name": "Sean Gillespie",
+              "person_image": "shopify:\/\/shop_images\/sean-muscle-feast.jpg",
+              "person_position": "Muscle Feast"
+            }
+          }
+        },
+        "block_order": [
+          "1533554209301",
+          "1536857651420",
+          "1533732071330",
+          "1536857370413"
+        ],
+        "settings": {
+          "slider_title": "What Clients Are Saying",
+          "section_background": "#fff",
+          "section_vertical_size": "large"
+        }
+      },
+      "1533560592018": {
+        "type": "electric__two_collumn",
+        "settings": {
+          "heading": "Video",
+          "section_content": "<p>We want your eCommerce business to grow. Our&nbsp;YouTube channel is about educating and giving actionable advice around eCommerce and it's many related topics.<\/p>\n<p>Just click below&nbsp;to explore and subscribe.<\/p>",
+          "item_image": "",
+          "section_background": "#51426b",
+          "channelId": "UUoIDYbz6QemLNgDWbj-7kTA",
+          "text_color": "#ffffff",
+          "linktext": "Watch more",
+          "url": "https:\/\/www.youtube.com\/channel\/UCoIDYbz6QemLNgDWbj-7kTA?view_as=subscriber"
+        }
+      },
+      "home": {
+        "type": "home",
+        "blocks": {
+          "1533576137387": {
+            "type": "hero",
+            "settings": {
+              "title": "Need help growing your Shopify sales?",
+              "subheading": "We Are Shopify Experts",
+              "linktext": "We Are Shopify Experts",
+              "url": "",
+              "background": ""
+            }
+          }
+        },
+        "block_order": [
+          "1533576137387"
+        ],
+        "settings": {}
+      },
+      "1533716492810": {
+        "type": "electric__article-list",
+        "blocks": {
+          "1533716499381": {
+            "type": "articles_by_blog",
+            "settings": {
+              "title": "Blog Articles",
+              "excerpt": "",
+              "selected_blog": "articles",
+              "no_posts": 4,
+              "show_blog_link": true
+            }
+          }
+        },
+        "block_order": [
+          "1533716499381"
+        ],
+        "settings": {
+          "posttitlefont": "karla_n4",
+          "section_background": "#ffffff",
+          "linktext": "View more posts",
+          "url": "https:\/\/electriceye.io\/blogs\/news"
+        }
+      },
+      "1533721671912": {
+        "type": "electric__colorfull-form",
+        "settings": {
+          "heading": "Hey, want to know a secret?",
+          "section_content": "We publish weekly Shopify related tips, tricks, and more. Get our amazing content straight to your inbox. Sign up now!",
+          "section_background": "#1e1e1e",
+          "section_text_color": "#ffffff"
+        }
+      },
+      "1533729307401": {
+        "type": "electric__topimage-text-section",
+        "settings": {
+          "heading": "Ready to start your project?",
+          "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
+          "section_background": "#1e1e1e",
+          "section_color": "#ffffff",
+          "icon": "",
+          "linktext": "Let’s Go",
+          "url": "http:\/\/electriceye.io\/connect"
+        }
+      },
+      "1533892282708": {
+        "type": "electric__gray-text-section",
+        "settings": {
+          "heading": "Our Work",
+          "section_content": "We take a data driven approach to every project to help our clients achieve the maximum return on investment.",
+          "linktext": "Learn More",
+          "url": "https:\/\/electriceye.io\/blogs\/work",
+          "section_background": "#f0f0f0",
+          "enable_bottom_divider": false,
+          "section_vertical_size": "large"
+        }
+      },
+      "1533902210701": {
+        "type": "electric__instagram",
+        "settings": {
+          "title": "Instagram",
+          "instagram_access_token": "4118661375.efae80a.e2cf3c67c11c4e85bc0a11273cca7a34",
+          "no_posts": "10"
+        }
+      },
+      "about": {
+        "type": "about",
+        "blocks": {
+          "1534762117501": {
+            "type": "fullheightsection",
+            "settings": {
+              "title": "About",
+              "subheading": "Electric Eye helps brands grow with stunning ecommerce design and smart marketing.",
+              "image_transparency": 0.2,
+              "section_background": "#51426b",
+              "background": "shopify:\/\/shop_images\/about-us.jpg"
+            }
+          },
+          "1534763204379": {
+            "type": "textblock",
+            "settings": {
+              "richtext": "<p>Electric Eye is a boutique agency focused on helping brands grow their online sales. We are certified Shopify Experts who provide well-designed, data-driven solutions, allowing our clients to worry less about technology, and focus on running their business.<\/p>\n<p>The agency was founded from our passion to help solve problems. Our process starts with site optimization through design and development, followed by marketing &amp; automation efforts to accelerate growth. Clients appreciate our dedication, and the results we provide through tangible revenue.<\/p>\n<p>Electric Eye is a small agency by choice. This allows their tight-knit team to work directly with key decision makers to quickly generate ROI for their clients.<\/p>",
+              "section_background": "#ffffff"
+            }
+          },
+          "1534762784982": {
+            "type": "sampletext",
+            "settings": {
+              "title": "What we do",
+              "text": "<p>Electric Eye are eCommerce designers, developers, and marketers that are passionate about increasing your profits. We offer a variety of services that are custom tailored to grow your Shopify business.<\/p>",
+              "section_background": "#f0f0f0"
+            }
+          }
+        },
+        "block_order": [
+          "1534762117501",
+          "1534763204379",
+          "1534762784982"
+        ],
+        "settings": {}
+      },
+      "electric__box-repeater": {
+        "type": "electric__box-repeater",
+        "blocks": {
+          "1534766110602": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__01_design.svg",
+              "item_title": "Design",
+              "item_content": "Our design team will ensure a professional looking website, customized for your brand."
+            }
+          },
+          "1534766125689": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__02_development.svg",
+              "item_title": "Development",
+              "item_content": "Our development team is fully capable of executing customized features to meet your needs."
+            }
+          },
+          "1534766142625": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__03_marketing.svg",
+              "item_title": "Marketing",
+              "item_content": "Acquire customers and retain them. We effectively reach the right audiences to maximize ROIs."
+            }
+          },
+          "1534766159568": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__04_automation.svg",
+              "item_title": "Automation",
+              "item_content": "We can implement automation into marketing campaigns to take monotonous tasks off of your plate."
+            }
+          },
+          "1534766176846": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__05_store_setups.svg",
+              "item_title": "Store Setups",
+              "item_content": "We set up Shopify stores comprehensively and efficiently for a quick-to-market solution."
+            }
+          },
+          "1534766191689": {
+            "type": "image",
+            "settings": {
+              "image_name": "icon__06_strategy.svg",
+              "item_title": "Strategy",
+              "item_content": "Rely on Shopify Experts to actualize the path toward meeting your business goals and objectives."
+            }
+          }
+        },
+        "block_order": [
+          "1534766110602",
+          "1534766125689",
+          "1534766142625",
+          "1534766159568",
+          "1534766176846",
+          "1534766191689"
+        ],
+        "settings": {
+          "linktext": "Learn More",
+          "url": "https:\/\/electriceye.io\/connect",
+          "section_background": "#ffffff"
+        }
+      },
+      "electric__simple-gallery": {
+        "type": "electric__simple-gallery",
+        "blocks": {
+          "1534767626744": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/g1.png",
+              "image_link": "http:\/\/promo.boldcommerce.com\/promo\/?ref=electriceye"
+            }
+          },
+          "1534767637562": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/g2_2.png",
+              "image_link": "https:\/\/www.shopify.com\/?ref=electriceye"
+            }
+          },
+          "1534767645688": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/g3.png",
+              "image_link": "https:\/\/www.klaviyo.com\/partner\/signup?utm_source=0010V00002DPpLw&utm_medium=partner"
+            }
+          },
+          "1534767653991": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/g4.png",
+              "image_link": "https:\/\/getshogun.com\/a\/28a12737-8726-4052-822f-621fcc2932a5"
+            }
+          },
+          "1534767704487": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/g5_2.png",
+              "image_link": "https:\/\/apps.shopify.com\/smile-io?surface_detail=smile&surface_inter_position=1&surface_intra_position=1&surface_type=search"
+            }
+          },
+          "1534767773270": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/g6.png",
+              "image_link": "https:\/\/click.pstmrk.it\/2sm\/powertools.refersion.com%2Faffiliate\/KLdiLAE\/18U\/L4uop2Sfo4\/bmV3X2FmZmlsaWF0ZV9ub3RpZmljYXRpb25fYWN0aXZl"
+            }
+          },
+          "1534767789296": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/g7.png",
+              "image_link": "https:\/\/www.refersion.com\/?rfsn=994849.9717d"
+            }
+          },
+          "1534767798406": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/g8.png",
+              "image_link": "https:\/\/outofthesandbox.com?rfsn=1050911.1e6d5"
+            }
+          },
+          "1534767828342": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/g9.png",
+              "image_link": "https:\/\/app.excelify.io\/a\/v?aid=7&to=https:\/\/excelify.io"
+            }
+          },
+          "1534767839669": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/g10.png",
+              "image_link": "https:\/\/www.yotpo.com\/lp\/partner-referral\/?agency=electriceye"
+            }
+          }
+        },
+        "block_order": [
+          "1534767626744",
+          "1534767637562",
+          "1534767645688",
+          "1534767653991",
+          "1534767704487",
+          "1534767773270",
+          "1534767789296",
+          "1534767798406",
+          "1534767828342",
+          "1534767839669"
+        ],
+        "settings": {
+          "title": "Partners",
+          "section_background": "#f0f0f0"
+        }
+      },
+      "electric__topimage-text-section": {
+        "type": "electric__topimage-text-section",
+        "settings": {
+          "heading": "Ready to start your project?",
+          "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
+          "section_background": "#312b3b",
+          "section_color": "#ffffff",
+          "icon": "",
+          "linktext": "let’s go",
+          "url": ""
+        }
+      },
+      "electric__full-page-banner": {
+        "type": "electric__full-page-banner",
+        "settings": {
+          "title": "PARTNERSHIPS",
+          "subheading": "",
+          "linktext": "",
+          "url": "",
+          "image_transparency": 0.2,
+          "section_background": "#51426b",
+          "background": ""
+        }
+      },
+      "electric__testimonials": {
+        "type": "electric__testimonials",
+        "blocks": {
+          "1561386406008": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"As a small growing business, Electric Eye have been fantastic partners for us in improving the user experience on our site and building out custom solutions.&nbsp; They&rsquo;ve been extremely easy and flexible to work with, and have allowed us to customize our Shopify site to meet our business needs while staying within our budgets.\"<\/p>",
+              "person_name": "Allison Gigliotti",
+              "person_image": "shopify:\/\/shop_images\/0.jpg",
+              "person_position": "Carve Designs"
+            }
+          },
+          "1534769986431": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Our overall experience with Shawn and Chase of Electric Eye has been amazing. They're experts in their field and have really helped us grow our online business.\"<\/p>",
+              "person_name": "Micah Belamarich",
+              "person_image": "shopify:\/\/shop_images\/micah-testimonial-2_76603fff-9dc9-441d-a52f-e2ea403f3ee2.png",
+              "person_position": "Only NY"
+            }
+          },
+          "1534770161038": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Electric Eye is great to work with! They are extremely knowledgable about Shopify, were very responsive when I would have a question or need help on something, and met all of their deadlines. I would highly recommend working with them.\"<\/p>",
+              "person_name": "Lauren Snyder",
+              "person_image": "shopify:\/\/shop_images\/lauren-snyder_c201cab2-aea8-45ee-8874-2b46d01a8a0f.jpg",
+              "person_position": "The Primary Essentials"
+            }
+          },
+          "1534770024052": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Electric Eye have done an absolutely great job with our business website. They're fast, they're responsive, very punctual, and make it very easy to ask questions\/suggest changes. They're open to ideas and also very willing to give their input when it's requested. We will continue to work with Electric Eye moving forward and would highly recommend them to anyone looking to build their web store with Shopify.\"<\/p>",
+              "person_name": "Matt Halpern",
+              "person_image": "shopify:\/\/shop_images\/matt-halpern_6d9091d6-647b-4647-8fa5-48cc9084da36.jpg",
+              "person_position": "GetGood Drums"
+            }
+          },
+          "1534770179630": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Working with Electric Eye has furthered our web business beyond my original expectations. Thanks to Electric Eye and their advertising techniques, we can pinpoint the precise customers we are looking to target and really go after the business.\"<\/p>",
+              "person_name": "Lester Wasserman",
+              "person_image": "shopify:\/\/shop_images\/lester-testimonial-homepage_e17bdd01-6c8d-49a1-94ac-9f21e6e47c58.png",
+              "person_position": "West NYC"
+            }
+          },
+          "1534770232791": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Before working with Electric Eye our Ad strategy and practices were a complete mess. They were able to help restructure our strategy and implement best practices that have put us on track to the most profitable year in the history of our company.\"<\/p>",
+              "person_name": "Alex Lira",
+              "person_image": "shopify:\/\/shop_images\/alex-lira-testimonial_4edab282-d023-4399-80dd-d161d2d5a8af.png",
+              "person_position": "Absolute Merch"
+            }
+          },
+          "1537798972085": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"The fellas over at Electric Eye have been great to work with. They are very knowledgeable, efficient, and patient. They are direct with their abilities, and get tasks handled quickly. Shawn and Chase helped fulfill all of my SEO and digital marketing requests, and even helped me learn about more opportunities for improvement that I had not known existed. I'd recommend them to anyone.\"<\/p>",
+              "person_name": "Dionte Johnson",
+              "person_image": "shopify:\/\/shop_images\/dionte-johnson-sole-classics.png",
+              "person_position": "Sole Classics"
+            }
+          },
+          "1537799057501": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Electric Eye are a great team to work with. They are knowledgable and experienced and went the extra mile to make sure our marketing efforts were successful. We will continue to use them in the future.\"<\/p>",
+              "person_name": "Mike Ryan",
+              "person_image": "shopify:\/\/shop_images\/mike-ryan-guitar-grip-1.png",
+              "person_position": "Guitar Grip"
+            }
+          },
+          "1537799209453": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Electric Eye were great to work with!&nbsp;<br>They are very knowledgeable and created an awesome site for us.\"<\/p>",
+              "person_name": "Kyoko Seki",
+              "person_image": "shopify:\/\/shop_images\/kyoko-seki-mrly.png",
+              "person_position": "mrly"
+            }
+          },
+          "1537800106087": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"I&rsquo;ve had the pleasure of working with Electric Eye on several projects. Our most recent project, building a storefront for a charitable partner, was seamless. Shawn and Chase provide diverse knowledge of design, marketing, development, and user experience. Electric Eye has become an integral part of our e-commerce strategy and we look forward to a strong partnership for years to come.\"<\/p>",
+              "person_name": "Jesse Guth",
+              "person_image": "shopify:\/\/shop_images\/jesse-guth-avid-apparel.png",
+              "person_position": "Avid Apparel"
+            }
+          },
+          "1559238407678": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"I have been in business for nearly 20 years, and very few companies I have hired in that time have performed as well as Electric Eye. They have knowledgeable staff, and our project was delivered on time and on budget. Electric Eye has exceeded my expectations, and I look forward to working with them again.\"<\/p>",
+              "person_name": "Kreg Hasse",
+              "person_image": "shopify:\/\/shop_images\/Screen_Shot_2019-05-30_at_1.44.47_PM.png",
+              "person_position": "Pool & Spa Sale"
+            }
+          },
+          "1534770209991": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"When my company was transitioning from Squarespace to Shopify, Electric Eye took the reins and made the transition fast, smooth and efficient. They were also very knowledgable with online commerce in general and I have gained significant revenue by following their lead and asking for advice.\"<\/p>",
+              "person_name": "Isaac Nichols",
+              "person_image": "shopify:\/\/shop_images\/isaac-nichols_b0d786c8-f2ad-4bcb-9d0b-c232432382dd.jpg",
+              "person_position": "Group Partner"
+            }
+          },
+          "1537799767988": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Electric Eye's expertise was instrumental in the initial design and set up of our store. They have continued to help boost our sales and further grow our loyal customer base with their elite understanding of Shopify. We look forward to our continued success with them as a part of our team.\"<\/p>",
+              "person_name": "Annette Grant",
+              "person_image": "shopify:\/\/shop_images\/annette-grant-old-school-gym_3ddaa7f5-da60-4a36-981e-36edb27d76fe.png",
+              "person_position": "Old School Gym"
+            }
+          },
+          "1537800303487": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Excellent team. They handled the migration from our Magento platform to Shopify seamlessly.&nbsp;Electric Eye is a top Shopify Pro.&nbsp;Anything we asked for was addressed.&nbsp;<br>'No' is not in their vocabulary..\"<\/p>",
+              "person_name": "Mike Dalberg",
+              "person_image": "shopify:\/\/shop_images\/michael-dalberg-tip-top-shoes.jpg",
+              "person_position": "Tip Top Shoes"
+            }
+          },
+          "1537799968720": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"After a long search for the right development team, I was so happy to find Chase and&nbsp;Shawn. Not only are they attentive and punctual, they think beyond the initial scope of the project to be sure no opportunities are missed for a great user experience. I'm excited to work with them again going forward.\"<\/p>",
+              "person_name": "Mandy Nagel",
+              "person_image": "shopify:\/\/shop_images\/mandy-nagel-I-thought-of-you.png",
+              "person_position": "I Thought Of You"
+            }
+          },
+          "1537799477821": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Working with Electric Eye has been nothing short of exceptional. Within the timeframe of our business relationship I've witnessed firsthand our sales increase. I'll look forward to continue to work and grow with Electric Eye in the future.\"<\/p>",
+              "person_name": "Floyd Johnson",
+              "person_image": "shopify:\/\/shop_images\/floyd-johnson-ohio-against-the-world.png",
+              "person_position": "Ohio Against The World"
+            }
+          },
+          "1555423971303": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"The team at Electric Eye demonstrated exemplary professionalism while working with us to implement the&nbsp;automated email marketing program. They are also very honest and great communicators. I highly recommend working with them.\"<\/p>",
+              "person_name": "Tom Kuhnash",
+              "person_image": "shopify:\/\/shop_images\/isla_fullxfull.32352307_2tbr0p5n.jpg",
+              "person_position": "Femfetti"
+            }
+          },
+          "1537799312750": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Electric Eye specializes&nbsp;in Facebook\/Instagram marketing and are most definitely experts on Shopify...they've been so helpful and flexible with their services, customizing to our small business' needs. Highly recommended!\"<\/p>",
+              "person_name": "Courtenay Nearburg",
+              "person_image": "shopify:\/\/shop_images\/courtenay-nearburg-krammer-and-stoudt.png",
+              "person_position": "Krammer & Stoudt"
+            }
+          },
+          "1555424173187": {
+            "type": "image",
+            "settings": {
+              "slide_content": "<p>\"Electric Eye was integral to finding the appropriate solutions for our rebrand and re-platform. We migrated from Squarespace to Shopify, and they helped make a convoluted transition process seamless and smooth so that we could launch with our strongest foot forward going into holiday season.\"<\/p>",
+              "person_name": "Lindsey Moeller",
+              "person_image": "shopify:\/\/shop_images\/Screen_Shot_2019-02-18_at_11.05.04_AM.png",
+              "person_position": "Concur"
+            }
+          }
+        },
+        "block_order": [
+          "1561386406008",
+          "1534769986431",
+          "1534770161038",
+          "1534770024052",
+          "1534770179630",
+          "1534770232791",
+          "1537798972085",
+          "1537799057501",
+          "1537799209453",
+          "1537800106087",
+          "1559238407678",
+          "1534770209991",
+          "1537799767988",
+          "1537800303487",
+          "1537799968720",
+          "1537799477821",
+          "1555423971303",
+          "1537799312750",
+          "1555424173187"
+        ],
+        "settings": {
+          "section_background": "#ffffff"
+        }
+      },
+      "electric__colls-text": {
+        "type": "electric__colls-text",
+        "settings": {
+          "text": "<p>Our Website is not intended for children under 13 years of age. No one under age 13 may provide any information to the Website. We do not knowingly collect personal information from children under 13. If you are under 13, do not use or provide any information on this Website, make any purchases through the Website, or provide any information about yourself to us, including your name, address, telephone number, or email address.<\/p>\n<p>If we learn we have collected or received personal information from a child under 13 without verification of parental consent, we will delete that information. If you believe we might have any information from or about a child under 13, please contact us at at info@electriceye.io.<\/p>",
+          "section_background": "#ffffff",
+          "text_collumns_count": 2
+        }
+      },
+      "electric__newsletterform": {
+        "type": "electric__newsletterform",
+        "settings": {
+          "heading": "Want more sales? Follow our 8-point guide.",
+          "section_content": "Subscribe to our newsletter and recieve our 8-point actionable guide for increasing conversions and building trust with your customers on any Shopify product page for FREE.",
+          "section_background": "#ffffff",
+          "section_text_color": "#4a4a4a"
+        }
+      },
+      "newsletter-page": {
+        "type": "newsletter-page",
+        "blocks": {
+          "1534775542144": {
+            "type": "fullheightsection",
+            "settings": {
+              "title": "Newsletter",
+              "subheading": "",
+              "image_transparency": 0.2,
+              "section_background": "#51426b",
+              "background": "shopify:\/\/shop_images\/photo-1499750310107-5fef28a66643.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1534775542144"
+        ],
+        "settings": {}
+      },
+      "partnerships": {
+        "type": "partnerships",
+        "blocks": {
+          "1534775838168": {
+            "type": "fullheightsection",
+            "settings": {
+              "title": "Partnerships",
+              "subheading": "",
+              "image_transparency": 0.2,
+              "section_background": "#51426b",
+              "background": "shopify:\/\/shop_images\/photo-1528789408128-bf8999ce0091.jpg"
+            }
+          },
+          "1534775891994": {
+            "type": "collstext",
+            "settings": {
+              "text": "<p>Electric Eye is very proud to partner with innovative software partners within the Shopify ecosystem. Our team is very familiar with these programs and use them everyday. Third party apps can add functionality to your ecommerce store without spending a fortune on custom development. They have been quality assured with many hours of testing, so you don't have to worry about your site breaking. Support teams&nbsp;have also been put in place in case anything goes wrong.&nbsp;<\/p>",
+              "section_background": "#ffffff",
+              "text_collumns_count": 2,
+              "font_size": 18
+            }
+          }
+        },
+        "block_order": [
+          "1534775838168",
+          "1534775891994"
+        ],
+        "settings": {}
+      },
+      "testimonials": {
+        "type": "testimonials",
+        "blocks": {
+          "1534776017592": {
+            "type": "fullheightsection",
+            "settings": {
+              "title": "Testimonials",
+              "subheading": "Real quotes from satisfied customers.",
+              "image_transparency": 0.2,
+              "section_background": "#51426b",
+              "background": "shopify:\/\/shop_images\/95cdfeef.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1534776017592"
+        ],
+        "settings": {}
+      },
+      "information": {
+        "type": "information",
+        "blocks": {
+          "1534850602778": {
+            "type": "fullheightsection",
+            "settings": {
+              "title": "FAQ",
+              "subheading": "Frequently Asked Questions",
+              "image_transparency": 0.2,
+              "section_background": "#51426b",
+              "background": "shopify:\/\/shop_images\/electric-eye-faq-1.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1534850602778"
+        ],
+        "settings": {}
+      },
+      "faq": {
+        "type": "faq",
+        "blocks": {
+          "1548814346543": {
+            "type": "text",
+            "settings": {
+              "faq_title": "What is Electric Eye?",
+              "faq_content": "We are a digital agency that specializes in the Shopify platform."
+            }
+          },
+          "1534851057178": {
+            "type": "text",
+            "settings": {
+              "faq_title": "What exactly do you do?",
+              "faq_content": "We help eCommerce brands grow through design, development, and marketing."
+            }
+          },
+          "1536758093743": {
+            "type": "text",
+            "settings": {
+              "faq_title": "What is your availability?",
+              "faq_content": "We are available for our clients Monday - Friday from 9am to 5pm EST. Evenings and weekends are reserved for our free time, family, and friends."
+            }
+          },
+          "1536758193188": {
+            "type": "text",
+            "settings": {
+              "faq_title": "What is Shopify and why do you love it?",
+              "faq_content": "Shopify is an eCommerce platform that we feel is the best option for our clients."
+            }
+          },
+          "1536758203494": {
+            "type": "text",
+            "settings": {
+              "faq_title": "What if we're not on Shopify? Can you help us?",
+              "faq_content": "Absolutely. We’ve helped migrate businesses from other platforms, such as Squarespace, WordPress, and Magento over to Shopify. If you are not looking to replatform, we can make some introductions to other teams more suited to help you."
+            }
+          },
+          "1536758214060": {
+            "type": "text",
+            "settings": {
+              "faq_title": "What is your hourly rate?",
+              "faq_content": "We do not typically charge by the hour. Our expertise brings a lot of value to our clients beyond what can be measured in an hourly rate."
+            }
+          },
+          "1536758254779": {
+            "type": "text",
+            "settings": {
+              "faq_title": "How do you know what to charge?",
+              "faq_content": "We bill on a per-project basis. We prefer value-based pricing that corresponds with the ROI you will get by using our services."
+            }
+          },
+          "1536758264112": {
+            "type": "text",
+            "settings": {
+              "faq_title": "Do you guarantee results?",
+              "faq_content": "No, and you should be wary of any company who guarantees results. Most of what drives a successful project is outside of an agency’s control. We can, however, use your data to show you the opportunity at hand."
+            }
+          },
+          "1536758274463": {
+            "type": "text",
+            "settings": {
+              "faq_title": "Do you have any guarantees?",
+              "faq_content": "Our work is 100% guaranteed, and if you are not completely satisfied at the end of the project we will do our best to make things right."
+            }
+          },
+          "1536758291199": {
+            "type": "text",
+            "settings": {
+              "faq_title": "Can we work out a profit-sharing percentage based deal?",
+              "faq_content": "No. At this time, we only work on a fee-for-service basis."
+            }
+          },
+          "1536758315815": {
+            "type": "text",
+            "settings": {
+              "faq_title": "Can you provide references?",
+              "faq_content": "Please see our case studies for testimonials and results. We are wary of divulging our full client list and contact information."
+            }
+          },
+          "1536758322886": {
+            "type": "text",
+            "settings": {
+              "faq_title": "How quickly can you build a Shopify Store?",
+              "faq_content": "Every project is unique and we always properly scope and estimate a timeline for each and every business engagement. While these are only estimates, we pride ourselves on our operational efficiencies and the quality of our work."
+            }
+          },
+          "1536758339021": {
+            "type": "text",
+            "settings": {
+              "faq_title": "Can you rush my project?",
+              "faq_content": "Probably not. We need to understand the entire project first to be able to quote an accurate timeline, which is usually a best case scenario launch date."
+            }
+          },
+          "1536758352374": {
+            "type": "text",
+            "settings": {
+              "faq_title": "Who owns the work you create?",
+              "faq_content": "You do. We are here to help you succeed and you can take what we create with you after our project is completed."
+            }
+          },
+          "1536758360230": {
+            "type": "text",
+            "settings": {
+              "faq_title": "Do you create content or copywriting?",
+              "faq_content": "No, but we can refer you to our network of trusted professionals to ensure these needs are met."
+            }
+          },
+          "1536758373128": {
+            "type": "text",
+            "settings": {
+              "faq_title": "Do you require a lengthy commitment for your retainers?",
+              "faq_content": "No. However, we do require a 3 month commitment on retainers so we can properly analyze all of your data. After that, we are happy to go month-to-month."
+            }
+          },
+          "1548814822017": {
+            "type": "text",
+            "settings": {
+              "faq_title": "Where are you located?",
+              "faq_content": "Our founders are in Columbus, Ohio, and the rest of the team is spread out all over the world!"
+            }
+          },
+          "1548814842464": {
+            "type": "text",
+            "settings": {
+              "faq_title": "How big is the team?",
+              "faq_content": "Our co-founders maintain a network of badass, elite freelancers who are specialists in their own areas so we can assemble the perfect dream team for every project."
+            }
+          },
+          "1548814860935": {
+            "type": "text",
+            "settings": {
+              "faq_title": "How long have you been in business?",
+              "faq_content": "The agency was founded in October of 2016, however our founders have nearly 20 years of experience as entrepreneurs, corporate employees, and freelancers in retail, apparel, and events. We've learned a thing or two along the way and can’t wait to share it with you!"
+            }
+          }
+        },
+        "block_order": [
+          "1548814346543",
+          "1534851057178",
+          "1536758093743",
+          "1536758193188",
+          "1536758203494",
+          "1536758214060",
+          "1536758254779",
+          "1536758264112",
+          "1536758274463",
+          "1536758291199",
+          "1536758315815",
+          "1536758322886",
+          "1536758339021",
+          "1536758352374",
+          "1536758360230",
+          "1536758373128",
+          "1548814822017",
+          "1548814842464",
+          "1548814860935"
+        ],
+        "settings": {
+          "faqtitle": "FAQ"
+        }
+      },
+      "electric__textsections-repeater": {
+        "type": "electric__textsections-repeater",
+        "blocks": {
+          "1534853847209": {
+            "type": "text",
+            "settings": {
+              "text_title": "1. Introduction",
+              "text_content": ""
+            }
+          }
+        },
+        "block_order": [
+          "1534853847209"
+        ],
+        "settings": {
+          "texttitle": "Privacy Policy"
+        }
+      },
+      "electric__collumn-text": {
+        "type": "electric__collumn-text",
+        "settings": {
+          "heading": "",
+          "section_content": "<p><\/p>\n<p><\/p>",
+          "section_background": "#fff"
+        }
+      },
+      "1541011669045": {
+        "type": "electric__simple-gallery",
+        "disabled": true,
+        "blocks": {
+          "1541011723815": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/only-logo-250_5755ef36-68af-44fb-a741-96fc2b0da2f8.png",
+              "image_link": ""
+            }
+          },
+          "1541011745068": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/gp-logo-250_34d43e48-a559-49ae-b160-651d8fb1adb7.png",
+              "image_link": ""
+            }
+          },
+          "1541011736383": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/tbk-logo-250_8172a606-80a0-4ab4-9ffc-e948d2c8a7a4.png",
+              "image_link": ""
+            }
+          },
+          "1541011752230": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/mp-logo-250_7a87b486-6e5e-4254-b241-ab48eb008d21.png",
+              "image_link": ""
+            }
+          },
+          "1541011772266": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/west-logo-250_d1bb17a3-3d27-4fc2-a23c-d392f609bfa6.png",
+              "image_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1541011723815",
+          "1541011745068",
+          "1541011736383",
+          "1541011752230",
+          "1541011772266"
+        ],
+        "settings": {
+          "title": "Brands We've Helped",
+          "section_background": "#51426b"
+        }
+      },
+      "getmore-meetup-cover": {
+        "type": "getmore-meetup-cover",
+        "settings": {
+          "image_background": "shopify:\/\/shop_images\/IMG_5637_aeb3039c-0f49-49f1-88dc-4b291c7fa9e2.jpg",
+          "image_opacity": 0.2,
+          "color_background": "#51426b",
+          "text_title": "Shopify Meetup Columbus",
+          "text_subtitle": "The only official Shopify Meetup in Ohio.",
+          "text_align": "center",
+          "text_color": "#ffffff",
+          "button_text": "Click to attend",
+          "button_url": "https:\/\/www.meetup.com\/columbus-shopify-meetup\/",
+          "button_align": "center"
+        }
+      },
+      "electric__full-width-items": {
+        "type": "electric__full-width-items",
+        "blocks": {
+          "1542411452497": {
+            "type": "image",
+            "settings": {
+              "item_image": "shopify:\/\/shop_images\/tip-top-vintage.jpg",
+              "item_background": "#312b3b",
+              "image_transparency": 0.4,
+              "item_title": "fqweqweqweqweqw",
+              "item_content": "<p>fweweqweqweqwe<\/p>",
+              "linktext": "weqweqweqweqwe",
+              "url": "htttasdasdas"
+            }
+          }
+        },
+        "block_order": [
+          "1542411452497"
+        ],
+        "settings": {
+          "verticalBlocksGutters": "normal"
+        }
+      },
+      "getmore-meetup-imageWRichText": {
+        "type": "getmore-meetup-imageWRichText",
+        "settings": {
+          "image_background": "shopify:\/\/shop_images\/meetup-kevin-mack_3dbf9e30-0a21-4c65-a09b-1ca02c8334c8.jpg",
+          "text_title": "Network & Learn",
+          "text": "<p>The <strong>Shopify Meetup Columbus<\/strong> is hosted by local Shopify Experts to share knowledge with the growing Shopify enthusiast community. The<strong> bi-monthly meetings<\/strong> are free and open to everyone.<\/p>\n<p><\/p>\n<p>With education at the forefront, each event features <strong>three speakers, offers networking opportunities, and free food and drinks.<\/strong> Attendees range from seasoned eCommerce experts to budding entrepreneurs, all brought together under one roof to learn about Shopify.&nbsp;<\/p>",
+          "align_block": "flex-start",
+          "title_color": "#2d2d2d",
+          "text_color": "#555555"
+        }
+      },
+      "getmore-meetup-imageOWRichText": {
+        "type": "getmore-meetup-imageOWRichText",
+        "settings": {
+          "image_background": "shopify:\/\/shop_images\/IMG_5646_5634ae17-2e79-4c0d-a24a-00812ea64d20.jpg",
+          "image_opacity": 0.2,
+          "color_background": "#51426b",
+          "text_title": "How to find us:",
+          "text": "<p>Park in the lot on the west side of the building and walk to the front entrance on State Street. Come in the building and up the stairs to your right. We will have wayfinding signs and a greeter to help you.<\/p>\n<p><\/p>\n<p><strong>Columbus Idea Foundry<\/strong><\/p>\n<p><\/p>\n<p>The Idea Foundry is both a physical place &ndash; 60,000 sq ft of workshops and offices; working nooks, classrooms and communal spaces &ndash; and a state of mind; the belief that each of us has the potential to bring our ideas to life if given the space, the equipment and the support to empower our inner maker.<\/p>",
+          "align_block": "flex-start",
+          "title_color": "#ffffff",
+          "text_color": "#ffffff"
+        }
+      },
+      "getmore-meetup-videoPlayList": {
+        "type": "getmore-meetup-videoPlayList",
+        "settings": {
+          "id_playlist": "PLnlgpjce9npiRrdw0ImbFq3mX3rLtsSzU"
+        }
+      },
+      "getmore-meetup-information": {
+        "type": "getmore-meetup-information",
+        "blocks": {
+          "1542913740774": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Columbus Idea Foundry<\/p>\n<p>421 W. State St.<\/p>\n<p>Columbus, OH 43215<\/p>\n<p><\/p>\n<p><\/p>",
+              "information_title": "Location",
+              "image": "shopify:\/\/shop_images\/location_2x_857e9a12-3fc4-4d2d-b4ef-0d593e132aaa.png"
+            }
+          },
+          "1542913816683": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Bi-monthly<\/p>",
+              "information_title": "How Often",
+              "image": "shopify:\/\/shop_images\/calendar_2x_bc3f8ea8-d2b1-4fe4-a977-2f4ffbd08ffd.png"
+            }
+          },
+          "1542914105475": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>6:00 PM to 8:00 PM<\/p>",
+              "information_title": "Time",
+              "image": "shopify:\/\/shop_images\/time_2x_d1f68f1c-49a6-40b7-b1a6-e4bb20fba8b0.png"
+            }
+          },
+          "1542914120462": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>There is a free surface parking lot on the west side of the building.<\/p>",
+              "information_title": "Parking Info",
+              "image": "shopify:\/\/shop_images\/park_2x_abc98088-2fed-4ebd-ba37-948c0a7022ce.png"
+            }
+          }
+        },
+        "block_order": [
+          "1542913740774",
+          "1542913816683",
+          "1542914105475",
+          "1542914120462"
+        ],
+        "settings": {
+          "title": "Important Information"
+        }
+      },
+      "getmore-meetup-map": {
+        "type": "getmore-meetup-map",
+        "settings": {
+          "id_map": "!1m14!1m8!1m3!1d12232.943296778372!2d-83.0120163!3d39.9584799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3732a877ec1a1327!2sThe+Columbus+Idea+Foundry!5e0!3m2!1ses-419!2smx!4v1543856424675"
+        }
+      },
+      "getmore-meetup-sponsors": {
+        "type": "getmore-meetup-sponsors",
+        "blocks": {
+          "1542929268038": {
+            "type": "image",
+            "settings": {
+              "sponsors_content": "<p>Refersion is a simple affiliate marketing software to manage, track, and grow your network like never before.<\/p>",
+              "image": "shopify:\/\/shop_images\/refersion_2x_39d1b385-6c39-4580-99d0-02bc1883da51.png"
+            }
+          },
+          "1542929303163": {
+            "type": "image",
+            "settings": {
+              "sponsors_content": "<p>.store domain names are created for retail &amp; ecommerce. Join 180,000+&nbsp;businesses such as Nike &amp; Emirates and get a .store domain name.<\/p>",
+              "image": "shopify:\/\/shop_images\/store_2x_8c7b4834-7df3-4e4b-a8a7-27eaf5918e8a.png"
+            }
+          },
+          "1542929336640": {
+            "type": "image",
+            "settings": {
+              "sponsors_content": "<p>Shogun helps you optimize your eCommerce business with high-converting landing pages and a powerful visual page builder.<\/p>",
+              "image": "shopify:\/\/shop_images\/shogun_2x_8460241e-4787-4720-8b08-0e242956d052.png"
+            }
+          },
+          "1542929382250": {
+            "type": "image",
+            "settings": {
+              "sponsors_content": "<p>Shopify is a complete commerce platform that enables you to start a business, grow and manage it.<\/p>",
+              "image": "shopify:\/\/shop_images\/shopify_2x_bcb4757b-1570-45b1-892f-2a14b59903fe.png"
+            }
+          },
+          "1542929418481": {
+            "type": "image",
+            "settings": {
+              "sponsors_content": "<p>Don't leave your customers waiting. Get high quality answers to your customer emails and chats for $2.25 per resolution.<\/p>",
+              "image": "shopify:\/\/shop_images\/simplr-logo_f58cd0c8-db95-4e1c-be40-c0ddfde35a2f.png"
+            }
+          }
+        },
+        "block_order": [
+          "1542929268038",
+          "1542929303163",
+          "1542929336640",
+          "1542929382250",
+          "1542929418481"
+        ],
+        "settings": {
+          "title": "Our event sponsors."
+        }
+      },
+      "getmore-meetup-asked": {
+        "type": "getmore-meetup-asked",
+        "blocks": {
+          "1542931708918": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>It is completely free.&nbsp;&nbsp;<\/p>",
+              "information_title": "Frequently Asked Questions."
+            }
+          },
+          "1542931724193": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Yes, we film every event and you might show up in pictures or video.<\/p>",
+              "information_title": "Will I be filmed?"
+            }
+          },
+          "1542931748874": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Yes, we&rsquo;ll have free food and refreshments.<\/p>",
+              "information_title": "Will there be food and drink?"
+            }
+          },
+          "1542931773977": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Possibly, contact info@electriceye.io to apply.<\/p>",
+              "information_title": "Can I speak at a future event?"
+            }
+          },
+          "1542931797507": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>No tickets are needed. We&rsquo;d love for you to RSVP on meetup.com so we can know how much pizza to buy.&nbsp;&nbsp;<\/p>",
+              "information_title": "Do I need tickets or to RSVP?"
+            }
+          },
+          "1542931814861": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Definitely, contact info@electriceye.io for more information.<\/p>",
+              "information_title": "Can I sponsor a future event?"
+            }
+          },
+          "1542931837148": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>We have three speakers, q+a, and time to network at each event.<\/p>",
+              "information_title": "What happens at the meetup?"
+            }
+          },
+          "1542931863468": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Yes, of course everyone is welcome to join and learn.<\/p>",
+              "information_title": "I’m don’t use Shopify, can I attend?"
+            }
+          }
+        },
+        "block_order": [
+          "1542931708918",
+          "1542931724193",
+          "1542931748874",
+          "1542931773977",
+          "1542931797507",
+          "1542931814861",
+          "1542931837148",
+          "1542931863468"
+        ],
+        "settings": {
+          "title": "Frequently Asked Questions.",
+          "button_text": "Click to attend",
+          "button_url": "https:\/\/www.meetup.com\/columbus-shopify-meetup\/"
+        }
+      },
+      "getmore-meetup-ready": {
+        "type": "getmore-meetup-ready",
+        "settings": {
+          "heading": "Ready To Start Your Project?",
+          "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
+          "section_background": "#1f1f1f",
+          "section_color": "#ffffff",
+          "icon": "shopify:\/\/shop_images\/shopify-experts-logo.png",
+          "linktext": "let's go",
+          "url": "http:\/\/electriceye.io\/connect"
+        }
+      },
+      "getmore-meetup2-cover": {
+        "type": "getmore-meetup2-cover",
+        "settings": {
+          "image_background": "shopify:\/\/shop_images\/shopify-plus-page.jpg",
+          "image_opacity": 0.1,
+          "color_background": "#51426b",
+          "text_title": "Shopify Plus",
+          "text_subtitle": "Multi Channel, Enterprise Ecommerce",
+          "text_align": "center",
+          "text_color": "#ffffff",
+          "button_text": "",
+          "button_url": "",
+          "button_align": "center"
+        }
+      },
+      "getmore-meetup2-imageWRichText": {
+        "type": "getmore-meetup2-imageWRichText",
+        "settings": {
+          "image_background": "shopify:\/\/shop_images\/95cdfeef.jpg",
+          "text_title": "Powered By Plus",
+          "text": "<p>Unfortunately, traditional enterprise ecommerce solutions are just broken. Antiquated technologies, costly custom builds, crashed sites during crucial hours, and infrastructure that burns through server resources.<\/p>\n<p><\/p>\n<p>The good news is Shopify Plus is not one of these old solutions. Electric Eye utilizes Shopify Plus to give you a multi-channel platform with unmatched scalability so you can grow your business, instead of worrying about your website.<\/p>",
+          "align_block": "flex-end",
+          "title_color": "#2d2d2d",
+          "text_color": "#555555"
+        }
+      },
+      "getmore-meetup2-information": {
+        "type": "getmore-meetup2-information",
+        "blocks": {
+          "1544035534976": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Enjoy 99.97% uptime and never experience site crashes again<\/p>",
+              "information_title": "Reliability",
+              "image": "shopify:\/\/shop_images\/reliability.png"
+            }
+          },
+          "1544035619333": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Level 1 PCI DSS compliant for keeping your shoppers safe.<\/p>",
+              "information_title": "Security",
+              "image": "shopify:\/\/shop_images\/security.png"
+            }
+          },
+          "1544035638987": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>A cloud based solution that retains customers with quick page loads.<\/p>",
+              "information_title": "Speed",
+              "image": "shopify:\/\/shop_images\/speed.png"
+            }
+          },
+          "1544065638405": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Integrate with most major platforms, thousands of apps and 16 sales channels.<\/p>",
+              "information_title": "Integrations",
+              "image": "shopify:\/\/shop_images\/settings-gears.png"
+            }
+          }
+        },
+        "block_order": [
+          "1544035534976",
+          "1544035619333",
+          "1544035638987",
+          "1544065638405"
+        ],
+        "settings": {
+          "title": "Shopify Plus Features"
+        }
+      },
+      "getmore-meetup2-map": {
+        "type": "getmore-meetup2-map",
+        "settings": {
+          "id_map": ""
+        }
+      },
+      "getmore-meetup2-imageOWRichText": {
+        "type": "getmore-meetup2-imageOWRichText",
+        "settings": {
+          "image_background": "shopify:\/\/shop_images\/tshirts.jpg",
+          "image_opacity": 0.1,
+          "color_background": "#cacaca",
+          "text_title": "Customize",
+          "text": "<p>Shopify Plus allows customization of your store design, checkout pages, and backend. If you dream it up, we can make it happen with our Shopify certified development team.<\/p>",
+          "align_block": "center",
+          "title_color": "#1c1c1c",
+          "text_color": "#1f1f1f"
+        }
+      },
+      "getmore-meetup2-sponsors": {
+        "type": "getmore-meetup2-sponsors",
+        "blocks": {
+          "1544035937286": {
+            "type": "image",
+            "settings": {
+              "sponsors_content": "<p>Lorem fistrum condemor jarl ahorese que llega ese que llega. Fistro la orl.<\/p>",
+              "image": "shopify:\/\/shop_images\/seventh.png"
+            }
+          }
+        },
+        "block_order": [
+          "1544035937286"
+        ],
+        "settings": {
+          "title": "Sponsors"
+        }
+      },
+      "getmore-meetup2-videoPlayList": {
+        "type": "getmore-meetup2-videoPlayList",
+        "settings": {
+          "id_playlist": "PLy7I_ELukC3lF9zzWrjLzbq6oMnIH8Ehc"
+        }
+      },
+      "getmore-meetup2-asked": {
+        "type": "getmore-meetup2-asked",
+        "blocks": {
+          "1544036007229": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Shopify Plus allows customization of your store design, checkout pages, and backend. If you dream it up, we can make it happen with our Shopify certified development team.<\/p>",
+              "information_title": "Customize"
+            }
+          },
+          "1544066299141": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>With an easy to use backend, there&rsquo;s no need to hire third party management to run your daily operations. Members of your staff can easily learn to upload and manage products without code. Save time and money on repetitive IT tasks like maintaining performance and monitoring risks.<\/p>",
+              "information_title": "Manage"
+            }
+          },
+          "1544066310626": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Launch new sales channels across social, mobile, and in real life with a single click. Go global through dedicated storefronts in multiple languages and currencies. Set up wholesale for high-volume buyers easily.<\/p>",
+              "information_title": "Sell Everywhere"
+            }
+          }
+        },
+        "block_order": [
+          "1544036007229",
+          "1544066299141",
+          "1544066310626"
+        ],
+        "settings": {
+          "title": "Sell More With Plus",
+          "button_text": "",
+          "button_url": ""
+        }
+      },
+      "getmore-meetup2-ready": {
+        "type": "getmore-meetup2-ready",
+        "settings": {
+          "heading": "Ready to Experience Shopify Plus?",
+          "section_content": "Contact the Shopify Experts at Electric Eye for more information.",
+          "section_background": "#312b3b",
+          "section_color": "#ffffff",
+          "icon": "shopify:\/\/shop_images\/shopify-plus-logo--darkbg.png",
+          "linktext": "Let's Connect",
+          "url": "http:\/\/electriceye.io\/connect"
+        }
+      },
+      "getmore-asked-question": {
+        "type": "getmore-asked-question",
+        "blocks": {
+          "1544459526505": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Absolutely. We design and develop with mobile in mind.<\/p>",
+              "information_title": "Are your websites mobile friendly?"
+            }
+          },
+          "1544459542934": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Yes, we build most of the features to be easily editable by you.<\/p>",
+              "information_title": "Can I edit the content myself?"
+            }
+          },
+          "1544459561404": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>No, Shopify is highly customizable.<\/p>",
+              "information_title": "Is Shopify limiting for customizations?"
+            }
+          },
+          "1544459592432": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Yes, if you are looking to migrate to Shopify we most certainly can.<\/p>",
+              "information_title": "I’m not on Shopify, can you help?"
+            }
+          },
+          "1544459608044": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>No idea! Our project minimum is $10,000 but we would need to learn more about your specific project to give you a better idea of the investment required.<\/p>",
+              "information_title": "How much will it cost?"
+            }
+          },
+          "1544459618965": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Highly unlikely. There are few other services like https:\/\/heycarson.com\/, but we focus on long term clients and projects.<\/p>",
+              "information_title": "I have a simple tweak, can you help me?"
+            }
+          }
+        },
+        "block_order": [
+          "1544459526505",
+          "1544459542934",
+          "1544459561404",
+          "1544459592432",
+          "1544459608044",
+          "1544459618965"
+        ],
+        "settings": {
+          "background_color": "#1f1f1f",
+          "sectionTitle_color": "#ffffff",
+          "titles_color": "#ffffff",
+          "text_color": "#ffffff",
+          "title": "Frequently Asked Questions",
+          "button_text": "Button",
+          "button_url": ""
+        }
+      },
+      "getmore-testimonials": {
+        "type": "getmore-testimonials",
+        "blocks": {
+          "1544555717625": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/author_2x_48e79804-f4b5-4dd8-8a76-962bb0a06eb8.jpg",
+              "author_name": "Micah Belamarich",
+              "author_company": "ONLY NY",
+              "testimonial": "<p>Our overall experience with Electric Eye has been amazing. They're experts in their field and have really helped us grow our online business.<\/p>"
+            }
+          },
+          "1544555764652": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/author2_2x_5f3d525d-811d-4d2e-a43e-5e3861fef141.jpg",
+              "author_name": "Kyoko Seki",
+              "author_company": "MRLY",
+              "testimonial": "<p>Electric Eye were great to work with! They are very knowledgeable and created an awesome site for us.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1544555717625",
+          "1544555764652"
+        ],
+        "settings": {
+          "title": "Testimonials",
+          "sectionTitle_color": "#51426b",
+          "background_image": "shopify:\/\/shop_images\/testimonials-bg_2x_5ec11efc-cebd-4c73-9c59-76d03fd5878a.jpg",
+          "background_color": "#50426b",
+          "author_color": "#50426b",
+          "company_color": "#262626",
+          "testimonials_color": "#2a2a2a"
+        }
+      },
+      "getmore-benefits": {
+        "type": "getmore-benefits",
+        "blocks": {
+          "1544570530318": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/sale.png",
+              "author_name": "Increased Sales",
+              "testimonial": "<p>Your website will be designed by a team of professionals with one goal in mind - increasing sales.<\/p>"
+            }
+          },
+          "1544570563095": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/phone.png",
+              "author_name": "Responsive Design",
+              "testimonial": "<p>Your website will be a responsive, with a mobile focused designed that will look fantastic on any device.<\/p>"
+            }
+          },
+          "1544570589057": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/like.png",
+              "author_name": "Trust & Authority",
+              "testimonial": "<p>A beautiful website does more than just help with sales, it can increase the trust of your brand and give you authority in your market.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1544570530318",
+          "1544570563095",
+          "1544570589057"
+        ],
+        "settings": {
+          "title": "Your customer wants an easy to use site.",
+          "sectionTitle_color": "#ffffff",
+          "background_image": "shopify:\/\/shop_images\/benefits_2x_30803118-37e8-447d-9b0c-2734d797c7c8.jpg",
+          "background_color": "#4f4d53",
+          "author_color": "#50426b",
+          "testimonials_color": "#a6a6a6"
+        }
+      },
+      "getmore-service-offering": {
+        "type": "getmore-service-offering",
+        "blocks": {
+          "1544573961920": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Your website can be a sales machine designed to win trust, drive conversions and grow your business.<\/p>",
+              "information_title": "What We Offer"
+            }
+          },
+          "1544573984571": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Electric Eye are ecommerce professionals and Shopify Experts that want to help you build a conversion optimized online store.<\/p>",
+              "information_title": "Who We Are"
+            }
+          },
+          "1544574001018": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>We use modern design, ecommerce best practices and conversion strategy to ensure your customers have no problem buying from you online.<\/p>",
+              "information_title": "How We Help"
+            }
+          }
+        },
+        "block_order": [
+          "1544573961920",
+          "1544573984571",
+          "1544574001018"
+        ],
+        "settings": {
+          "background_color": "#1f1f1f",
+          "sectionTitle_color": "#ffffff",
+          "titles_color": "#ffffff",
+          "text_color": "#ffffff",
+          "title": "Beautiful, conversion optimized websites.",
+          "button_text": "Button",
+          "button_url": ""
+        }
+      },
+      "getmore-cover": {
+        "type": "getmore-cover",
+        "settings": {
+          "image_alignment": "right",
+          "image_background": "shopify:\/\/shop_images\/imac-ipad-iphone.png",
+          "image_opacity": 0.2,
+          "color_background": "#ffffff",
+          "text_title": "Designed to Sell",
+          "text_subtitle": "<p>Increase your conversions with an ecommerce website design that is custom tailored to your brand.<\/p>\n<p>&nbsp;<\/p>\n<p>It only takes about <a href=\"https:\/\/www.tandfonline.com\/doi\/abs\/10.1080\/01449290500330448\">50 milliseconds<\/a> for a customer to pass judgement on your website. Are you making a good impression? If you are currently trying to win trust with a badly designed website, you&rsquo;re in for an uphill battle.<\/p>",
+          "text_align": "left",
+          "text_color": "#262626",
+          "title_color": "#50426b",
+          "button_align": "flex-start"
+        }
+      },
+      "getmore-case-studies": {
+        "type": "getmore-case-studies",
+        "blocks": {
+          "1544660223875": {
+            "type": "image",
+            "settings": {
+              "url": "https:\/\/electriceye.io\/blogs\/work\/only-ny-redesign",
+              "author_image": "shopify:\/\/shop_images\/only-ny-featured-1.jpg",
+              "author_company": "Only NY",
+              "testimonial": "<p>Helped streetwear brand <strong>achieve 15x<\/strong> average return with Facebook Ads and increase online sales <strong>by 45%<\/strong>.<\/p>"
+            }
+          },
+          "1544660306604": {
+            "type": "image",
+            "settings": {
+              "url": "https:\/\/electriceye.io\/blogs\/work\/getgood-drums",
+              "author_image": "shopify:\/\/shop_images\/matt-halpern-ggd_7f6c0dab-aa9a-4722-9700-bd1fd4517677.jpg",
+              "author_company": "GetGood Drums",
+              "testimonial": "<p>Increased sales <strong>by 197%<\/strong> with a migration to Shopify and Electric Eye redesign.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1544660223875",
+          "1544660306604"
+        ],
+        "settings": {
+          "title": "Case Studies",
+          "sectionTitle_color": "#50426b",
+          "background_image": "",
+          "background_color": "#ffffff",
+          "company_color": "#262626",
+          "testimonials_color": "#262626"
+        }
+      },
+      "getmore-blog-cover": {
+        "type": "getmore-blog-cover",
+        "settings": {
+          "background_image": "shopify:\/\/shop_images\/slack-imgs_2.jpg",
+          "subtitle": "News, Tips, and more from Shopify Experts",
+          "title": "Resources"
+        }
+      },
+      "getmore-blog-template": {
+        "type": "getmore-blog-template",
+        "settings": {
+          "no_posts": 6,
+          "enable_tag_filter": false,
+          "show_rss_icon": false,
+          "background": "",
+          "blog_subheading": "News, Tips, and more from Shopify Experts",
+          "blog_subtext": "News, Tips, and more from Shopify Experts"
+        }
+      },
+      "getmore-blog-service-template": {
+        "type": "getmore-blog-service-template",
+        "settings": {
+          "no_posts": 6,
+          "enable_tag_filter": false,
+          "show_rss_icon": false,
+          "background": "",
+          "blog_subheading": "News, Tips, and more from Shopify Experts",
+          "blog_subtext": "News, Tips, and more from Shopify Experts"
+        }
+      },
+      "getmore-blog-work-template": {
+        "type": "getmore-blog-work-template",
+        "settings": {
+          "no_posts": 6,
+          "enable_tag_filter": false,
+          "show_rss_icon": false,
+          "background": "",
+          "blog_subheading": "News, Tips, and more from Shopify Experts",
+          "blog_subtext": "News, Tips, and more from Shopify Experts"
+        }
+      },
+      "getmore-page-link-blocks": {
+        "type": "getmore-page-link-blocks",
+        "settings": {}
+      },
+      "development-cover": {
+        "type": "development-cover",
+        "settings": {
+          "image_alignment": "right",
+          "image_background": "shopify:\/\/shop_images\/markus-spiske-507983-unsplash.jpg",
+          "image_opacity": 0.4,
+          "color_background": "#51426b",
+          "text_title": "Development",
+          "text_subtitle": "<p>Our powerful framework and process allows us to create custom&nbsp;customer friendly shopping experiences&nbsp;for&nbsp;your ecommerce store and increase your sales in a matter of weeks, not months.<\/p>\n<p><\/p>\n<p>The most trivial shortcoming will cause a customer to leave your site and purchase from your competition. With our refined process and conversion focused optimizations, we ensure your customer&nbsp;will stay on your website.<\/p>",
+          "text_align": "left",
+          "text_color": "#262626",
+          "title_color": "#50426b",
+          "button_align": "flex-start"
+        }
+      },
+      "development-service-offering": {
+        "type": "development-service-offering",
+        "blocks": {
+          "1556574782746": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>We follow best practices and modern processes to bring a functional, conversion optmized user experience to life on your ecommerce store.<\/p>",
+              "information_title": "What We Offer"
+            }
+          },
+          "1556574819439": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Electric Eye is a boutique agency focused <em><strong>only<\/strong><\/em> on building&nbsp;wildly successful stores for Shopify brands.<\/p>",
+              "information_title": "Who We Are"
+            }
+          },
+          "1557930577271": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>We use&nbsp;modern tools to development a site your team can manage and your customers will love. Oh yeh, and it will increase sales.<\/p>",
+              "information_title": "How We Help"
+            }
+          }
+        },
+        "block_order": [
+          "1556574782746",
+          "1556574819439",
+          "1557930577271"
+        ],
+        "settings": {
+          "background_color": "#353535",
+          "sectionTitle_color": "#ffffff",
+          "titles_color": "#ffffff",
+          "text_color": "#ffffff",
+          "title": "Service Offering",
+          "button_text": "Button",
+          "button_url": ""
+        }
+      },
+      "development-benefits": {
+        "type": "development-benefits",
+        "blocks": {
+          "1556574864262": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/edit-icon_ba700b30-4309-41c6-b464-1a5bb07a079a.png",
+              "author_name": "Easily Managed",
+              "testimonial": "<p>Your website should be developed in a way that you can administer most simple content changes yourself, and we will do just that.&nbsp;<\/p>"
+            }
+          },
+          "1556574891460": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/responsive_shopify_design_6c085587-d4e2-414f-a317-71739367924e.png",
+              "author_name": "Fully Responsive",
+              "testimonial": "<p>If your website isn't mobile friendly, you are leaving money on the table. Every Electric Eye website is developed to be a mobile sales machine.&nbsp;<\/p>"
+            }
+          },
+          "1557930769871": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/multiple-users-silhouette.png",
+              "author_name": "User Friendly",
+              "testimonial": "<p>We build websites focused on delivering the best user experience&nbsp;for the customer to increase sales.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1556574864262",
+          "1556574891460",
+          "1557930769871"
+        ],
+        "settings": {
+          "title": "What's so good about our sites?",
+          "sectionTitle_color": "#fafafa",
+          "background_image": "shopify:\/\/shop_images\/bady-qb-490221-unsplash.jpg",
+          "background_color": "#50426b",
+          "author_color": "#50426b",
+          "testimonials_color": "#a6a6a6"
+        }
+      },
+      "development-asked-question": {
+        "type": "development-asked-question",
+        "blocks": {
+          "1556574945610": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Absolutely. We design and develop with mobile in mind.<\/p>",
+              "information_title": "Are your websites mobile friendly?"
+            }
+          },
+          "1556574956670": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Yes,&nbsp;when possible we always make sure the content is easily editable by our clients.&nbsp;<\/p>",
+              "information_title": "Can I edit the content myself?"
+            }
+          },
+          "1557931016502": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>No, Shopify is highly customizable.<\/p>",
+              "information_title": "Is Shopify limiting for customizations?"
+            }
+          },
+          "1557931030519": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Probably not. We focus on solving problems for our clients, not the market.<\/p>",
+              "information_title": "Will you develop my app idea?"
+            }
+          },
+          "1557931081910": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Yes, if you are looking to migrate to Shopify we most certainly can.<\/p>",
+              "information_title": "I’m not on Shopify, can you help?"
+            }
+          }
+        },
+        "block_order": [
+          "1556574945610",
+          "1556574956670",
+          "1557931016502",
+          "1557931030519",
+          "1557931081910"
+        ],
+        "settings": {
+          "background_color": "#50426b",
+          "sectionTitle_color": "#ffffff",
+          "titles_color": "#ffffff",
+          "text_color": "#ffffff",
+          "title": "Frequently Asked Questions",
+          "button_text": "Button",
+          "button_url": ""
+        }
+      },
+      "development-testimonials": {
+        "type": "development-testimonials",
+        "blocks": {
+          "1556575147105": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/mandy-nagel-I-thought-of-you_8a27ff6b-6b06-4fb0-ab4c-892e63fb6e23.png",
+              "author_name": "Mandy Nagel",
+              "author_company": "I Thought Of You",
+              "testimonial": "<p>After a long search for the right development team, I was so happy to find Chase and&nbsp;Shawn. Not only are they attentive and punctual, they think beyond the initial scope of the project to be sure no opportunities are missed for a great user experience. I'm excited to work with them again going forward.<\/p>"
+            }
+          },
+          "1557931716161": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/lindsey.png",
+              "author_name": "Lindsey Moeller",
+              "author_company": "Concur",
+              "testimonial": "<p>Electric Eye was integral to finding the appropriate solutions for our rebrand and re-platform. We migrated from Squarespace to Shopify, and they helped make a convoluted transition process seamless and smooth so that we could launch with our strongest foot forward going into holiday season.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1556575147105",
+          "1557931716161"
+        ],
+        "settings": {
+          "title": "Testimonials",
+          "sectionTitle_color": "#50426b",
+          "background_image": "shopify:\/\/shop_images\/stephen-arnold-114252-unsplash.jpg",
+          "background_color": "#50426b",
+          "author_color": "#50426b",
+          "company_color": "#262626",
+          "testimonials_color": "#262626"
+        }
+      },
+      "development-case-studies": {
+        "type": "development-case-studies",
+        "blocks": {
+          "1556575206841": {
+            "type": "image",
+            "settings": {
+              "url": "https:\/\/electriceye.io\/blogs\/work\/tip-top-shoes",
+              "author_image": "shopify:\/\/shop_images\/tip-top-vintage_db9c004c-c78b-430f-92bb-0c3773ab3273.jpg",
+              "author_company": "Tip Top Shoes",
+              "testimonial": "<p>Increased conversion rate by <strong>114%<\/strong> and sales by <strong>48%<\/strong> with a migration from Magento to Shopify.<\/p>"
+            }
+          },
+          "1557931302162": {
+            "type": "image",
+            "settings": {
+              "url": "https:\/\/electriceye.io\/blogs\/work\/concur-the-conscious-company",
+              "author_image": "shopify:\/\/shop_images\/concur-featured-image_640x448_crop_center_3bd75bfa-2ba7-4602-bc72-f7bec25a3653.jpg",
+              "author_company": "Concur",
+              "testimonial": "<p><strong>164%<\/strong> increase in orders&nbsp;after skincare brand's migration from Squarespace to Shopify.<\/p>\n<p><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1556575206841",
+          "1557931302162"
+        ],
+        "settings": {
+          "title": "Case Studies",
+          "sectionTitle_color": "#50426b",
+          "background_image": "",
+          "background_color": "#ffffff",
+          "company_color": "#262626",
+          "testimonials_color": "#262626"
+        }
+      },
+      "development-meetup-ready": {
+        "type": "development-meetup-ready",
+        "settings": {
+          "heading": "Ready To Start Your Project?",
+          "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
+          "section_background": "#312b3b",
+          "section_color": "#ffffff",
+          "icon": "shopify:\/\/shop_images\/shopify-experts-logo.png",
+          "linktext": "Let's Go",
+          "url": "http:\/\/electriceye.io\/connect"
+        }
+      },
+      "marketing-cover": {
+        "type": "marketing-cover",
+        "settings": {
+          "image_alignment": "right",
+          "image_background": "shopify:\/\/shop_images\/adeolu-eletu-13086-unsplash_5791e0e2-31b2-4a53-8f98-196db54394cd.jpg",
+          "image_opacity": 0.2,
+          "color_background": "#51426b",
+          "text_title": "Ecommerce Marketing",
+          "text_subtitle": "<p>A conversion-focused marketing strategy&nbsp;will help propel your brand forward and&nbsp;hit those ambitious sales goals.<\/p>\n<p><\/p>\n<p>Electric Eye will build your online business a marketing system that works.<\/p>",
+          "text_align": "left",
+          "text_color": "#262626",
+          "title_color": "#50426b",
+          "button_align": "flex-start"
+        }
+      },
+      "marketing-service-offering": {
+        "type": "marketing-service-offering",
+        "blocks": {
+          "1556664242520": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Tried &amp; true marketing systems that drive traffic, increase sales and gain customers.&nbsp;<\/p>",
+              "information_title": "What We Offer"
+            }
+          },
+          "1556664253689": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Electric Eye are ecommerce professionals and Shopify Experts that want to help you build a conversion optimized online store.<\/p>",
+              "information_title": "Who We Are"
+            }
+          },
+          "1556735077622": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>We partner with brands like yours to save them time and build systems that work.<\/p>",
+              "information_title": "How We Help"
+            }
+          }
+        },
+        "block_order": [
+          "1556664242520",
+          "1556664253689",
+          "1556735077622"
+        ],
+        "settings": {
+          "background_color": "#2a2a2a",
+          "sectionTitle_color": "#ffffff",
+          "titles_color": "#ffffff",
+          "text_color": "#ffffff",
+          "title": "Smart marketing for Shopify Stores",
+          "button_text": "Button",
+          "button_url": ""
+        }
+      },
+      "marketing-benefits": {
+        "type": "marketing-benefits",
+        "blocks": {
+          "1556664288067": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/increased-traffic_f2bfdabf-857c-42b3-b7e4-6c40a8e27f35.png",
+              "author_name": "More Traffic",
+              "testimonial": "<p>Increased&nbsp;sessions&nbsp;on your online store is the first step to growing your top line.&nbsp;<\/p>"
+            }
+          },
+          "1556735286035": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/customers_a94ad9a9-84aa-426f-ba9b-f89237335bd9.png",
+              "author_name": "More Customers",
+              "testimonial": "<p>Strategically convert new visitors from anonymous traffic to customer.<\/p>"
+            }
+          },
+          "1556735334096": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/sales-icon.png",
+              "author_name": "More Sales",
+              "testimonial": "<p>Smart marketing will increase your online stores sales.&nbsp;<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1556664288067",
+          "1556735286035",
+          "1556735334096"
+        ],
+        "settings": {
+          "title": "What should you expect?",
+          "sectionTitle_color": "#f6f6f6",
+          "background_image": "shopify:\/\/shop_images\/christin-hume-309876-unsplash_e5515128-9d73-4dcd-876c-fbbb9937b529.jpg",
+          "background_color": "#50426b",
+          "author_color": "#50426b",
+          "testimonials_color": "#a6a6a6"
+        }
+      },
+      "marketing-asked-question": {
+        "type": "marketing-asked-question",
+        "blocks": {
+          "1556664323420": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>No. But you should be wary of anyone who does. There are factors that are out of everyone&rsquo;s control. What we can do is extrapolate from available data.<\/p>",
+              "information_title": "Do you guarantee results?"
+            }
+          },
+          "1559563439880": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>At this time we only offer managed marketing for Facebook Ads and Google Ads. Facebook owns Instagram, it's the same network.&nbsp;<\/p>",
+              "information_title": "What platforms can you help me on?"
+            }
+          },
+          "1559563558266": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>We charge a flat fee vs 20% of your media spend.<\/p>",
+              "information_title": "How do you bill?"
+            }
+          },
+          "1559563610068": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Unfortunately, that&rsquo;s not a viable business model for us right now.<\/p>",
+              "information_title": "Will you consider a performance based payment structure?"
+            }
+          },
+          "1559563676981": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Honestly, it really depends. We strive for quickest results.&nbsp;We say 3 months is the minimum timeline it takes to collect solid data for any meaningful assessment.<\/p>",
+              "information_title": "How long does it take to see returns?"
+            }
+          },
+          "1559563790460": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Unless you're funded, you should be a $250k+ business for this&nbsp;type of engagement.<\/p>",
+              "information_title": "Can I afford managed marketing?"
+            }
+          },
+          "1559563839034": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>We recommend a solid feed software for optimal results. It's not very expensive.&nbsp;<\/p>",
+              "information_title": "Do I have to pay for additional software?"
+            }
+          },
+          "1559563881992": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Yes, in order to place your ad spends, you&rsquo;ll need to use a credit card.<\/p>",
+              "information_title": "Do I have to use a credit card?"
+            }
+          },
+          "1559563898951": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Unfortunately, no. We link your credit card so you can directly pay for ad spends.<\/p>",
+              "information_title": "Can I reimburse you for ad spends?"
+            }
+          },
+          "1559563910256": {
+            "type": "image",
+            "settings": {
+              "information_content": "<p>Short answer is yes but this is a very open ended question. Contact us and we&rsquo;d be happy to help.<\/p>",
+              "information_title": "Do you build marketing funnels?"
+            }
+          }
+        },
+        "block_order": [
+          "1556664323420",
+          "1559563439880",
+          "1559563558266",
+          "1559563610068",
+          "1559563676981",
+          "1559563790460",
+          "1559563839034",
+          "1559563881992",
+          "1559563898951",
+          "1559563910256"
+        ],
+        "settings": {
+          "background_color": "#353535",
+          "sectionTitle_color": "#ffffff",
+          "titles_color": "#ffffff",
+          "text_color": "#ffffff",
+          "title": "Frequently Asked Questions",
+          "button_text": "Button",
+          "button_url": ""
+        }
+      },
+      "marketing-testimonials": {
+        "type": "marketing-testimonials",
+        "blocks": {
+          "1556664349681": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/alex-lira-testimonial_4472x4472_21222ae0-733f-49b7-89d9-c836573165dd.png",
+              "author_name": "Alex Lira",
+              "author_company": "Absolute Merch",
+              "testimonial": "<p>Before working with Electric Eye our ad strategy and practices were a complete mess. They were able to help restructure our strategy and implement best practices that have put us on track to the most profitable year in the history of our company.<\/p>"
+            }
+          },
+          "1556736936793": {
+            "type": "image",
+            "settings": {
+              "author_image": "shopify:\/\/shop_images\/isla_fullxfull.32352307_2tbr0p5n.jpg",
+              "author_name": "Tom Kunash",
+              "author_company": "Femfetti",
+              "testimonial": "<p>The team at Electric Eye demonstrated exemplary professionalism while working with us to implement the&nbsp;automated email marketing program. They are also very honest and great communicators. I highly recommend working with them.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1556664349681",
+          "1556736936793"
+        ],
+        "settings": {
+          "title": "Client Testimonials",
+          "sectionTitle_color": "#50426b",
+          "background_image": "shopify:\/\/shop_images\/stephen-arnold-114252-unsplash.jpg",
+          "background_color": "rgba(0,0,0,0)",
+          "author_color": "#50426b",
+          "company_color": "#262626",
+          "testimonials_color": "#262626"
+        }
+      },
+      "marketing-case-studies": {
+        "type": "marketing-case-studies",
+        "blocks": {
+          "1556664398566": {
+            "type": "image",
+            "settings": {
+              "url": "https:\/\/electriceye.io\/blogs\/work\/only-ny-redesign",
+              "author_image": "shopify:\/\/shop_images\/only-ny-featured-1.jpg",
+              "author_company": "Only NY",
+              "testimonial": "<p>Helped streetwear brand&nbsp;<strong>achieve 15x&nbsp;<\/strong>average return with Facebook Ads and increase online sales&nbsp;<strong>by 45%<\/strong>.<\/p>"
+            }
+          },
+          "1557932439309": {
+            "type": "image",
+            "settings": {
+              "url": "https:\/\/electriceye.io\/blogs\/work\/west-nyc",
+              "author_image": "shopify:\/\/shop_images\/west-run.jpg",
+              "author_company": "West NYC",
+              "testimonial": "<p><a href=\"https:\/\/electriceye.io\/blogs\/work\/west-nyc\"><\/a>Design and Marketing for Upper West Side Sneaker Retailer that led to a <strong>52%<\/strong> increase in total sales.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1556664398566",
+          "1557932439309"
+        ],
+        "settings": {
+          "title": "Case Studies",
+          "sectionTitle_color": "#50426b",
+          "background_image": "",
+          "background_color": "#ffffff",
+          "company_color": "#262626",
+          "testimonials_color": "#262626"
+        }
+      },
+      "marketing-meetup-ready": {
+        "type": "marketing-meetup-ready",
+        "settings": {
+          "heading": "Ready To Start Your Project?",
+          "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
+          "section_background": "#312b3b",
+          "section_color": "#ffffff",
+          "icon": "shopify:\/\/shop_images\/shopify-experts-logo.png",
+          "linktext": "Let's Go",
+          "url": "http:\/\/electriceye.io\/connect"
+        }
+      },
+      "page-design-ready": {
+        "type": "page-design-ready",
+        "settings": {
+          "heading": "Ready To Start Your Project?",
+          "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
+          "section_background": "#312b3b",
+          "section_color": "#ffffff",
+          "linktext": "Let's Go",
+          "url": "http:\/\/electriceye.io\/connect"
+        }
+      },
+      "page-development-ready": {
+        "type": "page-development-ready",
+        "settings": {
+          "heading": "Ready To Start Your Project?",
+          "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
+          "section_background": "#312b3b",
+          "section_color": "#ffffff",
+          "linktext": "Let's Go",
+          "url": "http:\/\/electriceye.io\/connect"
+        }
+      },
+      "page-marketing-ready": {
+        "type": "page-marketing-ready",
+        "settings": {
+          "heading": "Ready To Start Your Project?",
+          "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
+          "section_background": "#353535",
+          "section_color": "#ffffff",
+          "linktext": "Let's Go",
+          "url": "http:\/\/electriceye.io\/connect"
+        }
+      },
+      "services-design": {
+        "type": "services-design",
+        "settings": {
+          "image_alignment": "left",
+          "image_background": "shopify:\/\/shop_images\/designer-at-work_925x_44608e89-2100-40fc-ad8a-e8c6e28793ae.jpg",
+          "image_opacity": 0.1,
+          "color_background": "#7549c0",
+          "text_title": "Design",
+          "text_subtitle": "<p>Increase your conversions with an ecommerce website design that is custom tailored to your brand.<\/p>",
+          "text_align": "left",
+          "text_color": "#262626",
+          "title_color": "#50426b",
+          "button_align": "flex-start",
+          "linktext": "view more",
+          "url": "\/pages\/shopify-website-design"
+        }
+      },
+      "services-development": {
+        "type": "services-development",
+        "settings": {
+          "image_alignment": "left",
+          "image_background": "shopify:\/\/shop_images\/markus-spiske-507983-unsplash.jpg",
+          "image_opacity": 0.2,
+          "color_background": "#51426b",
+          "text_title": "Development",
+          "text_subtitle": "<p>The sky's the limit with custom development for Shopify stores.<\/p>",
+          "text_align": "left",
+          "text_color": "#262626",
+          "title_color": "#50426b",
+          "button_align": "flex-start",
+          "linktext": "view more",
+          "url": "\/pages\/development"
+        }
+      },
+      "services-marketing": {
+        "type": "services-marketing",
+        "settings": {
+          "image_alignment": "right",
+          "image_background": "shopify:\/\/shop_images\/team-sales-business-meeting.jpg",
+          "image_opacity": 0.2,
+          "color_background": "#51426b",
+          "text_title": "Marketing",
+          "text_subtitle": "<p>Why hire full time digital designers, marketers, and developers in-house when you can put the Shopify Experts at Electric Eye on your team?<\/p>",
+          "text_align": "left",
+          "text_color": "#262626",
+          "title_color": "#50426b",
+          "button_align": "flex-start",
+          "linktext": "view more",
+          "url": "\/pages\/marketing"
+        }
+      },
+      "services-ready": {
+        "type": "services-ready",
+        "settings": {
+          "heading": "Ready To Start Your Project?",
+          "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
+          "section_background": "#312b3b",
+          "section_color": "#ffffff",
+          "linktext": "Let's go",
+          "url": "http:\/\/electriceye.io\/connect"
+        }
+      },
+      "services-cover": {
+        "type": "services-cover",
+        "settings": {
+          "image_background": "shopify:\/\/shop_images\/tim-van-der-kuip-1403210-unsplash.jpg",
+          "image_opacity": 0.2,
+          "color_background": "#51426b",
+          "text_title": "Services",
+          "text_subtitle": "No hidden fees. No hourly rate.",
+          "text_paragraph": "<p>Electric Eye believes in transparent pricing. We have custom built our service offerings to be the best value for business owners and give you the power to stay in budget.<\/p>\n<p>We offer continued monthly support with our Shopify Expert Retainers, as well as project based services that you can choose a la carte. Start with roadmapping and we'll help you determine exactly what services your business needs to grow.<\/p>",
+          "text_align": "center",
+          "text_color": "#ffffff",
+          "button_text": "",
+          "button_url": "",
+          "button_align": "flex-start"
+        }
+      }
+    },
+    "content_for_index": [
+      "1533537722768",
+      "1533554202136",
+      "1541011669045",
+      "1533545344904",
+      "1533547221726",
+      "1533892282708",
+      "1533551578560",
+      "1533716492810",
+      "1533721671912",
+      "1533560592018",
+      "1533902210701",
+      "1533729307401"
+    ]
+  },
+  "presets": {
+    "Adventure": {
+      "color_primary": "#333333",
+      "color_main_accent": "#ff4b49",
+      "color_secondary_accent": "#ffe55c",
+      "color_shop_accent": "#07aabc",
+      "color_borders": "#e5e5e5",
+      "color_body_bg": "#f7f7f7",
+      "color_section_bg": "#ffffff",
+      "color_footer_bg": "primary",
+      "color_footer_accent": "main-accent",
+      "main_typeface": "Google_Rubik_sans",
+      "header_typeface": "Google_Playfair+Display_serif",
+      "body_typeface": "Google_Crimson+Text_serif",
+      "header_font_weight": "700",
+      "header_text_transform": "none",
+      "section_title_typeface": "main",
+      "section_title_font_weight": "400",
+      "section_title_text_transform": "none",
+      "navigation_font_weight": "400",
+      "navigation_text_transform": "none",
+      "buttons_font_weight": "400",
+      "buttons_text_transform": "none",
+      "meta_font_weight": "400",
+      "meta_text_transform": "none",
+      "date_format": "time_ago",
+      "cart_notes_enable": true,
+      "cart_vendor_enable": false,
+      "ajax_cart_method": "drawer",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#1990C6",
+      "checkout_button_color": "#1990C6",
+      "checkout_error_color": "#ff6d6d",
+      "color_body_text": "#333333",
+      "color_footer_social_link": "#bbbbbb",
+      "color_footer_text": "#636363",
+      "color_secondary": "#bbb",
+      "favicon_enable": false,
+      "footer_newsletter_enable": true,
+      "footer_social_enable": true,
+      "logo_use_image": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "blocks": {
+            "1488181261946": {
+              "type": "notice_bar",
+              "settings": {
+                "text": "Free shipping on all orders"
+              }
+            }
+          },
+          "block_order": [
+            "1488181261946"
+          ],
+          "settings": {
+            "logo": "",
+            "logo_max_width": 160,
+            "main_linklist": "main-menu"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "main_linklist": "footer",
+            "secondary_linklist": "",
+            "extra_information": "<p>Use this to add additional information about your store, e.g. address \/ contact details.<\/p>",
+            "show_theme_credit": true,
+            "show_social_icons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "no_posts": 8,
+            "enable_tag_filter": true,
+            "enable_sort_filter": false
+          }
+        },
+        "1488182574425": {
+          "type": "video",
+          "blocks": {
+            "1488182597134": {
+              "type": "youtube_playlist",
+              "settings": {
+                "youtube_playlist_id": ""
+              }
+            }
+          },
+          "block_order": [
+            "1488182597134"
+          ],
+          "settings": {
+            "title": "Video"
+          }
+        },
+        "1488183202970": {
+          "type": "feature-image",
+          "settings": {
+            "feature_image": "",
+            "sub_text": "Feature",
+            "main_text": "Image with text overlay",
+            "cta_url": "",
+            "cta_text": "Shop Now",
+            "text_color": "primary",
+            "content_position": "text-align--center align--middle"
+          }
+        },
+        "1488188741688": {
+          "type": "instagram",
+          "settings": {
+            "title": "Instagram",
+            "instagram_access_token": "",
+            "no_posts": "10"
+          }
+        },
+        "1488190019153": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Sign up to our newsletter",
+            "text": "Receive special offers and  first look at new products."
+          }
+        },
+        "1488193262597": {
+          "type": "homepage-blog",
+          "blocks": {
+            "1488193262597-1": {
+              "type": "articles_by_blog",
+              "settings": {
+                "title": "",
+                "selected_blog": "",
+                "no_posts": 4,
+                "show_blog_link": false
+              }
+            },
+            "1488193300634": {
+              "type": "articles_by_blog",
+              "settings": {
+                "title": "",
+                "selected_blog": "",
+                "no_posts": 4,
+                "show_blog_link": false
+              }
+            }
+          },
+          "block_order": [
+            "1488193262597-1",
+            "1488193300634"
+          ],
+          "settings": {
+            "blog_1": "",
+            "blog_2": "",
+            "blog_3": "",
+            "blog_4": "",
+            "blog_5": ""
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "blocks": {
+            "1488201480408": {
+              "type": "supporting_links",
+              "settings": {
+                "title": "Shipping Information"
+              }
+            },
+            "1488201495383": {
+              "type": "supporting_links",
+              "settings": {
+                "title": "Returns Policy"
+              }
+            }
+          },
+          "block_order": [
+            "1488201480408",
+            "1488201495383"
+          ],
+          "settings": {
+            "show_quantity": true,
+            "show_share_links": true,
+            "show_tags": true,
+            "show_related_products": true,
+            "show_related_articles": true,
+            "blog_1": "adventure",
+            "blog_2": "urban",
+            "blog_3": "",
+            "blog_4": "",
+            "blog_5": ""
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "no_posts": 6,
+            "enable_tag_filter": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {}
+        },
+        "1488287493735": {
+          "type": "featured-content",
+          "settings": {
+            "rich_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "rich_text_mobile": "",
+            "font_size": "featured-content__title--large",
+            "text_color": "primary",
+            "highlight_color": "primary"
+          }
+        },
+        "1488287561982": {
+          "type": "store",
+          "blocks": {
+            "1488287561982-0": {
+              "type": "feature_text",
+              "settings": {
+                "rich_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+                "rich_text_mobile": ""
+              }
+            },
+            "1488287561982-1": {
+              "type": "collection_list",
+              "settings": {
+                "collection_1": "",
+                "collection_1_text_color": "primary",
+                "collection_2": "",
+                "collection_2_text_color": "primary"
+              }
+            },
+            "1488287561982-2": {
+              "type": "featured_collection",
+              "settings": {
+                "selected_collection": "",
+                "show_collection_link": false
+              }
+            }
+          },
+          "block_order": [
+            "1488287561982-0",
+            "1488287561982-1",
+            "1488287561982-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection-template__list": {
+          "type": "collection-template__list",
+          "settings": {
+            "no_posts": "4",
+            "alternate_rows": false,
+            "enable_tag_filter": false,
+            "enable_sort_filter": false,
+            "show_description": false
+          }
+        }
+      },
+      "content_for_index": [
+        "1488287493735",
+        "1488193262597",
+        "1488190019153",
+        "1488287561982",
+        "1488183202970",
+        "1488182574425",
+        "1488188741688"
+      ]
+    },
+    "Agency": {
+      "color_primary": "#4000e0",
+      "color_main_accent": "#ff78eb",
+      "color_secondary_accent": "#ffffff",
+      "color_shop_accent": "#ff4040",
+      "color_borders": "#e5e5e5",
+      "color_body_bg": "#e4fffd",
+      "color_section_bg": "#ffffef",
+      "color_footer_bg": "primary",
+      "color_footer_accent": "secondary-accent",
+      "main_typeface": "Google_Karla_sans",
+      "header_typeface": "Google_Karla_sans",
+      "body_typeface": "Google_Inconsolata_mono",
+      "header_font_weight": "700",
+      "header_text_transform": "none",
+      "section_title_typeface": "headings",
+      "section_title_font_weight": "700",
+      "section_title_text_transform": "none",
+      "navigation_font_weight": "400",
+      "navigation_text_transform": "Uppercase",
+      "buttons_font_weight": "400",
+      "buttons_text_transform": "Uppercase",
+      "meta_font_weight": "400",
+      "meta_text_transform": "Uppercase",
+      "date_format": "time_ago",
+      "cart_notes_enable": true,
+      "cart_vendor_enable": false,
+      "ajax_cart_method": "drawer",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#1990C6",
+      "checkout_button_color": "#1990C6",
+      "checkout_error_color": "#ff6d6d",
+      "color_body_text": "#333333",
+      "color_footer_social_link": "#bbbbbb",
+      "color_footer_text": "#636363",
+      "color_secondary": "#bbb",
+      "favicon_enable": false,
+      "footer_newsletter_enable": true,
+      "footer_social_enable": true,
+      "logo_use_image": false,
+      "sections": {
+        "header": {
+          "type": "header",
+          "blocks": {
+            "1488194599018": {
+              "type": "notice_bar",
+              "settings": {
+                "text": "Free shipping on all orders"
+              }
+            }
+          },
+          "block_order": [
+            "1488194599018"
+          ],
+          "settings": {
+            "logo": "",
+            "logo_max_width": 240,
+            "main_linklist": "main-menu"
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "main_linklist": "main-menu",
+            "secondary_linklist": "",
+            "extra_information": "<p>Use this to add additional information about your store, e.g. address \/ contact details.<\/p>",
+            "show_theme_credit": true,
+            "show_social_icons": true
+          }
+        },
+        "1488191749488": {
+          "type": "homepage-blog",
+          "settings": {
+            "blog_1": "",
+            "blog_2": "",
+            "blog_3": "",
+            "blog_4": "",
+            "blog_5": ""
+          }
+        },
+        "1488194371812": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Sign up to our newsletter",
+            "text": "Receive special offers and  first look at new products."
+          }
+        },
+        "collection-template__list": {
+          "type": "collection-template__list",
+          "settings": {
+            "no_posts": "4",
+            "alternate_rows": false,
+            "enable_tag_filter": false,
+            "enable_sort_filter": false,
+            "show_description": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "no_posts": 8,
+            "enable_tag_filter": false,
+            "enable_sort_filter": false
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity": false,
+            "show_share_links": true,
+            "show_tags": true,
+            "show_related_products": true,
+            "show_related_articles": true,
+            "blog_1": "",
+            "blog_2": "",
+            "blog_3": "",
+            "blog_4": "",
+            "blog_5": ""
+          }
+        },
+        "1488288244543": {
+          "type": "featured-content",
+          "settings": {
+            "rich_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "rich_text_mobile": "",
+            "font_size": "featured-content__title--large",
+            "text_color": "primary",
+            "highlight_color": "primary"
+          }
+        },
+        "1488288261836": {
+          "type": "feature-image",
+          "settings": {
+            "feature_image": "",
+            "sub_text": "Subheading goes here",
+            "main_text": "Image with text overlay",
+            "cta_url": "",
+            "cta_text": "Shop Now",
+            "text_color": "primary",
+            "content_position": "text-align--center align--middle"
+          }
+        },
+        "1488288294534": {
+          "type": "store",
+          "blocks": {
+            "1488288294534-0": {
+              "type": "feature_text",
+              "settings": {
+                "rich_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+                "rich_text_mobile": ""
+              }
+            },
+            "1488288294534-1": {
+              "type": "collection_list",
+              "settings": {
+                "collection_1": "",
+                "collection_1_text_color": "primary",
+                "collection_2": "",
+                "collection_2_text_color": "primary"
+              }
+            },
+            "1488288294534-2": {
+              "type": "featured_collection",
+              "settings": {
+                "selected_collection": "",
+                "show_collection_link": false
+              }
+            }
+          },
+          "block_order": [
+            "1488288294534-0",
+            "1488288294534-1",
+            "1488288294534-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1488288332296": {
+          "type": "featured-content",
+          "settings": {
+            "rich_text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "rich_text_mobile": "",
+            "font_size": "featured-content__title--medium",
+            "text_color": "primary",
+            "highlight_color": "primary"
+          }
+        },
+        "1488288371870": {
+          "type": "feature-image",
+          "settings": {
+            "feature_image": "",
+            "sub_text": "Subheading goes here",
+            "main_text": "Image with text overlay",
+            "cta_url": "",
+            "cta_text": "Shop Now",
+            "text_color": "primary",
+            "content_position": "text-align--center align--middle"
+          }
+        },
+        "1488288404392": {
+          "type": "instagram",
+          "settings": {
+            "title": "Instagram",
+            "instagram_access_token": "",
+            "no_posts": "5"
+          }
+        }
+      },
+      "content_for_index": [
+        "1488288244543",
+        "1488288261836",
+        "1488288294534",
+        "1488288332296",
+        "1488288371870",
+        "1488191749488",
+        "1488288404392",
+        "1488194371812"
+      ]
+    }
+  }
+}

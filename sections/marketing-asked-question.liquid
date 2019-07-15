@@ -1,0 +1,129 @@
+<!-- /sections/getmore-asked-question.liquid -->
+  {%- assign backgroundColor = section.settings.background_color -%}
+  {%- assign buttonText = section.settings.button_text -%}
+  {%- assign buttonURL = section.settings.button_url -%}
+  {%- assign sectionTitle = section.settings.title -%}
+  {%- assign sectionTitleColor = section.settings.sectionTitle_color -%}
+  {%- assign titlesColor = section.settings.titles_color -%}
+  {%- assign textColor = section.settings.text_color -%}
+
+
+<section class="getmore askedQuestion">
+  <h4 class="title">{{ sectionTitle }}</h4>
+    <div class="wrapper-items">
+
+    {% for item in section.blocks %}
+      <div class="item">
+        <h5 class="title">{{ item.settings.information_title }}</h5>
+        <div class="content">
+          {{ item.settings.information_content }}
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+  
+  {%- if buttonText != blank and buttonURL != blank -%}
+
+    <div class="wrapper-button">
+      <a href="{{ buttonURL }}" class="btn-white">
+        {{ buttonText }}
+      </a>
+    </div>
+  
+  {%- endif -%}
+
+  <style>
+    .askedQuestion {
+      background-color: {{ backgroundColor }};
+    }
+
+    .askedQuestion .title {
+      color: {{ sectionTitleColor }}
+    }
+
+    .askedQuestion .wrapper-items .title {
+      color: {{ titlesColor }}
+    }
+
+    .askedQuestion .wrapper-items .content * {
+      color: {{ textColor }}
+    }
+  </style>
+</section>
+
+{% schema %}
+  {
+    "name": "Asked Questions",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#50426b"
+      },
+      {
+        "type": "color",
+        "id": "sectionTitle_color",
+        "label": "Section Title color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "titles_color",
+        "label": "Titles color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section title"
+      },
+      {
+        "type": "header",
+        "content": "Button"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "default": "Button",
+        "label": "Text"
+      },
+      {
+        "id": "button_url",
+        "type": "url",
+        "label": "Button link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "information_content",
+            "label": "Content"
+          },
+          {
+            "type": "text",
+            "id": "information_title",
+            "label": "Title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Asked Questions",
+      "category": "GETMORE SECTIONS"
+    }
+  ]
+  }
+{% endschema %}

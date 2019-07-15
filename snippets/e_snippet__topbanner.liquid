@@ -1,0 +1,17 @@
+
+<section class="banner banner-page" style="background-color: {{ block.settings.section_background }}">
+    <div class="banner--image" style="  background-image: url('{{ block.settings.background | img_url: '4472x4472' }}');
+                                        opacity: {{ block.settings.image_transparency }};
+                                    "></div>
+    <div class="full-height-inner">
+        <div class="container banner--container">
+            <div class="hf-text">
+                <div class="banner--text">
+                    <h1>{{ block.settings.title }}</h1>
+                    <hr class="divider">
+                    <p>{{ block.settings.subheading }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

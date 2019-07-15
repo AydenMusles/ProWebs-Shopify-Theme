@@ -1,0 +1,65 @@
+<section class="section large" style="background-color: {{ section.settings.section_background }}" >
+  <div class="container">
+    <div class="text-entry ready-marketing">
+      <div class="text-center">
+        <a href="https://experts.shopify.com/electriceye" target="_blank">
+          <img class="img-fluid img-165" src="{{ 'shopify-experts-logo.svg' | asset_url }}" alt="Ready to start your project?">
+        </a>
+      </div>
+      <h2 class="section-heading text-capitalize" style="color: {{ section.settings.section_color }}">{{ section.settings.heading }}</h2>
+      <div class="section-content y-space" style="color: {{ section.settings.section_color }}">{{ section.settings.section_content }}</div>
+      {%- if section.settings.linktext != blank -%}
+        <a data-action="toggle-modal" data-target="#GetProposalForm" class="electric-btn small" href="{{ section.settings.url }}">
+          {{ section.settings.linktext }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ready Project",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Title"
+    },
+    {
+      "type": "textarea",
+      "id": "section_content",
+      "label": "Section Content"
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Background Color",
+      "default": "#312B3B"
+    },
+    {
+      "type": "color",
+      "id": "section_color",
+      "label": "Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "linktext",
+      "label": "Link text",
+      "default": "Link text"
+    },
+    {
+      "type": "text",
+      "id": "url",
+      "label": "Url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ready Project",
+      "category": "GETMORE"
+    }
+  ]
+}
+{% endschema %}
