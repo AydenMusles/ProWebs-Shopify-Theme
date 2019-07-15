@@ -1,0 +1,12 @@
+<a class="work-item" href="{{ article.url }}">
+    {% if article.image %}
+        <div class="work-item--thumb" style="background-image: url({{ article | img_url: '640x448', crop: 'center'  }})"></div>
+    {% endif %}
+    <div class="work-item--description">
+        {% assign article_blog = article.url  | split: '/' %}
+        {% assign blog_slug = article_blog[2] %}
+        {% assign blog_title = blogs[blog_slug].title %}
+        <h3 class="work-item__title">{{ article.title }}</h3>
+        <p  class="work-item__excerpt">{{ article.excerpt }}</p>
+    </div>
+</a>

@@ -1,0 +1,40 @@
+<!-- /sections/getmore-meetup-videoPlayList.liquid -->
+
+{%- assign idPlayList = section.settings.id_playlist -%}
+
+<section class="getmore meetup-videoPlayList">
+  <iframe 
+    src="https://www.youtube.com/embed/videoseries?list={{ idPlayList }}"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  </iframe>
+</section>
+{% schema %}
+  {
+    "name": "Video Play List",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Video Play List"
+      },
+      {
+        "type": "text",
+        "id": "id_playlist",
+        "default": "UUoIDYbz6QemLNgDWbj-7kTA",
+        "label": "Playlist ID"
+      }
+    ],
+    "presets": [
+    {
+      "name": "Video Play List",
+      "category": "GETMORE"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

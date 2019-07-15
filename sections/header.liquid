@@ -1,0 +1,405 @@
+<style>
+    .site-header-page.header-purple {
+    background-color: #51426b;
+}
+</style>
+
+{% assign notice_bar_enabled = false %}
+{% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'notice_bar' %}
+    {% assign notice_bar_enabled = true %}
+    {% assign notice_bar_text = block.settings.text | escape %}
+    {% endcase %}
+{% endfor %}
+
+{% comment %}
+{% section 'sidebar-menu' %}
+{% endcomment %}
+
+{% include 'sidebar-menu' %}
+
+
+<div class="site-nav-measure">
+    <ul class="site-nav site-nav--header inline-block font-size--m t--nav">
+        {% for link in linklists[section.settings.main_linklist].links %}
+
+            {% comment %}
+                Create a dropdown menu by naming a linklist the same as a link in the parent nav
+
+                More info on dropdowns:
+                - http://docs.shopify.com/manual/your-website/navigation/create-drop-down-menu
+            {% endcomment %}
+
+            {% assign child_list_handle = link.title | handleize %}
+            {% if linklists[child_list_handle].links != blank %}
+                <li class="site-nav--has-dropdown{% if link.active %} site-nav--active{% endif %}" aria-haspopup="true">
+                    <a href="{{ link.url }} " class="site-nav__link">
+                        {{ link.title }}
+                        {% include 'svg-icon', icon: 'chevron-down' %}
+                    </a>
+                    <ul class="site-nav__dropdown">
+                        {% for childlink in linklists[child_list_handle].links %}
+                            <li{% if childlink.active %} class="site-nav--active"{% endif %}>
+                                <a href="{{ childlink.url }}" class="site-nav__link" {% if childlink.url contains 'https' %}target="_blank"{% endif %}>{{ childlink.title | escape }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% else %}
+                <li {% if link.active %}class="site-nav--active"{% endif %}>
+                    <a href="{{ link.url }}" class="site-nav__link">{{ link.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+
+<header class="site-header f--main site-header-fixed" role="banner">
+    <div class="header-container">
+
+        {% for block in section.blocks %}
+            <div class="site-header__notice font-size--s bg--secondary-accent color--secondary-accent-overlay">
+                <div class="wrapper t--meta">
+                    {{ block.settings.text }}
+                </div>
+            </div>
+        {% endfor %}
+
+        <div class="grid__item site-header__logo-col ">
+
+            {% capture image_size %}{{ section.settings.logo_max_width | escape }}x{% endcapture %}
+            {% capture image_size_px %}{{ section.settings.logo_max_width | escape }}px{% endcapture %}
+            {% capture image_size_2x %}{{ section.settings.logo_max_width | times: 2 }}x{% endcapture %}
+
+            {% comment %}
+                Style the logo grid item to be the same width set as the logo
+            {% endcomment %}
+            <style>
+                .site-header__logo-col { padding: 16px 0 }
+                .logo__padding {
+                    padding: 0 16px;
+                }
+            </style>
+
+            {% if template == 'index' %}
+            <h1 class="site-header__logo logo__padding" itemscope itemtype="http://schema.org/Organization">
+                {% else %}
+                <div class="h1 site-header__logo" itemscope itemtype="http://schema.org/Organization">
+                    {% endif %}
+                    {% if section.settings.logo %}
+
+                        <a href="/" itemprop="url" class="sm--hide md--hide lg--show dt--show" style="margin-left: 30px;">
+                            <img src="{{ section.settings.logo | img_url: image_size_2x }}" alt="{{ shop.name }}" itemprop="logo" width="{{ image_size }}">
+                        </a>
+
+                        <a href="/" itemprop="url" class="lg--hide">
+                            <!--              <img src="{{ 'e-icon-logo.png' | asset_img_url: '40x40' }}" alt="{{ shop.name }}" itemprop="logo"> -->
+                            <img src="{{ section.settings.mob_logo | img_url: '340x' }}" alt="{{ shop.name }}" itemprop="logo">
+                        </a>
+                    {% else %}
+                        <a href="/" itemprop="url" class="text-align--center">{{ shop.name }}</a>
+                    {% endif %}
+                    {% if template == 'index' %}
+            </h1>
+            {% else %}
+        </div>
+        {% endif %}
+
+        </div>
+
+
+        <div class="grid__item site-header__mobile-icon site-header__mobile-icon--menu text-center">
+            <button type="button" class="site-header__icon js--drawer-open-left text-right" aria-controls="NavDrawer" aria-expanded="false">
+                {% include 'svg-icon', icon: 'menu' %}
+            </button>
+        </div>
+
+        {%  assign linklistLength = linklists[section.settings.main_linklist].links | size %}
+
+
+        {% assign value = linklists[section.settings.main_linklist].links | modulo:2 %}
+        {% if value == 0 %}
+            {%  assign linklistCenter = linklistLength | divided_by: 2 | plus: 1 %}
+        {% else %}
+            {%  assign linklistCenter = linklistLength | divided_by: 2 %}
+        {% endif %}
+
+        <div class="grid__item site-header__main grid--full sticky d-none-large">
+            <div class="site-nav-holder text-center">
+                <!-- begin site-nav -->
+                <ul class="site-nav site-nav--header dt--show  inline-block font-size--m t--nav" id="AccessibleNav">
+                    {% for link in linklists[section.settings.main_linklist].links %}
+                        {% comment %}
+                            Create a dropdown menu by naming a linklist the same as a link in the parent nav
+
+                            More info on dropdowns:
+                            - http://docs.shopify.com/manual/your-website/navigation/create-drop-down-menu
+                        {% endcomment %}
+                        {% assign child_list_handle = link.title | handleize %}
+                        {% if linklists[child_list_handle].links != blank %}
+                            <li class="site-nav--has-dropdown{% if link.active %} site-nav--active{% endif %}" aria-haspopup="true">
+                                <a href="{{ link.url }}" class="site-nav__link">
+                                    {{ link.title }}
+                                    {% include 'svg-icon', icon: 'chevron-down' %}
+                                </a>
+                                <ul class="site-nav__dropdown">
+                                    {% for childlink in linklists[child_list_handle].links %}
+
+                                        <li{% if childlink.active %} class="site-nav--active"{% endif %}>
+                                            <a href="{{ childlink.url }}" class="site-nav__link" {% if childlink.url contains 'https' %}target="_blank"{% endif %}>{{ childlink.title | escape }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% else %}
+                            <li {% if link.active %}class="site-nav--active"{% endif %}  >
+                                <a href="{{ link.url }}" class="site-nav__link {% if link.url == '/pages/connect' %} site-nav__outlined {% endif %} ">{{ link.title }}</a>
+                            </li>
+                        {% endif %}
+
+                    {% endfor %}
+                </ul>
+                <button type="button" class="site-header__icon site-header__icon--nav-menu hide js--drawer-open-left dt--hide" aria-controls="NavDrawer" aria-expanded="false">
+                    {% include 'svg-icon', icon: 'menu' %}
+                </button>
+            </div>
+        </div>
+    </div>
+</header> <!-- FIXED HEADER -->
+
+<header class="site-header f--main site-header-page" role="banner">
+    <div class="header-container">
+
+        {% for block in section.blocks %}
+            <div class="site-header__notice font-size--s bg--secondary-accent color--secondary-accent-overlay">
+                <div class="wrapper t--meta">
+                    {{ block.settings.text }}
+                </div>
+            </div>
+        {% endfor %}
+
+        <div class="grid__item site-header__logo-col ">
+
+            {% capture image_size %}{{ section.settings.logo_max_width | escape }}x{% endcapture %}
+            {% capture image_size_px %}{{ section.settings.logo_max_width | escape }}px{% endcapture %}
+            {% capture image_size_2x %}{{ section.settings.logo_max_width | times: 2 }}x{% endcapture %}
+
+            {% comment %}
+                Style the logo grid item to be the same width set as the logo
+            {% endcomment %}
+            <style>
+                .site-header__logo-col { padding: 16px 0 }
+                .logo__padding {
+                    padding: 0 16px;
+                }
+            </style>
+
+            {% if template == 'index' %}
+            <h1 class="site-header__logo logo__padding" itemscope itemtype="http://schema.org/Organization">
+                {% else %}
+                <div class="h1 site-header__logo" itemscope itemtype="http://schema.org/Organization">
+                    {% endif %}
+                    {% if section.settings.logo %}
+
+                        <a href="/" itemprop="url" class="sm--hide md--hide lg--show dt--show" style="margin-left: 30px;">
+                            <img src="{{ section.settings.logo | img_url: image_size_2x }}" alt="{{ shop.name }}" itemprop="logo" width="{{ image_size }}">
+                        </a>
+
+                        <a href="/" itemprop="url" class="lg--hide">
+                            <!--              <img src="{{ 'e-icon-logo.png' | asset_img_url: '40x40' }}" alt="{{ shop.name }}" itemprop="logo"> -->
+                            <img src="{{ section.settings.mob_logo | img_url: '340x' }}" alt="{{ shop.name }}" itemprop="logo">
+                        </a>
+                    {% else %}
+                        <a href="/" itemprop="url" class="text-align--center">{{ shop.name }}</a>
+                    {% endif %}
+                    {% if template == 'index' %}
+            </h1>
+            {% else %}
+        </div>
+        {% endif %}
+
+        </div>
+
+
+        <div class="grid__item site-header__mobile-icon site-header__mobile-icon--menu text-center">
+            <button type="button" class="site-header__icon js--drawer-open-left text-right" aria-controls="NavDrawer" aria-expanded="false">
+                {% include 'svg-icon', icon: 'menu' %}
+            </button>
+        </div>
+
+        {%  assign linklistLength = linklists[section.settings.main_linklist].links | size %}
+
+
+        {% assign value = linklists[section.settings.main_linklist].links | modulo:2 %}
+        {% if value == 0 %}
+            {%  assign linklistCenter = linklistLength | divided_by: 2 | plus: 1 %}
+        {% else %}
+            {%  assign linklistCenter = linklistLength | divided_by: 2 %}
+        {% endif %}
+
+        <div class="grid__item site-header__main grid--full sticky d-none-large">
+            <div class="site-nav-holder text-center">
+                <!-- begin site-nav -->
+                <ul class="site-nav site-nav--header dt--show  inline-block font-size--m t--nav" id="AccessibleNav">
+                    {% for link in linklists[section.settings.main_linklist].links %}
+                        {% comment %}
+                            Create a dropdown menu by naming a linklist the same as a link in the parent nav
+
+                            More info on dropdowns:
+                            - http://docs.shopify.com/manual/your-website/navigation/create-drop-down-menu
+                        {% endcomment %}
+                        {% assign child_list_handle = link.title | handleize %}
+                        {% if linklists[child_list_handle].links != blank %}
+                            <li class="site-nav--has-dropdown{% if link.active %} site-nav--active{% endif %}" aria-haspopup="true">
+                                <a href="{{ link.url }}" class="site-nav__link">
+                                    {{ link.title }}
+                                    {% include 'svg-icon', icon: 'chevron-down' %}
+                                </a>
+                                <ul class="site-nav__dropdown">
+                                    {% for childlink in linklists[child_list_handle].links %}
+
+                                        <li{% if childlink.active %} class="site-nav--active"{% endif %}>
+                                            <a href="{{ childlink.url }}" class="site-nav__link" {% if childlink.url contains 'https' %}target="_blank"{% endif %}>{{ childlink.title | escape }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% else %}
+                            <li {% if link.active %}class="site-nav--active"{% endif %}  >
+                                <a href="{{ link.url }}" class="site-nav__link {% if link.url == '/pages/connect' %} site-nav__outlined {% endif %} ">{{ link.title }}</a>
+                            </li>
+                        {% endif %}
+
+                    {% endfor %}
+                </ul>
+                <button type="button" class="site-header__icon site-header__icon--nav-menu hide js--drawer-open-left dt--hide" aria-controls="NavDrawer" aria-expanded="false">
+                    {% include 'svg-icon', icon: 'menu' %}
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<script>
+    if($("body").attr("id") == "development" || $("body").attr("id") == "custom-shopify-design-by-ecommerce-experts" || $("body").attr("id") == "marketing") {
+        document.querySelector('.site-header-page').classList.add('header-purple');
+    }
+</script>
+
+
+
+{% javascript %}
+    $(document).ready(function(){
+        $('ul.site-nav li').each(function(){
+            var link = $(this).find('a');
+            if ( link.text() === "Get In Touch") {
+                link.addClass('site-nav__outlined');
+            }
+        });
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            if (scroll > 100) {
+                $('header.site-header.f--main.site-header-fixed').addClass('show');
+            } else {
+                $('header.site-header.f--main.site-header-fixed').removeClass('show');
+            }
+        });
+    });
+
+{% endjavascript %}
+
+{% schema %}
+{
+    "name":"Header",
+    "class":"section-site-header",
+    "settings":[
+        {
+            "type":"header",
+            "content":"Logo"
+        },
+        {
+            "type":"image_picker",
+            "id":"logo",
+            "label":"Custom logo",
+            "info":"800 x 300px recommended."
+        },
+        {
+            "type":"range",
+            "id":"logo_max_width",
+            "min":20,
+            "max":800,
+            "step":10,
+            "unit":"px",
+            "label":"Custom logo width",
+            "default":100
+        },
+        {
+            "type":"image_picker",
+            "id":"mob_logo",
+            "label":"Custom mobile logo",
+            "info":"100 x 50px recommended."
+        },
+        {
+            "type":"link_list",
+            "id":"main_linklist",
+            "label":"Menu",
+            "default":"main-menu",
+            "info":"Note: when menu exceeds max available space, mobile menu button will be shown instead."
+        },
+        {
+            "type":"checkbox",
+            "id":"show_search",
+            "label":"Show search"
+        },
+        {
+            "type":"header",
+            "content":"Sidebar Menu"
+        },
+        {
+            "type":"link_list",
+            "id":"secondary_linklist",
+            "label":"Secondary Menu"
+        },
+        {
+            "type":"checkbox",
+            "id":"show_search_sidebar",
+            "label":"Show search"
+        },
+        {
+            "type":"checkbox",
+            "id":"show_social_sidebar",
+            "label":"Show social icons"
+        },
+        {
+            "type":"image_picker",
+            "id":"shopify_logo_img",
+            "label":"Shopify expert logo"
+        },
+        {
+            "type":"url",
+            "id":"shopify_logo_link",
+            "label":"Select Link"
+        }
+    ],
+        "blocks":[
+        {
+            "type":"notice_bar",
+            "name":"Notice bar",
+            "limit":1,
+            "settings":[
+                {
+                    "type":"text",
+                    "id":"text",
+                    "label":"Text",
+                    "default":"Free shipping on all orders"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

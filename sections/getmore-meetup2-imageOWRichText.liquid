@@ -1,0 +1,119 @@
+<!-- /sections/getmore-meetup-imageOWRichText.liquid -->
+
+{%- assign imageOpacity = section.settings.image_opacity -%}
+{%- assign imageBackground = section.settings.image_background -%}
+{%- assign colorBackground = section.settings.color_background -%}
+
+{%- assign text = section.settings.text -%}
+{%- assign textColor = section.settings.text_color -%}
+{%- assign textTitle = section.settings.text_title -%}
+{%- assign alignBlock = section.settings.align_block -%}
+{%- assign titleColor = section.settings.title_color -%}
+
+{%- case alignBlock -%}
+  {%- when "flex-start" -%}
+    {%- assign textAlign = "left" -%}
+  {%- when "center" -%}
+    {%- assign textAlign = "center" -%}
+  {%- when "flex-end" -%}
+    {%- assign textAlign = "right" -%}
+{%- endcase -%}
+
+<section
+  class="getmore meetup-imageOwRichText"
+  style="background-color:{{ colorBackground }}">
+    <div class="background-wrapper"
+      style="background-image:url({{ imageBackground | img_url: '2880x' | format: 'pjpg' }}); opacity:{{ imageOpacity }}">
+    </div>
+  <div class="text-wrapper" style="align-items:{{ alignBlock }}">
+    <div class="container">
+      <h3 class="title" style="color:{{ titleColor }}; text-align:{{ textAlign }}">
+        {{ textTitle }}
+      </h3>
+      <div class="content-text" style="color:{{ textColor }}; text-align:{{ textAlign }}">
+        {{ text }}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Image Overlay w Rich Text",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Image Background"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_background",
+        "label": "Select Image"
+      },
+      {
+        "type": "range",
+        "id": "image_opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "Image Opacity",
+        "default": 0.2
+      },
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Background Color",
+        "default": "#51426b"
+      },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "text",
+        "id": "text_title",
+        "default": "Network & Learn.",
+        "label": "Title"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "default": "<p>Default <em>richtext</em> <a href=\"https://example.com/\">content</a></p>",
+        "label": "Text"
+      },
+      {
+        "type": "select",
+        "id": "align_block",
+        "options": [
+          { "value": "flex-start", "label": "Left"},
+          { "value": "center", "label": "Center"},
+          { "value": "flex-end", "label": "Right"}
+        ],
+        "label": "Align Block"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color",
+        "default": "#2d2d2d"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#555555"
+      }
+    ],
+    "presets": [
+    {
+      "name": "Image Overlay w Rich Text",
+      "category": "GETMORE"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

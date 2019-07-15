@@ -1,0 +1,78 @@
+<!-- /sections/getmore-meetup-asked.liquid -->
+
+<section class="getmore meetup-asked">
+  <h4 class="asked-title">{{ section.settings.title }}</h4>
+  <div class="wrapper-items">
+    {% for item in section.blocks %}
+      <div class="item">
+        <h5 class="title">{{ item.settings.information_title }}</h5>
+        <div class="item_content">
+          {{ item.settings.information_content }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {%- if section.settings.button_text != blank -%}
+    <div class="wrapper-button">
+      <a href="{{ section.settings.button_url }}" class="btn-white">{{ section.settings.button_text }}</a>
+    </div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+  {
+    "name": "Asked Questions",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section title"
+      },
+      {
+        "type": "header",
+        "content": "Button"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "default": "Click to attend",
+        "label": "Text"
+      },
+      {
+        "id": "button_url",
+        "type": "url",
+        "label": "Button link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "information_content",
+            "label": "Content"
+          },
+          {
+            "type": "text",
+            "id": "information_title",
+            "label": "Title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Asked Questions",
+      "category": "GETMORE"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

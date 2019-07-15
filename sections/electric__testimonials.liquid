@@ -1,0 +1,81 @@
+<section class="section section--large" style="background-color: {{ section.settings.section_background }}">
+    <div class="repeater-container">
+        <div class="row-collumns">
+
+            {% for item in section.blocks %}
+
+                <div class="testimonial-item">
+                    <div class="text-entry slide-content">
+                        {{ item.settings.slide_content }}
+                    </div>
+                    {% if item.settings.person_name != '' and  item.settings.person_position != '' and  item.settings.person_image != ''  %}
+                        <div class="person">
+                            <div class="person-image">
+                                <div class="person-position">
+                                    {{ item.settings.person_name }}
+                                </div>
+                                <div class="person-image-box">
+                                    <img src="{{ item.settings.person_image | img_url: '4472x4472' }}" alt="{{ item.settings.person_name }}">
+                                </div>
+                                <div class="person-name">
+                                    {{ item.settings.person_position }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name": "Testimonials Repeater",
+    "settings": [
+        {
+            "type": "color",
+            "id": "section_background",
+            "label": "Section Color",
+            "default": "#FFFFFF"
+        }
+    ],
+    "blocks": [
+        {
+        "type": "image",
+        "name": "Item",
+        "settings": [
+                {
+                    "type": "richtext",
+                    "id": "slide_content",
+                    "label": "Slide Content"
+                },
+                {
+                    "type": "text",
+                    "id": "person_name",
+                    "label": "Person Name"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "person_image",
+                    "label": "Person Image"
+                },
+                {
+                    "type": "text",
+                    "id": "person_position",
+                    "label": "Person Position"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Testimonials Repeater",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

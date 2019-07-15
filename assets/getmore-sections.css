@@ -1,0 +1,991 @@
+.getmore-page.general-info {
+  padding-top: 119px;
+}
+
+.getmore-page .cover {
+  align-items: center;
+  position: relative;
+  /* min-height: 85vh; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  height: auto;
+  justify-content: space-between;
+  padding: 120px 5% 90px 10%;
+}
+
+.getmore-page .cover .background-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.getmore-page .cover .img_container.mobile {
+  display: none;
+}
+
+.getmore-page .cover.imageAlignment-left {
+  flex-direction: row;
+}
+
+.getmore-page .cover.imageAlignment-right {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1270px) {
+  .getmore-page .cover .background-wrapper {
+    background-position: center right 40%;
+  }
+}
+
+.getmore-page .cover .img_container {
+  min-width: 350px;
+  width: 50%;
+}
+
+.getmore-page .cover .text-wrapper {
+  margin: 0 40px 0 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.getmore-page .cover .text-wrapper .title {
+  font-family: "Poppins";
+  margin: 0;
+}
+
+.getmore-page .cover .text-wrapper .title {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 920px) {
+  .getmore-page .cover {
+    padding-right: 10%;
+  }
+
+  .getmore-page .cover .img_container.mobile {
+    display: block;
+    margin: 50px 0;
+  }
+
+  .getmore-page .cover .img_container.desktop {
+    display: none;
+  }
+
+  .getmore-page .cover .img_container {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .getmore-page .cover .text-wrapper {
+    margin-right: 0;
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .cover .text-wrapper .title {
+    font-size: calc(30px + 17 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .cover .text-wrapper .title {
+    font-size: 47px;
+  }
+}
+
+.getmore-page .cover .text-wrapper .subtitle {
+  font-family: "Karla Regular";
+  margin: 15px 0 40px 0;
+  max-width: 570px;
+}
+
+.getmore-page .cover .text-wrapper .subtitle {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .cover .text-wrapper .subtitle {
+    font-size: calc(18px + 2 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .cover .text-wrapper .subtitle {
+    font-size: 22px;
+  }
+}
+
+.getmore-page .cover .text-wrapper .subtitle p {
+  margin-bottom: 4px;
+}
+
+.getmore-page .cover .text-wrapper .subtitle p strong {
+  font-family: "Karla Bold";
+  font-weight: bold;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #50426b;
+  text-decoration-color: #50426b;
+  color: #50426b;
+}
+
+.getmore-page .cover .text-wrapper .subtitle p:empty {
+  height: 16px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  /* .getmore-page .cover {
+    min-height: 90vh;
+  } */
+  .getmore-page .cover .text-wrapper {
+    width: 90%;
+  }
+  .getmore-page .cover .text-wrapper .title, .getmore-page .cover .text-wrapper .subtitle {
+    max-width: 100%;
+  }
+}
+
+/*------------------------------------END SECTION-------------------------------------------------------*/
+
+.getmore-page .serviceOffering {
+  padding: 147px 0;
+}
+
+.getmore-page .serviceOffering .title {
+  font-family: "Poppins";
+  text-align: left;
+  max-width: 80.913%;
+  margin: 0 auto;
+}
+
+.getmore-page .serviceOffering .title {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .serviceOffering .title {
+    font-size: calc(30px + 10 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .serviceOffering .title {
+    font-size: 40px;
+  }
+}
+
+.getmore-page .serviceOffering .wrapper-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 80.913%;
+  margin: 45px auto 0 auto;
+}
+
+.getmore-page .serviceOffering .wrapper-items .item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 25.673%;
+  flex: 0 1 25.673%;
+  margin-bottom: 17px;
+}
+
+.getmore-page .serviceOffering .wrapper-items .item:nth-child(2) {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+@media screen and (max-width: 1420px) {
+  .getmore-page .serviceOffering .wrapper-items .item {
+    flex: 0 1 50%;
+    padding-right: 30px;
+  }
+
+  .getmore-page .serviceOffering .wrapper-items .item:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.getmore-page .serviceOffering .wrapper-items .item-title {
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 17px;
+}
+
+.getmore-page .serviceOffering .wrapper-items .item-title {
+  font-size: 19px !important;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .serviceOffering .wrapper-items .item-title {
+    font-size: calc(19px + 2 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .serviceOffering .wrapper-items .item-title {
+    font-size: 22px;
+  }
+}
+
+.getmore-page .serviceOffering .wrapper-items .content * {
+  font-family: "Karla Regular";
+}
+
+.getmore-page .serviceOffering .wrapper-items .content * {
+  font-size: 19px !important;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .serviceOffering .wrapper-items .content * {
+    font-size: calc(19px + 6 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .serviceOffering .wrapper-items .content * {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .getmore-page .serviceOffering .wrapper-items {
+    max-width: 90%;
+  }
+  .getmore-page .serviceOffering .wrapper-items .item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+  }
+  .getmore-page .serviceOffering .wrapper-items .item:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.getmore-page .benefits {
+  padding-top: 5.313rem;
+  padding-bottom: 6.25rem;
+}
+
+.getmore-page .benefits .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.getmore-page .benefits .title {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .benefits .title {
+    font-size: calc(28px + 12 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .benefits .title {
+    font-size: 40px;
+  }
+}
+
+.getmore-page .benefits .wrapper-cards {
+  max-width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.getmore-page .benefits .wrapper-cards .card {
+  background: #fff;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: 90% 90%;
+  -webkit-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.18);
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.18);
+  padding: 33px/*2.0625em*/;
+  margin-bottom: 2rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 30.01%;
+  flex: 0 1 29%;
+  min-height: 16.611111em;
+}
+
+.getmore-page .benefits .wrapper-cards .card .wrapper-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-bottom: inherit;
+}
+
+.getmore-page .benefits .wrapper-cards .card .wrapper-content .card-title {
+  font-family: "Poppins";
+  font-weight: bold;
+  margin-bottom: 1.9rem;
+  height: 30px;
+}
+
+.getmore-page .benefits .wrapper-cards .card .wrapper-content .card-title {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .benefits .wrapper-cards .card .wrapper-content .card-title {
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .benefits .wrapper-cards .card .wrapper-content .card-title {
+    font-size: 20px;
+  }
+}
+
+.getmore-page .benefits .wrapper-cards .card .wrapper-content .text {
+  margin-bottom: 1.25rem;
+}
+
+.getmore-page .benefits .wrapper-cards .card .wrapper-content .text * {
+  font-family: "Karla";
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.getmore-page .benefits .wrapper-cards .card .wrapper-content .text * {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .benefits .wrapper-cards .card .wrapper-content .text * {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .benefits .wrapper-cards .card .wrapper-content .text * {
+    font-size: 16px;
+  }
+}
+
+/* @media screen and (max-width: 1200px) {
+  .getmore-page .benefits .wrapper-cards .card {
+    flex: 0 1 28%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .getmore-page .benefits .wrapper-cards .card {
+    flex: 1 1 41%;
+  }
+} */
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .getmore-page .benefits .wrapper-cards {
+    max-width: 90%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .getmore-page .benefits .wrapper-cards .card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 49%;
+    flex: 0 1 49%;
+    /* padding: 1.0625em; */
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1024px) /*and (min-width: 1415px)*/ {
+  .getmore-page .benefits .wrapper-cards {
+    max-width: 90%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: left /*space-between*/;
+  }
+  .getmore-page .benefits .wrapper-cards .card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 30%;
+    flex: 0 1 30%;
+    /* padding: 1.0625em; */
+    /* margin-bottom: 1rem; */
+    margin: 21px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1414px) {
+  .getmore-page .benefits .wrapper-cards .card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 28%;
+    flex: 0 1 28%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .getmore-page .benefits .wrapper-cards {
+    max-width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .getmore-page .benefits .wrapper-cards .card {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    /* padding: 1.0625em; */
+    margin-bottom: 1rem;
+  }
+}
+
+.getmore-page .askedQuestion {
+  padding: 95px 0 55px 0;
+}
+
+.getmore-page .askedQuestion .title {
+  font-family: "Poppins";
+  text-align: center;
+}
+
+.getmore-page .askedQuestion .title {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .askedQuestion .title {
+    font-size: calc(25px + 15 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .askedQuestion .title {
+    font-size: 40px;
+  }
+}
+
+.getmore-page .askedQuestion .wrapper-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 80.913%;
+  margin: 70px auto 0 auto;
+}
+
+.getmore-page .askedQuestion .wrapper-items .item {
+  width: 33%;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.getmore-page .askedQuestion .wrapper-items .title {
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.getmore-page .askedQuestion .wrapper-items .title {
+  font-size: 19px !important;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .askedQuestion .wrapper-items .title {
+    font-size: calc(19px + 0 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .askedQuestion .wrapper-items .title {
+    font-size: 19px;
+  }
+}
+
+.getmore-page .askedQuestion .wrapper-items .content * {
+  font-family: "Karla Regular";
+}
+
+.getmore-page .askedQuestion .wrapper-items .content * {
+  font-size: 19px !important;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .askedQuestion .wrapper-items .content * {
+    font-size: calc(22px + 0 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .askedQuestion .wrapper-items .content * {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .getmore-page .askedQuestion .wrapper-items {
+    max-width: 90%;
+  }
+  .getmore-page .askedQuestion .wrapper-items .item {
+    width: 90%;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 767px) {
+  .getmore-page .askedQuestion .wrapper-items {
+    max-width: 90%;
+  }
+  .getmore-page .askedQuestion .wrapper-items .item {
+    width: 45%;
+  }
+}
+
+.getmore-page .testimonials {
+  padding-top: 4.688rem;
+  padding-bottom: 6.25rem;
+}
+
+.getmore-page .testimonials .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.getmore-page .testimonials .title {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .testimonials .title {
+    font-size: calc(28px + 12 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .testimonials .title {
+    font-size: 40px;
+  }
+}
+
+.getmore-page .testimonials .wrapper-items {
+  max-width: 80.913%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.getmore-page .testimonials .wrapper-items .item {
+  background: url("quotes.svg") #fff;
+  background-repeat: no-repeat;
+  background-size: 64px;
+  background-position: 3.125rem 2rem;
+  -webkit-box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.18);
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.18);
+  padding: 5.313rem 3.5rem 1.875rem 3.125rem;
+  margin-bottom: 2.625rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 46.054%;
+  flex: 0 1 46.054%;
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .text {
+  margin-bottom: 1.25rem;
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .text p {
+  margin-bottom: 1px;
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .text * {
+  font-family: "Karla";
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .text * {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .testimonials .wrapper-items .item .wrapper-content .text * {
+    font-size: calc(18px + 2 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .testimonials .wrapper-items .item .wrapper-content .text * {
+    font-size: 22px;
+  }
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .picture {
+  max-width: 80px;
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .picture img {
+  display: block;
+  max-width: 100%;
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .author .name, .getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .author .company {
+  margin-bottom: -4px;
+  padding-left: 1rem;
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .author .name {
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .author .name {
+  font-size: 17px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .author .name {
+    font-size: calc(17px + 1 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .author .name {
+    font-size: 21px;
+  }
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .author .company {
+  font-family: "Poppins";
+  text-transform: capitalize;
+}
+
+.getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .author .company {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .author .company {
+    font-size: calc(14px + 1 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .testimonials .wrapper-items .item .wrapper-content .profile .author .company {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .getmore-page .testimonials .wrapper-items {
+    max-width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .getmore-page .testimonials .wrapper-items .item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    background-size: 52px;
+    background-position: 2.125rem 1rem;
+    padding: 4.313rem 2.5rem .875rem 2.125rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.getmore-page .caseStudies {
+  padding-top: 3rem/*4.688rem*/;
+  padding-bottom: 6.25rem;
+}
+
+.getmore-page .caseStudies .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.getmore-page .caseStudies .title {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .caseStudies .title {
+    font-size: calc(28px + 12 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .caseStudies .title {
+    font-size: 40px;
+  }
+}
+
+.getmore-page .caseStudies .wrapper-items {
+  max-width: 80.913%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.getmore-page .caseStudies .wrapper-items .item {
+  margin-bottom: 2.625rem;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 44.84%;
+  flex: 0 1 44.84%;
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .text {
+  margin-bottom: 1.25rem;
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .text p {
+  margin-bottom: 1px;
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .text * {
+  text-align: center;
+  font-family: "Karla";
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .text * {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .caseStudies .wrapper-items .item .wrapper-content .text * {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .caseStudies .wrapper-items .item .wrapper-content .text * {
+    font-size: 16px;
+  }
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .picture {
+  max-width: 100%;
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .picture img {
+  display: block;
+  width: 100%;
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .author {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .author .name {
+  font-family: "Poppins";
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .author .name {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .author .name {
+    font-size: calc(16px + 5 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .author .name {
+    font-size: 21px;
+  }
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .author .company {
+  font-family: "Karla";
+  /* text-transform: capitalize; */
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .author .company {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .author .company {
+    font-size: calc(16px + 3 * ((100vw - 320px) / 1120));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .author .company {
+    font-size: 22px;
+  }
+}
+
+.getmore-page .caseStudies .wrapper-items .item .wrapper-content .profile .author .company * {
+  text-align: center;
+}
+
+/* @media screen and (max-width: 1023px) and (min-width: 750px) {
+  .getmore-page .cover .text-wrapper .subtitle {
+    margin-right: 300px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .getmore-page .caseStudies .wrapper-items {
+    max-width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .getmore-page .caseStudies .wrapper-items .item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .getmore-page .cover .background-wrapper {
+    display: none;
+  }
+
+  .getmore-page .cover {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0px;
+  }
+
+  .getmore-page .serviceOffering .wrapper-items,
+  .getmore-page .serviceOffering .title,
+  .getmore-page .askedQuestion .title {
+    max-width: 90%;
+  }
+
+  .getmore-page .askedQuestion .title {
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .getmore-page .askedQuestion .wrapper-items .title {
+    margin-left: 0;
+  }
+
+  .getmore-page .askedQuestion .wrapper-items .item {
+    padding-left: 0;
+    width: 50%;
+  }
+}
+
+.getmore-page.general-info .section.large {
+  padding: 70px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .getmore-page .cover .text-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .getmore-page .askedQuestion .wrapper-items .item {
+    width: 100%;
+  }
+}

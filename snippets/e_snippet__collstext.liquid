@@ -1,0 +1,24 @@
+<section class="section section-large"  style="background-color: {{ block.settings.section_background }}">
+    <style media="screen">
+        .collumn-text {
+            -webkit-column-count: {{ block.settings.text_collumns_count }};
+            column-count: {{ block.settings.text_collumns_count }};
+            -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+            -moz-column-gap: 30px; /* Firefox */
+            column-gap: 30px;
+        }
+        @media (max-width: 767px) {
+            .collumn-text {
+                -webkit-column-count: 1;
+                column-count: 1;
+                -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+                -moz-column-gap: 0px; /* Firefox */
+                column-gap: 0px;
+            }
+        }
+    </style>
+    <div class="container" style="font-size:{{ block.settings.font_size }}px;">
+        {{ block.settings.text }}
+    </div>
+
+</section>

@@ -1,0 +1,71 @@
+<section class="section section--middle" style="background-color: {{ section.settings.section_background }}; padding-bottom: 100px;">
+    <div class="wrapper text-center">
+
+        <h2 class="section-title">{{ section.settings.title }}</h2>
+
+        <div class="row">
+            {% for item in section.blocks %}
+                <div class="col-1-5 md-dn--one-half">
+                    <a href="{{ item.settings.image_link }}" class="item-box--tile">
+                        <img src="{{ item.settings.item_image | img_url: '4472x4472' }}">
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Simple Gallery",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Partners"
+        },
+        {
+            "type": "color",
+            "id": "section_background",
+            "label": "Section Color",
+            "default": "#FFFFFF"
+        }
+    ],
+    "blocks": [
+        {
+        "type": "image",
+        "name": "Item",
+        "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "item_image",
+                    "label": "Item image"
+                },
+                {
+                    "type": "text",
+                    "id": "image_link",
+                    "label": "Image link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Small Gallery tiles",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}
+<style>
+  @media only screen and (max-width:767px){
+    .et .col-1-5.md-dn--one-half {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+              width:50%;
+    }
+  }
+  
+</style>

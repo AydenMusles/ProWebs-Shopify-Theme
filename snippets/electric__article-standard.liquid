@@ -1,0 +1,42 @@
+<article class="article article--row mb3 lg--mb0">
+    <div class="grid">
+        <div class="grid__item dt--six-twelfths">
+            <div class="width-limiter--middle box-center">
+                <a class="article__thumb" href="{{ article.url }}">
+                    {% if article.image %}
+                        <picture>
+                            <!--[if IE 9]><video style="display: none"><![endif]-->
+                            <source
+                                    data-srcset="{{ article | img_url: '400x280', crop: 'center'  }}"
+                                    media="(max-width: 768px)" />
+                            <source
+                                    data-srcset="{{ article | img_url: '640x448', crop: 'center'  }}" />
+                            <!--[if IE 9]></video><![endif]-->
+                            <img
+                                    src="{{ article | img_url: '20x14', crop: 'center'  }}"
+                                    data-src="{{ article | img_url: '20x14', crop: 'center'  }}"
+                                    class="lazyload article__image full block blur-up"
+                                    alt="{{ article.image.src }}"
+                            />
+                        </picture>
+                    {% endif %}
+                </a>
+            </div>
+        </div>
+        <div class="grid__item dt--six-twelfths">
+            <div class="width-limiter--middle box-center clearfix ">
+                <div class="width-limiter--small width-limiter--small-lg article_item-intro">
+                    {% assign article_blog = article.url  | split: '/' %}
+                    {% assign blog_slug = article_blog[2] %}
+                    {% assign blog_title = blogs[blog_slug].title %}
+                  <h3 class="article__item__title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+                    <p class="article__item__excerpt">{{ article.excerpt }}</p>
+                    <a href="{{ article.url }}" class="electric-btn outlined-gray small">
+                        Read more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</article>

@@ -1,0 +1,162 @@
+<!-- /sections/getmore-meetup-cover.liquid -->
+
+{%- assign imageBackground = section.settings.image_background -%}
+{%- assign imageOpacity = section.settings.image_opacity -%}
+{%- assign colorBackground = section.settings.color_background -%}
+
+{%- assign imagePicker = section.settings.image_background -%}
+
+{%- assign colorTitle = section.settings.title_color -%}
+{%- assign textTitle = section.settings.text_title -%}
+{%- assign textSubtitle = section.settings.text_subtitle -%}
+{%- assign textAlign = section.settings.text_align -%}
+{%- assign textColor = section.settings.text_color -%}
+
+{%- assign buttonText = section.settings.button_text -%}
+{%- assign buttonUrl = section.settings.button_url -%}
+{%- assign buttonAlign = section.settings.button_align -%}
+
+{%- assign justifyContent = section.settings.image_alignment -%}
+
+{% comment %} <section class="getmore cover" {% if colorBackground %} style="background-color:{{ colorBackground }}" {% endif %}> {% endcomment %}
+<section class="servicesArticle getmore cover imageAlignment-{{ justifyContent }}">
+
+  {% comment %} {% if imageBackground %}
+    <div class="background-wrapper"  style="background-image:url({{ imageBackground | img_url: '2500x' | format: 'pjpg' }}); opacity:{{ imageOpacity }}"></div>
+  {% endif %} {% endcomment %}
+
+  <div class="article-item">
+    <div class="img_container">
+      <img src="{{ imagePicker | img_url: 'master' }}">
+    </div>
+
+    <div class="text-wrapper">
+      <h1 class="title" style="color:{{ colorTitle }}; text-align:{{ textAlign }}">{{ textTitle }}</h1>
+      <!-- <div class="img_container mobile">
+        <img src="{{ imagePicker | img_url: 'master' }}">
+      </div> -->
+      <h2 class="subtitle" style="color:{{ textColor }}; text-align:{{ textAlign }}">{{ textSubtitle }}</h2>
+      {%- if section.settings.linktext != blank -%}
+        <a class="electric-btn outlined-violet small" href="{{ section.settings.url }}">
+          {{ section.settings.linktext }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Development",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Image Background"
+      },
+      {
+        "type": "select",
+        "id": "image_alignment",
+        "label": "Image Alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "image_picker",
+        "id": "image_background",
+        "label": "Select Image"
+      },
+      {
+        "type": "range",
+        "id": "image_opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "label": "Image Opacity",
+        "default": 0.2
+      },
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Background Color",
+        "default": "#51426b"
+      },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "text",
+        "id": "text_title",
+        "default": "Network & Learn.",
+        "label": "Title"
+      },
+      {
+        "type": "richtext",
+        "id": "text_subtitle",
+        "label": "Text"
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "options": [
+          { "value": "left", "label": "Left"},
+          { "value": "center", "label": "Center"},
+          { "value": "right", "label": "Right"}
+        ],
+        "label": "Align Text"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#262626"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color",
+        "default": "#50426b"
+      },
+      {
+        "type": "select",
+        "id": "button_align",
+        "options": [
+          { "value": "flex-start", "label": "Left"},
+          { "value": "center", "label": "Center"},
+          { "value": "flex-end", "label": "Right"}
+        ],
+        "label": "Align Text"
+      },
+      {
+        "type": "text",
+        "id": "linktext",
+        "label": "Link text",
+        "default": "Link text"
+      },
+      {
+        "type": "text",
+        "id": "url",
+        "label": "Url"
+      }
+    ],
+    "presets": [
+    {
+      "name": "Development",
+      "category": "GETMORE SECTIONS"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

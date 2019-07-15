@@ -1,0 +1,29 @@
+<div class="et">
+
+    <section class="banner banner-page" style="background-color: #51426B ">
+        <div class="banner--image" style="  background-image: url({{ 'shopify-store-setup.jpg' | asset_url }});
+                                            opacity:0.1;
+                                        "></div>
+        <div class="full-height-inner">
+            <div class="container banner--container banner--container--large hello">
+                <div class="text-center color-white">
+                    <div class="banner--text">
+                        <h1>Featured Work</h1>
+                        <hr class="divider">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    {% section 'blog-work-template' %}
+    {% section 'electric__topimage-text-section' %}
+  <style>
+    @media (min-width: 768px){
+      .container-standard .grid__item:nth-child(odd) {
+        clear: left;
+      } 	
+    }
+  </style>
+</div>

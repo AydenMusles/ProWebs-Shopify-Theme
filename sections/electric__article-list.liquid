@@ -1,0 +1,141 @@
+<section class="section section-color" style="background-color: {{ section.settings.section_background }}">
+    <div class="container-fluid">
+        {% for block in section.blocks %}
+            {% case block.type %}
+            {% when 'articles_by_blog' %}
+                <div class="text-center">
+                    {% if block.settings.title != '' %}
+                            <h2 class="purple-heading">{{ block.settings.title | escape }}</h2>
+                    {% elsif blogs[block.settings.selected_blog].title != '' %}
+                        <h2 class="t--section-title text-align--center f--main font-size--l lg--font-size--xl  m0 pb3">{{ blogs[block.settings.selected_blog].title }}</h2>
+                    {% else %}
+                        <h2 class="t--section-title text-align--center f--main font-size--l lg--font-size--xl  m0 pb3">{{ 'homepage.onboarding.blog_name' | t }}</h2>
+                    {% endif %}
+                </div>
+                <div class="post-list article__chess-order">
+                    {%- assign blog = blogs[block.settings.selected_blog] -%}
+                    {% if blog and blog != empty %}
+                        {% assign count = 0 %}
+                        {% for article in blog.articles %}
+                            {% assign already_shown = false %}
+                            {% assign current_handle = article.url %}
+                            {% for handle in latest_article_handles %}
+                                {% if handle == current_handle %}
+                                    {% assign already_shown = true %}
+                                    {% break %}
+                                {% endif %}
+                            {% endfor %}
+                            {% unless already_shown %}
+                                <div class="post__item">
+                                    {% include 'electric__article-standard' %}
+                                </div>
+                            {% assign count = count | plus: 1 %}
+                            {% assign no_posts = block.settings.no_posts | plus: 0 %}
+                                {% if count == no_posts %}
+                                    {% break %}
+                                {% endif %}
+                            {% endunless %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            {% endcase %}
+        {% endfor %}
+    </div>
+
+    <div class="text-center" style="margin: 110px 0 71px">
+        <a class="electric-btn outlined-violet" href="{{ section.settings.url }}">
+            {{ section.settings.linktext }}
+        </a>
+    </div>
+
+</section>
+<style>
+
+    .article__item__title {
+        font-family: {{ section.settings.posttitlefont.family }}, sans-serif!important;
+
+        font-weight: 700;
+    }
+
+</style>
+
+{% schema %}
+{
+    "name": "Article List",
+    "settings": [
+        {
+            "type":    "font_picker",
+            "label":   "Post Title Font",
+            "id":      "posttitlefont",
+            "info":    "Text",
+            "default": "helvetica_n4"
+        },
+        {
+            "type": "color",
+            "id": "section_background",
+            "label": "Section Color",
+            "default": "#FFFFFF"
+        },
+        {
+            "type": "text",
+            "id": "linktext",
+            "label": "Link text",
+            "default": "View more posts"
+        },
+        {
+            "type": "text",
+            "id": "url",
+            "label": "Url"
+        }
+    ],
+    "blocks" :  [
+        {
+            "type": "articles_by_blog",
+            "name": "Articles by blog",
+            "settings": [
+                {
+                    "type":      "paragraph",
+                    "content":   "If latest articles is enabled, blog posts shown in latest articles won't be shown again inside this block."
+                },
+                {
+                    "type":      "text",
+                    "id":        "title",
+                    "label":     "Title",
+                    "info":     "If left blank, name of blog will be used."
+                },
+                {
+                    "type":      "text",
+                    "id":        "excerpt",
+                    "label":     "Excerpt",
+                    "info":      "Post excerpt"
+                },
+                {
+                    "type":      "blog",
+                    "id":        "selected_blog",
+                    "label":     "Select blog:"
+                },
+                {
+                    "type":      "range",
+                    "id":        "no_posts",
+                    "min":       2,
+                    "max":        12,
+                    "step":       2,
+                    "label":     "No of posts to show",
+                    "default":   2
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_blog_link",
+                    "label": "Show link to Blog"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Blog Repeater",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

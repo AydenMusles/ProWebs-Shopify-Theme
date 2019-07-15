@@ -1,0 +1,88 @@
+<span class="input-group-btn news-letter"> <section class="section section--newsletter m0 py3 color--newsletter-content bg--newsletter-accent">
+  <div class="wrapper section--wrapper text-align--center px2">
+    <div class="grid">
+    <div class="grid__item sm--one-whole md--one-whole lg--one-whole dt--one-whole py3">
+      <h3 class="f--title font-size--xl">{{ section.settings.title | escape }}</h3>
+      <p class="f--main font-size--s lg--font-size--m">{{ section.settings.text | escape }}</p>
+
+      <div class="newsletter__form mx--auto mt3">
+         <script async data-uid="856d581d34" src="https://f.convertkit.com/856d581d34/037b1f1d2d.js"></script>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Newsletter",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Sign up to our newsletter"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Receive special offers and first look at new products."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Newsletter",
+      "category": "Promotional"
+    }
+  ]
+}
+{% endschema %}
+
+  
+<style>
+  .newsletter_padding
+  {
+    padding-left:28px;
+  }
+  input[type='email']::-moz-placeholder
+  {
+    color: #fff !important;
+    opacity:1;
+  }
+  input[type='email']::-webkit-input-placeholder {
+    color: #fff !important;
+    opacity:1;
+  }
+   input[type='text']::-moz-placeholder
+  {
+    color: #fff !important;
+    opacity:1;
+  }
+  input[type='text']::-webkit-input-placeholder
+  {
+    color: #fff !important;
+    opacity:1;
+  }
+ 
+  .input-height{height:37px;}
+  
+  @media only screen and (max-width:767px)
+    {
+      .btn.newsletter__submit {float:none;}
+    }
+  @media only screen and (min-width:768px)
+    { 
+      .btn.newsletter__submit {float:right;}
+      input#drip-last-name {margin-left: 10px; width:48%;}
+      input#drip-first-name {margin-right:10px; width:48%;}
+    }
+  @media only screen and (min-width:481px) and (max-width:767px)
+    {
+      .newsletter__form {
+        max-width: 360px;
+         width: 100%;}
+    }
+  
+  
+  </style>

@@ -1,0 +1,25 @@
+<section class="section section--middle" style="background-color: {{ block.settings.section_background }}">
+        <div class="repeater-container">
+            <div class="row">
+                {% for item in block.blocks %}
+                    <div class="col-md-6">
+
+                        <div class="item-box">
+                            <div class="item-box--image">
+                                <img src="{{ item.settings.item_image | img_url: '4472x4472' }}" alt="{{ item.settings.item_title }}">
+                            </div>
+                            <h3>{{ item.settings.item_title }}</h3>
+                            <p>{{ item.settings.item_content }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="text-center space-y-65">
+                <a class="electric-btn outlined-violet" href="{{ block.settings.url }}">
+                    {{ block.settings.linktext }}
+                </a>
+            </div>
+
+        </div>
+</section>

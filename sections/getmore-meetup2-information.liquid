@@ -1,0 +1,67 @@
+<!-- /sections/getmore-meetup-information.liquid -->
+
+<section class="getmore meetup-information">
+  <h4 class="information-title">{{ section.settings.title }}</h4>
+  <div class="wrapper-items">
+    {% for item in section.blocks %}
+      <div class="item">
+        <picture>
+          {%- assign wImage = item.settings.image.width | append: 'x' -%}
+          <img src="{{ item.settings.image | img_url: wImage | format: 'pjpg' }}" alt="{{ item.settings.information_title }}">
+        </picture>
+        <h5 class="title">{{ item.settings.information_title }}</h5>
+        <div class="item_content">
+          {{ item.settings.information_content }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Information w Icon",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "information_content",
+            "label": "Content"
+          },
+          {
+            "type": "text",
+            "id": "information_title",
+            "label": "Title"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Information w Icon",
+      "category": "GETMORE"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

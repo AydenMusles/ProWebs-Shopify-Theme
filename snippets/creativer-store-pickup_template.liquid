@@ -1,0 +1,48 @@
+<style>.lds-ellipsis{display:inline-block;position:relative;width:103px;height:13px;top:-23px;right:-23px}.lds-ellipsis div{position:absolute;top:27px;width:11px;height:11px;border-radius:50%;background:#fff;animation-timing-function:cubic-bezier(0,1,1,0)}.lds-ellipsis div:nth-child(1){left:6px;animation:lds-ellipsis1 .6s infinite}.lds-ellipsis div:nth-child(2){left:6px;animation:lds-ellipsis2 .6s infinite}.lds-ellipsis div:nth-child(3){left:26px;animation:lds-ellipsis2 .6s infinite}.lds-ellipsis div:nth-child(4){left:45px;animation:lds-ellipsis3 .6s infinite}@keyframes lds-ellipsis1{0%{transform:scale(0)}100%{transform:scale(1)}}@keyframes lds-ellipsis3{0%{transform:scale(1)}100%{transform:scale(0)}}@keyframes lds-ellipsis2{0%{transform:translate(0,0)}100%{transform:translate(19px,0)}}</style>
+<div id="pickup-container" style="display: flex;flex-direction: column;align-items: flex-end; margin-bottom: 1rem;margin-top: 1rem;">
+    <div id="pickup-header"></div>
+    <div class="js-toggle-pickup pickup-button btn btn--small-wide">
+        <span style="position: relative"></span>
+    </div>
+    <!-- Name of person picking up etc -->
+    <div id="pickup-details" style="display:none;">
+        <div class="js-stores-position-1"></div>
+        <label id="pickup-date-label" for="pickup-date">Pickup Date</label>
+        <!--<input type="date" id="pickup-date-start" name="pickup-date-start">-->
+        <div style="position:relative">
+            <input type="text" class="datepicker" id="pickup-date-start" name="pickup-date-start" readonly>
+        </div>
+        <label id="pickup-date-start-error" class="valid" for="pickup-date-start" style="display: none;"></label>
+
+        <label id="pickup-name-label"for="pickup-name">Name of Person Collecting</label>
+        <input style="margin-bottom: 0px;" type="text" id="pickup-name" name="pickup-name" placeholder="Your name">
+
+        <label id="pickup-number-label" for="pickup-number">Contact Number</label>
+        <input type="text" id="pickup-number" name="pickup-number" placeholder="" />
+
+        <div class="js-stores-position-2"></div>
+
+        <!-- Extra input 1 -->
+        <div class="extra_input_1_wrapper">
+            <label id="extra_input_1_label" for="extra_input_1">Extra</label>
+            <input type="text" id="extra_input_1" name="extra_input_1" placeholder="" />
+        </div>
+
+        <!-- Extra input 2 -->
+        <div class="extra_input_2_wrapper">
+            <label id="extra_input_2_label" for="extra_input_2">Extra</label>
+            <input type="text" id="extra_input_2" name="extra_input_2" placeholder="" />
+        </div>
+
+        <!-- Extra input 3 -->
+        <div class="extra_input_3_wrapper">
+            <label id="extra_input_3_label" for="extra_input_3">Extra</label>
+            <input type="text" id="extra_input_3" name="extra_input_3" placeholder="" />
+        </div>
+
+        <div class="js-storepickup-message"></div>
+        <input type="hidden" id="pickup-attribute" name="attributes[pickup]" value="0">
+        <input type="hidden" id="pickup-information" name="attributes[Pickup_Information]" value="">
+        <input type="hidden" id="pickup-selected-store" name="attributes[Pickup_Store]" value="">
+    </div>
+</div>

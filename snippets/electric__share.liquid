@@ -1,0 +1,82 @@
+
+<div class="share--desktop f--main  t--meta clearfix relative font-size--s inline-block md-dn--hide">
+
+    <div class="">
+        <i class="eeyeicon-i-sharing-interface"></i>
+        <span class="right">{{ 'products.general.share' | t }}</span>
+    </div>
+
+    {% capture share_url %}{{ shop.url }}{{ article.url }}{% endcapture %}
+    {% assign share_image = product.featured_image.src | img_url: 'grande' %}
+
+    {% capture tweet %}{{ article.title }}: {{ article.url }}{% endcapture %}
+    <ul class="share__links list--reset m0 p0 font-size--xs">
+        <li class="inline-block">
+            <a href="//www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" class="block facebook">
+                {% include 'svg-icon', icon: 'facebook' %}
+            </a>
+        </li>
+        <li  class="inline-block">
+            <a href="//twitter.com/home?url={{ share_url }}text={{ tweet }}" target="_blank" class="block twitter">
+                {% include 'svg-icon', icon: 'twitter' %}
+            </a>
+        </li>
+
+        {% if template.name == 'article' %}
+            <li  class="inline-block">
+                <a href="//pinterest.com/pin/create/button/?url={{ share_url }}&media={{ share_image }}&description={{ article.title }}" class="block pinterest" target="_blank" >
+                    {% include 'svg-icon', icon: 'pinterest' %}
+                </a>
+            </li>
+        {% endif %}
+
+        <li  class="inline-block">
+            <a href="mailto:?&subject={{ article.title }}&body={{ share_url }}" class="block email" target="_blank" >
+                {% include 'svg-icon', icon: 'email' %}
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+
+<div class="share--mobile f--main t--meta clearfix relative font-size--s inline-block lg--hide">
+
+    <div class="">
+        <span class="share__icon--arrow left">
+            <i class="eeyeicon-i-sharing-interface"></i>
+        </span>
+        <span class="share__icon--close left hide">
+            <i class="eeyeicon-i-sharing-interface"></i>
+        </span>
+        <span class="right">{{ 'products.general.share' | t }}</span>
+    </div>
+
+    {% capture product_url %}{{ shop.url }}{{ article.url }}{% endcapture %}
+    {% capture tweet %}{{ article.title }}: {{ article.url }}{% endcapture %}
+    {% assign share_image = product.featured_image.src | img_url: 'grande' %}
+    <ul class="share__links list--reset m0 p0 font-size--xs">
+        <li class="inline-block">
+            <a href="//www.facebook.com/sharer/sharer.php?u={{ article.url }}" target="_blank" class="block facebook">
+                {% include 'svg-icon', icon: 'facebook' %}
+            </a>
+        </li>
+        <li  class="inline-block">
+            <a href="//twitter.com/home?status={{ tweet }}" target="_blank" class="block twitter">
+                {% include 'svg-icon', icon: 'twitter' %}
+            </a>
+        </li>
+
+        <li  class="inline-block">
+            <a href="//pinterest.com/pin/create/button/?url={{ article.url }}&media={{ share_image }}&description={{ article.title }}" class="block pinterest" target="_blank" >
+                {% include 'svg-icon', icon: 'pinterest' %}
+            </a>
+        </li>
+        <li  class="inline-block">
+            <a href="mailto:?&subject={{ article.title }}&body={{ article.url }}" class="block email" target="_blank" >
+                {% include 'svg-icon', icon: 'email' %}
+            </a>
+        </li>
+    </ul>
+
+</div>

@@ -1,0 +1,311 @@
+<!doctype html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <!-- Hotjar Tracking Code for http://electriceye.io -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {hjid: 1005129, hjsv: 6};
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+	<!-- ConvertKit Exit Intent Popup -->  
+  	<script async data-uid="792545514b" src="https://f.convertkit.com/792545514b/3558fa3f08.js"></script>
+  
+    <!-- RightMessage -->
+    <script type="text/javascript">
+        (function (p, a, n, d, o, b) {
+            o = n.createElement('script');
+            o.type = 'text/javascript';
+            o.async = true;
+            o.src = 'https://tag.rightmessage.com/' + p + '.js';
+            b = n.getElementsByTagName('script')[0];
+            b.parentNode.insertBefore(o, b);
+            d = function (h, u, i) {
+                var o = n.createElement('style');
+                o.id = 'rmcloak' + i;
+                o.type = 'text/css';
+                o.appendChild(n.createTextNode('.rmcloak' + h + '{visibility:hidden}.rmcloak' + u + '{display:none}'));
+                b.parentNode.insertBefore(o, b);
+                return o;
+            };
+            o = d('', '-hidden', '');
+            d('-stay-invisible', '-stay-hidden', '-stay');
+            setTimeout(function () {
+                o.parentNode && o.parentNode.removeChild(o);
+            }, a);
+        })('1269173007', 2500, document);
+    </script>
+
+    <!-- Basic page needs ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    {% if settings.favicon != blank %}
+        <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    {% endif %}
+
+    <!-- Title and description ================================================== -->
+    
+
+    <!-- Helpers ================================================== -->
+    {% include 'social-meta-tags' %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_primary }}">
+    <meta name="apple-itunes-app" content="app-id=1447700156">
+  
+	<!-- SEO Manager & NOINDEX loops ================================================== -->
+	{% if template contains "noindex" %} 
+  	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      <title>
+        {{ page_title }} &ndash; {{ shop.name }}
+    </title>
+	{% endif %}
+      
+ 	{% unless template contains "noindex" %}
+	{% include 'SEOManager' %}
+	{% endunless %}
+  
+    <!-- CSS ================================================== -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+
+    {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+
+    {{ 'electric.scss.css' | asset_url | stylesheet_tag }}
+
+    {{ 'getmore-meetup.css' | asset_url | stylesheet_tag }}
+    
+    {{ 'getmore-sections.css' | asset_url | stylesheet_tag }}
+
+
+
+    {% include 'type' %}
+
+    <!-- Header hook for plugins ================================================== -->
+    {{ content_for_header }}
+
+
+    {% include 'oldIE-js' %}
+
+    {{ '//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' | script_tag }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    {{ 'modernizr.min.js' | asset_url | script_tag }}
+
+    {% comment %}
+    If you store has customer accounts disabled, you can remove the following JS file
+    {% endcomment %}
+    {% if template contains 'customers' %}
+        {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+    {% endif %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+
+{% include 'svg-defs' %}
+
+{% comment %}
+Add the page template as a class for easy page or template specific styling.
+{% endcomment %}
+<body id="{{ page_title | handle }}"
+      class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} {% if settings.ajax_cart_method == "drawer" %}ajax-on{% endif %}">
+
+
+<div id="PageContainer"> <!--  class="is-moved-by-drawer"  -->
+
+    {% section 'header' %}
+
+    {% include 'lightbox' %}
+    {% include 'search-bar_lightbox' %}
+
+    <main class="full-width-wrapper" role="main">
+
+        {{ content_for_layout }}
+
+        {% if cart.item_count >= 1 %}
+            <div class="floating--cart">
+                <a href="/checkout" class="js--drawer-open-right font-size--s" aria-controls="NavDrawer"
+                   aria-expanded="false">
+                    <img src="{{ 'f--cart.png' | asset_url }}"
+                         alt="AddToCart"
+                         class="img__padding">
+                    <span id="CartCount" class="cart-count">{{ cart.item_count }}</span>
+                </a>
+            </div>
+        {% endif %}
+
+    </main>
+
+
+    <!-- //site-footer -->
+    {% section 'footer' %}
+
+</div><!-- end page container -->
+
+
+{% if settings.ajax_cart_method == "drawer" %}
+    {% include 'cart-drawer' %}
+    {% include 'drawer-close' %}
+{% endif %}
+
+
+
+{% comment %}
+Theme data we want to use in JS file
+{% endcomment %}
+<script>
+    window.theme = window.theme || {};
+    window.theme.data = {
+        "addToCartText": {{ 'products.product.add_to_cart' | t | json }},
+        "addToCartTextSoldOut": {{ 'products.product.sold_out' | t | json }},
+        "addToCartTextUnavailable": {{ 'products.product.unavailable' | t | json }},
+        "cartMethod": "{{ settings.ajax_cart_method }}",
+        "dateFormat": "{{ settings.date_format }}",
+        "moneyFormat": {{ shop.money_format | json }},
+        "ajaxDateFormat": {{ settings.date_format | json }},
+        "dates": {
+            "years": {{ 'blogs.date.years' | t: number:  '0' | json }},
+            "months": {{ 'blogs.date.months' | t: number:  '0' | json }},
+            "weeks": {{ 'blogs.date.weeks' | t: number:  '0' | json }},
+            "days": {{ 'blogs.date.days' | t: number:  '0' | json }},
+            "hours": {{ 'blogs.date.hours' | t: number:  '0' | json }},
+            "minutes": {{ 'blogs.date.minutes' | t: number:  '0' | json }},
+            "seconds": {{ 'blogs.date.seconds' | t: number:  '0' | json }},
+            "year": {{ 'blogs.date.year' | t: number:  '0' | json }},
+            "month": {{ 'blogs.date.month' | t: number:  '0' | json }},
+            "week": {{ 'blogs.date.week' | t: number:  '0' | json }},
+            "day": {{ 'blogs.date.day' | t: number:  '0' | json }},
+            "hour": {{ 'blogs.date.hour' | t: number:  '0' | json }},
+            "minute": {{ 'blogs.date.minute' | t: number:  '0' | json }},
+            "second": {{ 'blogs.date.second' | t: number:  '0' | json }}
+        }
+    };
+
+
+  $('body').on('click', 'a.site-nav__link.site-nav__outlined', function (e) {
+    e.preventDefault();
+    $('#GetProposalForm').toggleClass('show-modal');
+
+  });
+
+  $('body').on('click', 'a.site-nav__connect', function (e) {
+    e.preventDefault();
+    $('#GetProposalForm').toggleClass('show-modal');
+
+    if ($('#GetProposalForm').hasClass('show-modal')){
+      $('body').find('.section-site-header .drawer').removeClass('drawer--active');
+      $('html, body').removeClass('no-scroll');
+    }
+
+
+  });
+
+  $('body').on('click', '[data-action="toggle-modal"]', function (e) {
+    e.preventDefault();
+    var target = $(this).data('target');
+    $(target).toggleClass('show-modal');
+  });
+
+  
+
+
+   var stickyOffset = $('#blogSidebar').offset().top;
+   
+    $(window).scroll(function(){
+       var h = $('.site-header-fixed').outerHeight();
+   
+      var sticky = $('#blogSidebar'),
+          scroll = $(window).scrollTop();
+
+      if (scroll >= stickyOffset) sticky.addClass('post_sticky');
+      else sticky.removeClass('post_sticky');
+      
+      if ($('#blogSidebar').hasClass('post_sticky')){
+        $('#blogSidebar.post_sticky').css('top', h + 'px');
+      }
+    });
+
+
+   
+
+  
+</script>
+
+
+{% comment %}
+Ajaxify your cart with this plugin.
+Documentation:
+- http://shopify.com/timber#ajax-cart
+{% endcomment %}
+{% if settings.ajax_cart_method == "drawer" %}
+    {{ 'handlebars.min.js' | asset_url | script_tag }}
+    {% include 'ajax-cart-template' %}
+    {{ 'ajax-cart.js' | asset_url | script_tag }}
+{% endif %}
+
+{{ 'all.min.js' | asset_url | script_tag }}
+
+{% comment %}
+Template-specific js
+{% endcomment %}
+<script>
+    {% if resetPassword %}
+    $(function () {
+        theme.resetPasswordSuccess();
+    });
+    {% endif %}
+</script>
+
+<style>
+    table.membership_table span, table.membership_table a, .modal-content, .plan-modal-footer button {
+        color: black;
+    }
+
+    .collection-grid__item-title--wrapper {
+        display: none;
+    }
+</style>
+
+
+<div class="et">
+
+
+    <div id="GetProposalForm" class="form-modal get-proposal-form">
+
+        <div class="form-modal__body">
+            <button type="button"
+                    class="form-modal__close-button"
+                    data-action="toggle-modal"
+                    data-target="#GetProposalForm">
+                <i></i><i></i>
+            </button>
+
+            <h2 class="form-title">Ready To Connect?</h2>
+            {%- unless template contains "connectform" -%}
+              
+            <div class="cognito">
+                <script src="https://services.cognitoforms.com/s/2ztXx56cKkGh5-C2UTeWXg"></script>
+                <script>Cognito.load("forms", {id: "1"});</script>
+            </div>
+            {%- endunless -%}
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

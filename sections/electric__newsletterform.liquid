@@ -1,0 +1,57 @@
+ <section class="section large" style="background-color: {{ section.settings.section_background }}" >
+
+    <div class="container-fluid">
+        <div class="text-entry">
+            <h2 class="section-title">
+                {{ section.settings.heading }}
+            </h2>
+            <div class="section-content">
+                {{ section.settings.section_content }}
+            </div>
+        </div>
+
+        <div class="newsletter__form mx--auto mt3">
+
+           <script async data-uid="856d581d34" src="https://f.convertkit.com/856d581d34/037b1f1d2d.js"></script>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% schema %}
+{
+    "name": "Newsletter form",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Section Title"
+        },
+        {
+            "type": "textarea",
+            "id": "section_content",
+            "label": "Section Content"
+        },
+        {
+            "type": "color",
+            "id": "section_background",
+            "label": "Section Color",
+            "default": "#312B3B"
+        },
+        {
+            "type": "color",
+            "id": "section_text_color",
+            "label": "Section Text Color",
+            "default": "#FFF"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Newsletter form",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

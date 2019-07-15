@@ -1,0 +1,32 @@
+<section>
+  <div>
+    {% for urlLink in section.blocks %}
+      <a href="{{ urlLink.settings.url }}">{{ urlLink.settings.url }}</a><br>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Link Repeater",
+    "blocks": [
+      {
+      "type": "image",
+      "name": "Item",
+      "settings": [
+          {
+            "type": "text",
+            "id": "url",
+            "label": "Url"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Link Repeater",
+        "category": "GETMORE SECTIONS"
+      }
+    ]
+  }
+{% endschema %}

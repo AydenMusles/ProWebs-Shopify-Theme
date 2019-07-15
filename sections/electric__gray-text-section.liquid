@@ -1,0 +1,71 @@
+<section class="section section-color {{ section.settings.section_vertical_size }}" style="background-color: {{ section.settings.section_background }}" >
+
+    <div class="container">
+        <div class="text-entry">
+            <h2 class="section-title">{{ section.settings.heading }}</h2>
+            <div class="section-content">{{ section.settings.section_content }}</div>
+        </div>
+        {% if section.settings.enable_bottom_divider == true %}
+            <div class="divider top"></div>
+        {% endif %}
+    </div>
+
+</section>
+
+{% schema %}
+{
+    "name": "Background text section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Section Title"
+        },
+        {
+            "type": "textarea",
+            "id": "section_content",
+            "label": "Section Content"
+        },
+        {
+            "type": "text",
+            "id": "linktext",
+            "label": "Link text",
+            "default": "Learn More"
+        },
+        {
+            "type": "text",
+            "id": "url",
+            "label": "Url"
+        },
+        {
+            "type": "color",
+            "id": "section_background",
+            "label": "Section Color",
+            "default": "#FBFBFB"
+        },
+        {
+           "type": "checkbox",
+           "id": "enable_bottom_divider",
+           "default": true,
+           "label": "Bottom divider"
+       },
+       {
+           "type": "select",
+           "id": "section_vertical_size",
+           "options": [
+              { "value": "small", "label": "small"},
+              { "value": "middle", "label": "middle"},
+              { "value": "large", "label": "large"}
+           ],
+           "label": "Products per page",
+           "default":   "middle"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Background text section",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

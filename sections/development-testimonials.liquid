@@ -1,0 +1,163 @@
+<!-- /sections/getmore-testimonials.liquid -->
+  {%- assign backgroundColor = section.settings.background_color -%}
+  {%- assign backgroundImage = section.settings.background_image -%}
+  
+  {%- assign buttonText = section.settings.button_text -%}
+  {%- assign buttonURL = section.settings.button_url -%}
+  {%- assign sectionTitle = section.settings.title -%}
+  {%- assign sectionTitleColor = section.settings.sectionTitle_color -%}
+  
+  {%- assign authorColor = section.settings.author_color -%}
+  {%- assign companyColor = section.settings.company_color -%}
+  {%- assign testimonialColor = section.settings.testimonials_color -%}
+
+
+<section class="getmore testimonials">
+  <h4 class="title">{{ sectionTitle }}</h4>
+    <div class="wrapper-items">
+
+    {% for item in section.blocks %}
+      <div class="item">
+        <div class="wrapper-content">
+          <div class="text">
+            {{ item.settings.testimonial }}
+          </div>
+          <div class="profile">
+            <div class="picture">
+              <img src="{{ item.settings.author_image | img_url: '400x' }}" alt="">
+            </div>
+            <div class="author">
+              <p class="name">{{ item.settings.author_name }}</p>
+              <p class="company">{{ item.settings.author_company }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+  
+  {%- if buttonText != blank and buttonURL != blank -%}
+
+    <div class="wrapper-button">
+      <a href="{{ buttonURL }}" class="btn-white">
+        {{ buttonText }}
+      </a>
+    </div>
+  
+  {%- endif -%}
+
+  <style>
+    .testimonials {
+      background: url("{{ backgroundImage | img_url: '2000x' | format: 'pjpg' }}") {{ backgroundColor }};
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .testimonials .title {
+      color: {{ sectionTitleColor }}
+    }
+
+    .testimonials .wrapper-content .text {
+      color: {{ testimonialColor }}
+    }
+
+    .testimonials .wrapper-content .name {
+      color: {{ authorColor }}
+    }
+
+    .testimonials .wrapper-content .company {
+      color: {{ companyColor }}
+    }
+  </style>
+</section>
+
+{% schema %}
+  {
+    "name": "Testimonials",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section title"
+      },
+      {
+        "type": "color",
+        "id": "sectionTitle_color",
+        "label": "Section Title color",
+        "default": "#50426b"
+      },
+      {
+        "type": "header",
+        "content": "Background"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Image"
+      },      
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#50426b"
+      },
+      {
+        "type": "header",
+        "content": "Testimonials"
+      },
+      {
+        "type": "color",
+        "id": "author_color",
+        "label": "Author color",
+        "default": "#50426b"
+      },
+      {
+        "type": "color",
+        "id": "company_color",
+        "label": "Company color",
+        "default": "#262626"
+      },
+      {
+        "type": "color",
+        "id": "testimonials_color",
+        "label": "Testimonials color",
+        "default": "#262626"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "author_image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "author_name",
+            "label": "Author"
+          },
+          {
+            "type": "text",
+            "id": "author_company",
+            "label": "Company"
+          },
+          {
+            "type": "richtext",
+            "id": "testimonial",
+            "label": "Testimonials"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Testimonials",
+      "category": "GETMORE SECTIONS"
+    }
+  ]
+  }
+{% endschema %}

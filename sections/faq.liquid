@@ -1,0 +1,87 @@
+<section class="section">
+    <div class="container-large">
+        <div class="text-center">
+            <h2 class="section-title">{{ section.settings.faqtitle }}</h2>
+        </div>
+        <div class="row faq-row">
+            {% for item in section.blocks %}
+                <div class="col-sm-12 col-md-6">
+                    <div class="set faq-box">
+                        <a class="faq-box--title" href="#">{{ item.settings.faq_title }}</a>
+                        <div class="faq-box--content content">{{ item.settings.faq_content }}</div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<style media="screen">
+
+.set > a{
+  display: block;
+}
+
+.content{
+  display:none;
+}
+
+</style>
+<script type="text/javascript">
+
+    $(".set > a").on("click", function(e) {
+        e.preventDefault();
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this)
+          .siblings(".content")
+          .slideUp(200);
+
+      } else {
+        $(".set > a").removeClass("active");
+        $(this).addClass("active");
+        $(".content").slideUp(200);
+        $(this)
+          .siblings(".content")
+          .slideDown(200);
+      }
+    });
+
+</script>
+{% schema %}
+{
+    "name": "Faq Repeater",
+    "settings": [
+        {
+            "type": "text",
+            "id": "faqtitle",
+            "label": "Link text",
+            "default": "FAQ"
+        }
+    ],
+    "blocks": [
+        {
+        "type": "text",
+        "name": "Question",
+        "settings": [
+                {
+                    "type": "text",
+                    "id": "faq_title",
+                    "label": "Item Title"
+                },
+                {
+                    "type": "textarea",
+                    "id": "faq_content",
+                    "label": "Item content"
+                }
+
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Faq Repeater",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,218 @@
+<!-- /templates/blog.liquid -->
+<div class="getmore-page-blogs">
+<section class="section blogs-section">
+  <div class="container-standard">
+
+    <div class="grid sticky__sidebar">
+      <div class="blogs-page-grid grid__item three-quarters md-dn--one-whole page-content-padding" id="section-vertical-border">
+        <h2 class="blog-title">Articles</h2>
+
+        {% paginate blogs.articles.articles by 3 %}
+
+          <div class="grid article-list-grid">
+            {% for article in blogs.articles.articles %}
+
+                {% capture thecycle %}{% cycle '1', '2', '3', '4', '5', '6', '7' %}{% endcapture %}
+
+                {% if thecycle == '1' %}
+                  <div class="grid__item article-item-content">
+                    <article class="blog-list-item">
+                      <div>
+                        <a href="{{ article.url }}" class="bl--thumb">
+                          {% if article.image %}
+                            <img
+                              data-sizes="auto"
+                              alt="{{ article.image.alt }}"
+                              src="{{ article | img_url: '1200x' }}"
+                              data-src="{{ article | img_url: '600x'  }}"
+                              data-srcset="{{ article | img_url: '600x'  }} 600w,
+                                          {{ article | img_url: '900x'  }} 900w,
+                                          {{ article | img_url: '1200x'  }} 1200w"
+                              class="lazyload article__image full blur-up" />
+                          {% endif %}
+                        </a>
+                        <div class="bl--list-content">
+                          <div class="bl--content--bottom">
+                            <div class="grid blog-grid-modify">
+                              <div class="grid__item lg--two-sixths text-center">
+                                <!-- <span><i class="eeyeicon-i-eye"></i> 242</span> -->
+                              </div>
+                              <div class="blog-author-and-date">
+                                <div>
+                                  <span class="bl__author"><i class="eeyeicon-i-user"></i> {{ article.author }}</span>
+                                </div>
+                                <div>
+                                  <span>
+                                    <i class="eeyeicon-i-clock"></i>
+                                    {% include 'date', date_object: article.published_at  %}
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bl--content--top">
+                            <div class="grid">
+                              <div class="grid__item one-half"></div>
+                            </div>
+                          </div>
+                          <h3 class="bl--title">
+                            <a href="{{ article.url }}">
+                              {{ article.title | truncate: 30 }}
+                            </a>
+                          </h3>
+                          <div class="bl--introtext">
+                            {{ article.excerpt | truncate: 100 }}
+                            <div class="article-tag-list hide">
+                              {% for tag in article.tags %}
+                                <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}">#{{ tag }}</a>
+                              {% endfor %}
+                            </div>
+                          </div>
+                          <div class="grid__item lg--two-sixths share-wrapper">
+                            {% include 'electric__share' %}
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                {% else %}
+                  <div class="grid__item article-item-content md-dn--one-whole lg--one-half">
+                    <article class="blog-list-item">
+                      <div>
+                        <a href="{{ article.url }}" class="bl--thumb">
+                          {% if article.image %}
+                            <img
+                              data-sizes="auto"
+                              alt="{{ article.image.alt }}"
+                              src="{{ article | img_url: '1200x' }}"
+                              data-src="{{ article | img_url: '600x'  }}"
+                              data-srcset="{{ article | img_url: '600x'  }} 600w,
+                                          {{ article | img_url: '900x'  }} 900w,
+                                          {{ article | img_url: '1200x'  }} 1200w"
+                              class="lazyload article__image full blur-up" />
+                          {% endif %}
+                        </a>
+                        <div class="bl--list-content">
+                          <div class="bl--content--bottom">
+                            <div class="grid blog-grid-modify">
+                              <div class="grid__item lg--two-sixths text-center">
+                                <!-- <span><i class="eeyeicon-i-eye"></i> 242</span> -->
+                              </div>
+                              <div class="blog-author-and-date">
+                                <div>
+                                  <span class="bl__author"><i class="eeyeicon-i-user"></i> {{ article.author }}</span>
+                                </div>
+                                <div>
+                                  <span>
+                                    <i class="eeyeicon-i-clock"></i>
+                                    {% include 'date', date_object: article.published_at  %}
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bl--content--top">
+                            <div class="grid">
+                              <div class="grid__item one-half"></div>
+                            </div>
+                          </div>
+                          <h3 class="bl--title">
+                            <a href="{{ article.url }}">
+                              {{ article.title | truncate: 30 }}
+                            </a>
+                          </h3>
+                          <div class="bl--introtext">
+                            {{ article.excerpt | truncate: 100 }}
+                            <div class="article-tag-list hide">
+                              {% for tag in article.tags %}
+                                <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}">#{{ tag }}</a>
+                              {% endfor %}
+                            </div>
+                          </div>
+                          <div class="grid__item lg--two-sixths share-wrapper">
+                            {% include 'electric__share' %}
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                {% endif %}
+            {% endfor %}
+          </div> <!-- /.grid -->
+
+          <div class="text-center">
+            <a class="electric-btn outlined-violet" href="/blogs/articles">view all</a>
+          </div>
+
+        {% endpaginate %}
+      </div>
+    </div>
+  </div> <!-- /.container-standard -->
+</section>  <!-- /section.section -->
+</div>
+
+<script>
+
+  var tags_active = $(".tags-item.active").length;
+  if ( tags_active === 0) {
+    $(".tags-nav-item:first-child").find(".tags-item").addClass('active');
+  }
+
+  $('.js__tags_select2').select2();
+  $('.js__tags_select2').on('select2:select', function (e) {
+    location = "https://" + window.location.hostname + e.params.data.id;
+  });
+
+</script>
+
+{% schema %}
+  {
+    "name": "Pages Blog Articles",
+    "class": "section-blog",
+    "settings": [
+      {
+        "type": "range",
+        "id": "no_posts",
+        "min": 6,
+        "max": 24,
+        "step": 6,
+        "label": "No of posts per page",
+        "default": 6
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_tag_filter",
+        "label": "Enable filtering by tag"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_rss_icon",
+        "label": "Show RSS subscribe icon"
+      },
+      {
+        "type": "image_picker",
+        "id": "background",
+        "label": "background Image"
+      },
+      {
+        "type": "text",
+        "id": "blog_subheading",
+        "label": "Press SubHeading",
+        "default": "News, Tips, and more from Shopify Experts"
+      },
+      {
+        "type": "text",
+        "id": "blog_subtext",
+        "label": "Blog SubHeading",
+        "default": "News, Tips, and more from Shopify Experts"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Pages Blog Articles",
+        "category": "GETMORE SECTIONS"
+      }
+    ]
+  }
+{% endschema %}
+  

@@ -1,0 +1,106 @@
+<section>
+    {% for item in section.blocks %}
+        <div class="item-backgrounded {{ section.settings.verticalBlocksGutters }}" style="background-color: {{ item.settings.item_background }}" >
+            <div class="item-backgrounded-image " style="   background-image: url({{ item.settings.item_image | img_url: '4472x4472' }});
+                                                            opacity: {{ item.settings.image_transparency }};
+                                                        "></div>
+
+            <div class="item-backgrounded-content">
+                <div class="ibc--inner">
+                    <h2>{{ item.settings.item_title }}</h2>
+                    <p>{{ item.settings.item_content }}</p>
+                    <div class="space-y-40">
+                        <a class="electric-btn small outlined-white" href="{{ item.settings.url }}">
+                            {{ item.settings.linktext }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</section>
+
+
+{% schema %}
+{
+    "name": "Electric",
+    "settings": [
+        {
+            "type": "select",
+            "id": "verticalBlocksGutters",
+            "label": "Items size",
+            "options": [
+                {
+                    "value": "small",
+                    "label": "small"
+                },
+                {
+                    "value": "normal",
+                    "label": "normal"
+                },
+                {
+                    "value": "large",
+                    "label": "large"
+                }
+            ],
+            "default":   "normal",
+            "info":      "Text"
+        }
+    ],
+    "blocks": [
+        {
+        "type": "image",
+        "name": "Item",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "item_image",
+                "label": "Item image"
+            },
+            {
+                "type": "color",
+                "id": "item_background",
+                "label": "Item Color",
+                "default": "#312B3B"
+            },
+            {
+                "type":      "range",
+                "id":        "image_transparency",
+                "min":       0,
+                "max":       1,
+                "step":      0.1,
+                "label":     "Image Transparency",
+                "default":   0.2
+            },
+            {
+                "type": "text",
+                "id": "item_title",
+                "label": "Item Title"
+            },
+            {
+                "type": "richtext",
+                "id": "item_content",
+                "label": "Item content"
+            },
+            {
+                "type": "text",
+                "id": "linktext",
+                "label": "Link text",
+                "default": "View More"
+            },
+            {
+                "type": "text",
+                "id": "url",
+                "label": "Url"
+            }
+        ]
+    }
+    ],
+    "presets": [
+        {
+            "name": "Full width repeater",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

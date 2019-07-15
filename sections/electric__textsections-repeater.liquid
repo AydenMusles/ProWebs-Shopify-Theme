@@ -1,0 +1,54 @@
+<section class="section">
+    <div class="container-large">
+        <div class="text-center">
+            <h2 class="section-title">{{ section.settings.texttitle }}</h2>
+        </div>
+
+        {% for item in section.blocks %}
+            <div class="text-column">
+                {{ item.settings.text_title }}
+                {{ item.settings.text_content }}
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name": "Text Section Repeater",
+    "settings": [
+        {
+            "type": "text",
+            "id": "texttitle",
+            "label": "Text Section title",
+            "default": "Privacy Policy"
+        }
+    ],
+    "blocks": [
+        {
+        "type": "text",
+        "name": "Text Section",
+        "settings": [
+                {
+                    "type": "text",
+                    "id": "text_title",
+                    "label": "Item Title"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text_content",
+                    "label": "Item content"
+                }
+
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Text Section Repeater",
+            "category": "Electric Custom Content"
+        }
+    ]
+}
+{% endschema %}

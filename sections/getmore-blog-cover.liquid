@@ -1,0 +1,38 @@
+{%- assign backgroundImage = section.settings.background_image -%}
+
+<section class="banner banner-page" style="background-image: url({{ backgroundImage | img_url: 'master' }})">
+  <div class="full-height-inner">
+    <div class="container banner--container banner--container--large">
+      <div class="text-center color-white">
+        <div class="banner--text">
+          <h1>{{ section.settings.title }}</h1>
+          <hr class="divider">
+          <p>{{ section.settings.subtitle }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Blogs cover",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Cover Background Image"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Section Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title"
+      }
+    ]
+  }
+{% endschema %}
