@@ -3,11 +3,11 @@
     "color_primary": "#2a2a2a",
     "color_main_accent": "#2a2a2a",
     "color_secondary_accent": "#94be47",
-    "color_shop_accent": "#51426b",
+    "color_shop_accent": "#1e1e1e",
     "color_borders": "#2a2a2a",
     "color_nav_button": "#fffafa",
     "color_body_bg": "#f6f6f6",
-    "color_section_bg": "#51426b",
+    "color_section_bg": "#1e1e1e",
     "color_newsletter": "#e85555",
     "color_newsletter_content": "#ffffff",
     "social_icon_color": "#2a2a2a",
@@ -57,8 +57,8 @@
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-    "checkout_accent_color": "#51426b",
-    "checkout_button_color": "#51426b",
+    "checkout_accent_color": "#1e1e1e",
+    "checkout_button_color": "#1e1e1e",
     "checkout_error_color": "#e85555",
     "color_body_text": "#333333",
     "color_footer_social_link": "#bbbbbb",
@@ -752,7 +752,7 @@
             "type": "image",
             "settings": {
               "item_image": "shopify:\/\/shop_images\/012A5427.jpg",
-              "item_background": "#312b3b",
+              "item_background": "#1e1e1e",
               "image_transparency": 0.6,
               "item_title": "Only NY",
               "item_content": "<p>Helped streetwear brand achieve 15x average return with Facebook Ads and increase online sales by 45%.<\/p>\n<p><\/p>",
@@ -764,7 +764,7 @@
             "type": "image",
             "settings": {
               "item_image": "shopify:\/\/shop_images\/group-partner-case-study-2_a76c075c-3301-4e6b-99df-bfc6f14a1730.jpg",
-              "item_background": "#312b3b",
+              "item_background": "#1e1e1e",
               "image_transparency": 0.8,
               "item_title": "Group Partner",
               "item_content": "<p>Increased total orders by 93% with a migration from Squarespace to Shopify and website redesign.<\/p>",
@@ -776,7 +776,7 @@
             "type": "image",
             "settings": {
               "item_image": "shopify:\/\/shop_images\/muscle-feast-homepage-case-study.jpg",
-              "item_background": "#312b3b",
+              "item_background": "#1e1e1e",
               "image_transparency": 0.6,
               "item_title": "Muscle Feast",
               "item_content": "<p>Increased sales by 21% with a website redesign, Automated Email and Social Marketing for protein supplement brand.<\/p>\n<p><\/p>",
@@ -852,9 +852,9 @@
           "heading": "Video",
           "section_content": "<p>We want your eCommerce business to grow. Our&nbsp;YouTube channel is about educating and giving actionable advice around eCommerce and it's many related topics.<\/p>\n<p>Just click below&nbsp;to explore and subscribe.<\/p>",
           "item_image": "",
-          "section_background": "#51426b",
+          "section_background": "#f0f0f0",
           "channelId": "UUoIDYbz6QemLNgDWbj-7kTA",
-          "text_color": "#ffffff",
+          "text_color": "#1e1e1e",
           "linktext": "Watch more",
           "url": "https:\/\/www.youtube.com\/channel\/UCoIDYbz6QemLNgDWbj-7kTA?view_as=subscriber"
         }
@@ -952,7 +952,7 @@
               "title": "About",
               "subheading": "Electric Eye helps brands grow with stunning ecommerce design and smart marketing.",
               "image_transparency": 0.2,
-              "section_background": "#51426b",
+              "section_background": "#1e1e1e",
               "background": "shopify:\/\/shop_images\/about-us.jpg"
             }
           },
@@ -1141,7 +1141,7 @@
         "settings": {
           "heading": "Ready to start your project?",
           "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
-          "section_background": "#312b3b",
+          "section_background": "#1e1e1e",
           "section_color": "#ffffff",
           "icon": "",
           "linktext": "let’s go",
@@ -1156,7 +1156,7 @@
           "linktext": "",
           "url": "",
           "image_transparency": 0.2,
-          "section_background": "#51426b",
+          "section_background": "#1e1e1e",
           "background": ""
         }
       },
@@ -1386,7 +1386,7 @@
               "title": "Newsletter",
               "subheading": "",
               "image_transparency": 0.2,
-              "section_background": "#51426b",
+              "section_background": "#1e1e1e",
               "background": "shopify:\/\/shop_images\/photo-1499750310107-5fef28a66643.jpg"
             }
           }
@@ -1405,7 +1405,7 @@
               "title": "Partnerships",
               "subheading": "",
               "image_transparency": 0.2,
-              "section_background": "#51426b",
+              "section_background": "#1e1e1e",
               "background": "shopify:\/\/shop_images\/photo-1528789408128-bf8999ce0091.jpg"
             }
           },
@@ -1434,7 +1434,7 @@
               "title": "Testimonials",
               "subheading": "Real quotes from satisfied customers.",
               "image_transparency": 0.2,
-              "section_background": "#51426b",
+              "section_background": "#1e1e1e",
               "background": "shopify:\/\/shop_images\/95cdfeef.jpg"
             }
           }
@@ -1453,7 +1453,7 @@
               "title": "FAQ",
               "subheading": "Frequently Asked Questions",
               "image_transparency": 0.2,
-              "section_background": "#51426b",
+              "section_background": "#1e1e1e",
               "background": "shopify:\/\/shop_images\/electric-eye-faq-1.jpg"
             }
           }
@@ -1700,7 +1700,7 @@
         ],
         "settings": {
           "title": "Brands We've Helped",
-          "section_background": "#51426b"
+          "section_background": "#1e1e1e"
         }
       },
       "getmore-meetup-cover": {
@@ -1708,7 +1708,7 @@
         "settings": {
           "image_background": "shopify:\/\/shop_images\/IMG_5637_aeb3039c-0f49-49f1-88dc-4b291c7fa9e2.jpg",
           "image_opacity": 0.2,
-          "color_background": "#51426b",
+          "color_background": "#1e1e1e",
           "text_title": "Shopify Meetup Columbus",
           "text_subtitle": "The only official Shopify Meetup in Ohio.",
           "text_align": "center",
@@ -1725,7 +1725,7 @@
             "type": "image",
             "settings": {
               "item_image": "shopify:\/\/shop_images\/tip-top-vintage.jpg",
-              "item_background": "#312b3b",
+              "item_background": "#1e1e1e",
               "image_transparency": 0.4,
               "item_title": "fqweqweqweqweqw",
               "item_content": "<p>fweweqweqweqwe<\/p>",
@@ -1757,7 +1757,7 @@
         "settings": {
           "image_background": "shopify:\/\/shop_images\/IMG_5646_5634ae17-2e79-4c0d-a24a-00812ea64d20.jpg",
           "image_opacity": 0.2,
-          "color_background": "#51426b",
+          "color_background": "#1e1e1e",
           "text_title": "How to find us:",
           "text": "<p>Park in the lot on the west side of the building and walk to the front entrance on State Street. Come in the building and up the stairs to your right. We will have wayfinding signs and a greeter to help you.<\/p>\n<p><\/p>\n<p><strong>Columbus Idea Foundry<\/strong><\/p>\n<p><\/p>\n<p>The Idea Foundry is both a physical place &ndash; 60,000 sq ft of workshops and offices; working nooks, classrooms and communal spaces &ndash; and a state of mind; the belief that each of us has the potential to bring our ideas to life if given the space, the equipment and the support to empower our inner maker.<\/p>",
           "align_block": "flex-start",
@@ -1966,7 +1966,7 @@
         "settings": {
           "image_background": "shopify:\/\/shop_images\/shopify-plus-page.jpg",
           "image_opacity": 0.1,
-          "color_background": "#51426b",
+          "color_background": "#1e1e1e",
           "text_title": "Shopify Plus",
           "text_subtitle": "Multi Channel, Enterprise Ecommerce",
           "text_align": "center",
@@ -2117,7 +2117,7 @@
         "settings": {
           "heading": "Ready to Experience Shopify Plus?",
           "section_content": "Contact the Shopify Experts at Electric Eye for more information.",
-          "section_background": "#312b3b",
+          "section_background": "#1e1e1e",
           "section_color": "#ffffff",
           "icon": "shopify:\/\/shop_images\/shopify-plus-logo--darkbg.png",
           "linktext": "Let's Connect",
@@ -2216,10 +2216,10 @@
         ],
         "settings": {
           "title": "Testimonials",
-          "sectionTitle_color": "#51426b",
+          "sectionTitle_color": "#1e1e1e",
           "background_image": "shopify:\/\/shop_images\/testimonials-bg_2x_5ec11efc-cebd-4c73-9c59-76d03fd5878a.jpg",
-          "background_color": "#50426b",
-          "author_color": "#50426b",
+          "background_color": "#1e1e1e",
+          "author_color": "#1e1e1e",
           "company_color": "#262626",
           "testimonials_color": "#2a2a2a"
         }
@@ -2262,7 +2262,7 @@
           "sectionTitle_color": "#ffffff",
           "background_image": "shopify:\/\/shop_images\/benefits_2x_30803118-37e8-447d-9b0c-2734d797c7c8.jpg",
           "background_color": "#4f4d53",
-          "author_color": "#50426b",
+          "author_color": "#1e1e1e",
           "testimonials_color": "#a6a6a6"
         }
       },
@@ -2317,7 +2317,7 @@
           "text_subtitle": "<p>Increase your conversions with an ecommerce website design that is custom tailored to your brand.<\/p>\n<p>&nbsp;<\/p>\n<p>It only takes about <a href=\"https:\/\/www.tandfonline.com\/doi\/abs\/10.1080\/01449290500330448\">50 milliseconds<\/a> for a customer to pass judgement on your website. Are you making a good impression? If you are currently trying to win trust with a badly designed website, you&rsquo;re in for an uphill battle.<\/p>",
           "text_align": "left",
           "text_color": "#262626",
-          "title_color": "#50426b",
+          "title_color": "#1e1e1e",
           "button_align": "flex-start"
         }
       },
@@ -2349,7 +2349,7 @@
         ],
         "settings": {
           "title": "Case Studies",
-          "sectionTitle_color": "#50426b",
+          "sectionTitle_color": "#1e1e1e",
           "background_image": "",
           "background_color": "#ffffff",
           "company_color": "#262626",
@@ -2407,12 +2407,12 @@
           "image_alignment": "right",
           "image_background": "shopify:\/\/shop_images\/markus-spiske-507983-unsplash.jpg",
           "image_opacity": 0.4,
-          "color_background": "#51426b",
+          "color_background": "#1e1e1e",
           "text_title": "Development",
           "text_subtitle": "<p>Our powerful framework and process allows us to create custom&nbsp;customer friendly shopping experiences&nbsp;for&nbsp;your ecommerce store and increase your sales in a matter of weeks, not months.<\/p>\n<p><\/p>\n<p>The most trivial shortcoming will cause a customer to leave your site and purchase from your competition. With our refined process and conversion focused optimizations, we ensure your customer&nbsp;will stay on your website.<\/p>",
           "text_align": "left",
           "text_color": "#262626",
-          "title_color": "#50426b",
+          "title_color": "#1e1e1e",
           "button_align": "flex-start"
         }
       },
@@ -2493,8 +2493,8 @@
           "title": "What's so good about our sites?",
           "sectionTitle_color": "#fafafa",
           "background_image": "shopify:\/\/shop_images\/bady-qb-490221-unsplash.jpg",
-          "background_color": "#50426b",
-          "author_color": "#50426b",
+          "background_color": "#1e1e1e",
+          "author_color": "#1e1e1e",
           "testimonials_color": "#a6a6a6"
         }
       },
@@ -2545,7 +2545,7 @@
           "1557931081910"
         ],
         "settings": {
-          "background_color": "#50426b",
+          "background_color": "#1e1e1e",
           "sectionTitle_color": "#ffffff",
           "titles_color": "#ffffff",
           "text_color": "#ffffff",
@@ -2582,10 +2582,10 @@
         ],
         "settings": {
           "title": "Testimonials",
-          "sectionTitle_color": "#50426b",
+          "sectionTitle_color": "#1e1e1e",
           "background_image": "shopify:\/\/shop_images\/stephen-arnold-114252-unsplash.jpg",
-          "background_color": "#50426b",
-          "author_color": "#50426b",
+          "background_color": "#1e1e1e",
+          "author_color": "#1e1e1e",
           "company_color": "#262626",
           "testimonials_color": "#262626"
         }
@@ -2618,7 +2618,7 @@
         ],
         "settings": {
           "title": "Case Studies",
-          "sectionTitle_color": "#50426b",
+          "sectionTitle_color": "#1e1e1e",
           "background_image": "",
           "background_color": "#ffffff",
           "company_color": "#262626",
@@ -2630,7 +2630,7 @@
         "settings": {
           "heading": "Ready To Start Your Project?",
           "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
-          "section_background": "#312b3b",
+          "section_background": "#1e1e1e",
           "section_color": "#ffffff",
           "icon": "shopify:\/\/shop_images\/shopify-experts-logo.png",
           "linktext": "Let's Go",
@@ -2643,12 +2643,12 @@
           "image_alignment": "right",
           "image_background": "shopify:\/\/shop_images\/adeolu-eletu-13086-unsplash_5791e0e2-31b2-4a53-8f98-196db54394cd.jpg",
           "image_opacity": 0.2,
-          "color_background": "#51426b",
+          "color_background": "#1e1e1e",
           "text_title": "Ecommerce Marketing",
           "text_subtitle": "<p>A conversion-focused marketing strategy&nbsp;will help propel your brand forward and&nbsp;hit those ambitious sales goals.<\/p>\n<p><\/p>\n<p>Electric Eye will build your online business a marketing system that works.<\/p>",
           "text_align": "left",
           "text_color": "#262626",
-          "title_color": "#50426b",
+          "title_color": "#1e1e1e",
           "button_align": "flex-start"
         }
       },
@@ -2729,8 +2729,8 @@
           "title": "What should you expect?",
           "sectionTitle_color": "#f6f6f6",
           "background_image": "shopify:\/\/shop_images\/christin-hume-309876-unsplash_e5515128-9d73-4dcd-876c-fbbb9937b529.jpg",
-          "background_color": "#50426b",
-          "author_color": "#50426b",
+          "background_color": "#1e1e1e",
+          "author_color": "#1e1e1e",
           "testimonials_color": "#a6a6a6"
         }
       },
@@ -2858,10 +2858,10 @@
         ],
         "settings": {
           "title": "Client Testimonials",
-          "sectionTitle_color": "#50426b",
+          "sectionTitle_color": "#1e1e1e",
           "background_image": "shopify:\/\/shop_images\/stephen-arnold-114252-unsplash.jpg",
           "background_color": "rgba(0,0,0,0)",
-          "author_color": "#50426b",
+          "author_color": "#1e1e1e",
           "company_color": "#262626",
           "testimonials_color": "#262626"
         }
@@ -2894,7 +2894,7 @@
         ],
         "settings": {
           "title": "Case Studies",
-          "sectionTitle_color": "#50426b",
+          "sectionTitle_color": "#1e1e1e",
           "background_image": "",
           "background_color": "#ffffff",
           "company_color": "#262626",
@@ -2906,7 +2906,7 @@
         "settings": {
           "heading": "Ready To Start Your Project?",
           "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
-          "section_background": "#312b3b",
+          "section_background": "#1e1e1e",
           "section_color": "#ffffff",
           "icon": "shopify:\/\/shop_images\/shopify-experts-logo.png",
           "linktext": "Let's Go",
@@ -2918,7 +2918,7 @@
         "settings": {
           "heading": "Ready To Start Your Project?",
           "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
-          "section_background": "#312b3b",
+          "section_background": "#1e1e1e",
           "section_color": "#ffffff",
           "linktext": "Let's Go",
           "url": "http:\/\/electriceye.io\/connect"
@@ -2929,7 +2929,7 @@
         "settings": {
           "heading": "Ready To Start Your Project?",
           "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
-          "section_background": "#312b3b",
+          "section_background": "#1e1e1e",
           "section_color": "#ffffff",
           "linktext": "Let's Go",
           "url": "http:\/\/electriceye.io\/connect"
@@ -2940,7 +2940,7 @@
         "settings": {
           "heading": "Ready To Start Your Project?",
           "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
-          "section_background": "#353535",
+          "section_background": "#1e1e1e",
           "section_color": "#ffffff",
           "linktext": "Let's Go",
           "url": "http:\/\/electriceye.io\/connect"
@@ -2952,12 +2952,12 @@
           "image_alignment": "left",
           "image_background": "shopify:\/\/shop_images\/designer-at-work_925x_44608e89-2100-40fc-ad8a-e8c6e28793ae.jpg",
           "image_opacity": 0.1,
-          "color_background": "#7549c0",
+          "color_background": "#0d0d0d",
           "text_title": "Design",
           "text_subtitle": "<p>Increase your conversions with an ecommerce website design that is custom tailored to your brand.<\/p>",
           "text_align": "left",
           "text_color": "#262626",
-          "title_color": "#50426b",
+          "title_color": "#1e1e1e",
           "button_align": "flex-start",
           "linktext": "view more",
           "url": "\/pages\/shopify-website-design"
@@ -2969,12 +2969,12 @@
           "image_alignment": "left",
           "image_background": "shopify:\/\/shop_images\/markus-spiske-507983-unsplash.jpg",
           "image_opacity": 0.2,
-          "color_background": "#51426b",
+          "color_background": "#1e1e1e",
           "text_title": "Development",
           "text_subtitle": "<p>The sky's the limit with custom development for Shopify stores.<\/p>",
           "text_align": "left",
           "text_color": "#262626",
-          "title_color": "#50426b",
+          "title_color": "#1e1e1e",
           "button_align": "flex-start",
           "linktext": "view more",
           "url": "\/pages\/development"
@@ -2986,12 +2986,12 @@
           "image_alignment": "right",
           "image_background": "shopify:\/\/shop_images\/team-sales-business-meeting.jpg",
           "image_opacity": 0.2,
-          "color_background": "#51426b",
+          "color_background": "#1e1e1e",
           "text_title": "Marketing",
           "text_subtitle": "<p>Why hire full time digital designers, marketers, and developers in-house when you can put the Shopify Experts at Electric Eye on your team?<\/p>",
           "text_align": "left",
           "text_color": "#262626",
-          "title_color": "#50426b",
+          "title_color": "#1e1e1e",
           "button_align": "flex-start",
           "linktext": "view more",
           "url": "\/pages\/marketing"
@@ -3002,7 +3002,7 @@
         "settings": {
           "heading": "Ready To Start Your Project?",
           "section_content": "Contact the Shopify Experts at Electric Eye to begin making more money online.",
-          "section_background": "#312b3b",
+          "section_background": "#1e1e1e",
           "section_color": "#ffffff",
           "linktext": "Let's go",
           "url": "http:\/\/electriceye.io\/connect"
@@ -3013,7 +3013,7 @@
         "settings": {
           "image_background": "shopify:\/\/shop_images\/tim-van-der-kuip-1403210-unsplash.jpg",
           "image_opacity": 0.2,
-          "color_background": "#51426b",
+          "color_background": "#1e1e1e",
           "text_title": "Services",
           "text_subtitle": "No hidden fees. No hourly rate.",
           "text_paragraph": "<p>Electric Eye believes in transparent pricing. We have custom built our service offerings to be the best value for business owners and give you the power to stay in budget.<\/p>\n<p>We offer continued monthly support with our Shopify Expert Retainers, as well as project based services that you can choose a la carte. Start with roadmapping and we'll help you determine exactly what services your business needs to grow.<\/p>",
@@ -3023,11 +3023,131 @@
           "button_url": "",
           "button_align": "flex-start"
         }
+      },
+      "1563204207757": {
+        "type": "getmore-logolist",
+        "blocks": {
+          "1563212701314": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shopify-partner.png",
+              "link": ""
+            }
+          },
+          "1563212747360": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/gold-klaviyo-master-black.png",
+              "link": ""
+            }
+          },
+          "1563212762622": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fmc-badge-medium.png",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1563212701314",
+          "1563212747360",
+          "1563212762622"
+        ],
+        "settings": {
+          "title": "Our Partners"
+        }
+      },
+      "1563213624644": {
+        "type": "getmore-logolist",
+        "blocks": {
+          "1563213624644-0": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shopify-partner.png",
+              "link": "shopify:\/\/collections\/all"
+            }
+          },
+          "1563213624644-1": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/gold-klaviyo-master-black.png",
+              "link": ""
+            }
+          },
+          "1563213624644-2": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fmc-badge-medium.png",
+              "link": ""
+            }
+          },
+          "1563217088877": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fmc-badge-medium.png",
+              "link": ""
+            }
+          },
+          "1563217096986": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fmc-badge-medium.png",
+              "link": ""
+            }
+          },
+          "1563217103210": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/fmc-badge-medium.png",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1563213624644-0",
+          "1563213624644-1",
+          "1563213624644-2",
+          "1563217088877",
+          "1563217096986",
+          "1563217103210"
+        ],
+        "settings": {
+          "title": "Brand Logos"
+        }
+      },
+      "header-multiverse": {
+        "type": "header-multiverse",
+        "settings": {
+          "logo": "",
+          "logo_max_width": 100,
+          "mob_logo": "",
+          "main_linklist": "main-menu",
+          "show_search": false,
+          "secondary_linklist": "",
+          "show_search_sidebar": false,
+          "show_social_sidebar": false,
+          "shopify_logo_img": "",
+          "shopify_logo_link": ""
+        }
+      },
+      "footer-multiverse": {
+        "type": "footer-multiverse",
+        "settings": {
+          "main_linklist": "footer",
+          "secondary_linklist": "",
+          "last_linklist": "",
+          "extra_information": "<p>Use this to add additional information about your store, e.g. address \/ contact details.<\/p>",
+          "show_theme_credit": false,
+          "show_social_icons": false
+        }
       }
     },
     "content_for_index": [
       "1533537722768",
+      "1563204207757",
       "1533554202136",
+      "1563213624644",
       "1541011669045",
       "1533545344904",
       "1533547221726",

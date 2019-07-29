@@ -1,0 +1,139 @@
+{% assign notice_bar_enabled = false %}
+{% for block in section.blocks %}
+  {% case block.type %}
+  {% when 'notice_bar' %}
+  {% assign notice_bar_enabled = true %}
+  {% assign notice_bar_text = block.settings.text | escape %}
+  {% endcase %}
+{% endfor %}
+
+{% comment %}
+{% section 'sidebar-menu' %}
+{% endcomment %}
+
+{% include 'sidebar-menu' %}
+
+<header class="site-header header-multiverse f--main site-header-fixed" role="banner">
+  {% capture image_size %}{{ section.settings.logo_max_width | escape }}x{% endcapture %}
+  {% capture image_size_px %}{{ section.settings.logo_max_width | escape }}px{% endcapture %}
+  {% capture image_size_2x %}{{ section.settings.logo_max_width | times: 2 }}x{% endcapture %}
+
+  {% comment %}
+      Style the logo grid item to be the same width set as the logo
+  {% endcomment %}
+  <style>
+      .site-header__logo-col { padding: 16px 0 }
+      .logo__padding {
+          padding: 0 16px;
+      }
+  </style>
+
+  <div class="h1 site-header__logo" itemscope itemtype="http://schema.org/Organization">
+    {% if section.settings.logo %}
+
+      <a href="/" itemprop="url" class="sm--hide md--hide lg--show dt--show" style="margin-left: 30px;">
+        <img src="{{ section.settings.logo | img_url: image_size_2x }}" alt="{{ shop.name }}" itemprop="logo" width="{{ image_size }}">
+      </a>
+
+      <a href="/" itemprop="url" class="lg--hide">
+        <!--              <img src="{{ 'e-icon-logo.png' | asset_img_url: '40x40' }}" alt="{{ shop.name }}" itemprop="logo"> -->
+        <img src="{{ section.settings.mob_logo | img_url: '340x' }}" alt="{{ shop.name }}" itemprop="logo">
+      </a>
+    {% else %}
+        <a href="/" itemprop="url" class="text-align--center">{{ shop.name }}</a>
+    {% endif %}
+  </div>
+</header> <!-- FIXED HEADER -->
+
+
+
+{% schema %}
+{
+  "name":"Header Multiverse",
+  "class":"section-site-header",
+  "settings":[
+      {
+          "type":"header",
+          "content":"Logo"
+      },
+      {
+          "type":"image_picker",
+          "id":"logo",
+          "label":"Custom logo",
+          "info":"800 x 300px recommended."
+      },
+      {
+          "type":"range",
+          "id":"logo_max_width",
+          "min":20,
+          "max":800,
+          "step":10,
+          "unit":"px",
+          "label":"Custom logo width",
+          "default":100
+      },
+      {
+          "type":"image_picker",
+          "id":"mob_logo",
+          "label":"Custom mobile logo",
+          "info":"100 x 50px recommended."
+      },
+      {
+          "type":"link_list",
+          "id":"main_linklist",
+          "label":"Menu",
+          "default":"main-menu",
+          "info":"Note: when menu exceeds max available space, mobile menu button will be shown instead."
+      },
+      {
+          "type":"checkbox",
+          "id":"show_search",
+          "label":"Show search"
+      },
+      {
+          "type":"header",
+          "content":"Sidebar Menu"
+      },
+      {
+          "type":"link_list",
+          "id":"secondary_linklist",
+          "label":"Secondary Menu"
+      },
+      {
+          "type":"checkbox",
+          "id":"show_search_sidebar",
+          "label":"Show search"
+      },
+      {
+          "type":"checkbox",
+          "id":"show_social_sidebar",
+          "label":"Show social icons"
+      },
+      {
+          "type":"image_picker",
+          "id":"shopify_logo_img",
+          "label":"Shopify expert logo"
+      },
+      {
+          "type":"url",
+          "id":"shopify_logo_link",
+          "label":"Select Link"
+      }
+  ],
+      "blocks":[
+      {
+          "type":"notice_bar",
+          "name":"Notice bar",
+          "limit":1,
+          "settings":[
+              {
+                  "type":"text",
+                  "id":"text",
+                  "label":"Text",
+                  "default":"Free shipping on all orders"
+              }
+          ]
+      }
+  ]
+}
+{% endschema %}

@@ -18,3 +18,7 @@ h6,
 .h6 {
     font-family: $base-font;
 }
+
+.c-editor input[type=text] {
+    background-color: red;
+}

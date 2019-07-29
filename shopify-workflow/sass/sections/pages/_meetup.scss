@@ -23,8 +23,8 @@
 
 .btn-white {
   background-color: #fff;
-  color: #50416b;
-  border: 1px solid #51416b;
+  color: #1e1e1e;
+  border: 1px solid #1e1e1e;
   font-size: 14px;
   font-family: "Karla Bold";
   font-weight: bold;
@@ -36,7 +36,7 @@
   transition: 0.3s;
 
   &:hover {
-    background-color: #51416b;
+    background-color: #1e1e1e;
     color: #fff;
   }
 }
@@ -259,7 +259,7 @@
 
   .information-title {
     text-align: center;
-    color: #554671;
+    color: #1e1e1e;
     font-family: "Poppins";
     letter-spacing: -0.71px;
     @include fluid-type(320px, 1440px, 30px, 40px);
@@ -309,7 +309,7 @@
 
       .title {
         font-family: "Poppins";
-        color: #50426b;
+        color: #1e1e1e;
         margin-top: 1rem;
         margin-bottom: 1rem;
         letter-spacing: 0.15px;
@@ -339,7 +339,7 @@
 
   .sponsors-title {
     text-align: center;
-    color: #554671;
+    color: #1e1e1e;
     font-family: "Poppins";
     letter-spacing: -1.18px;
     @include fluid-type(320px, 1440px, 30px, 41px);
@@ -427,7 +427,7 @@
 
   .asked-title {
     text-align: center;
-    color: #554671;
+    color: #1e1e1e;
     font-family: "Poppins";
     letter-spacing: -1.15px;
     max-width: 80%;
@@ -470,7 +470,7 @@
 
       .title {
         font-family: "Poppins";
-        color: #50426b;
+        color: #1e1e1e;
         margin-top: 1rem;
         margin-bottom: 1rem;
         letter-spacing: -0.47px;
