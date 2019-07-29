@@ -1,0 +1,30 @@
+{% include 'shogun-products', content: page %}
+
+<div class="multiversePage et">
+  <section class="banner banner-page" style="background-color: #1e1e1e">
+    <div class="full-height-inner">
+      <div class="container banner--container banner--container--large">
+        <div class="text-center color-white">
+          <div class="banner--text">
+            <h1>{{ page.title }}</h1>
+            <hr class="divider">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% section 'getmore-page-link-blocks' %}
+
+  <section class="section section-page bg--section m0 pt3 pb4 et">
+    <div class="wrapper section--wrapper">
+      <!-- <h1 class="font-size--xxl lg--font-size--xxxxl f--title m0 mt2 px2 text-align--center">{{ page.title }}</h1>
+      <hr class="rule bg--main-accent my3 mx--auto" /> -->
+      <div class="container-middle">
+        {{ page.content }}
+      </div>
+    </div>
+  </section>
+</div>
+
+

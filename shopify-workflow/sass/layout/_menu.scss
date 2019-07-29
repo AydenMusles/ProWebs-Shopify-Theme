@@ -1,0 +1,15 @@
+header.site-header.f--main.header-multiverse {
+  align-items: center;
+  display: flex;
+  height: 57px;
+  justify-content: center;
+  top: 0;
+
+  .site-header__logo {
+    display: inline-block;
+
+    a {
+      margin-left: 0 !important;
+    }
+  }
+}

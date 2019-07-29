@@ -126,7 +126,13 @@ Add the page template as a class for easy page or template specific styling.
 
 <div id="PageContainer"> <!--  class="is-moved-by-drawer"  -->
 
-    {% section 'header' %}
+    {% if template.suffix contains "multiverse" %}
+        {% section 'header-multiverse' %}
+    {% endif %}
+
+    {% unless template.suffix contains "multiverse" %}
+        {% section 'header' %}
+    {% endunless %}
 
     {% include 'lightbox' %}
     {% include 'search-bar_lightbox' %}
@@ -151,7 +157,15 @@ Add the page template as a class for easy page or template specific styling.
 
 
     <!-- //site-footer -->
-    {% section 'footer' %}
+
+    {% if template.suffix contains "multiverse" %}
+        {% section 'footer-multiverse' %}
+    {% endif %}
+
+    {% unless template.suffix contains "multiverse" %}
+        {% section 'footer' %}
+    {% endunless %}
+    
 
 </div><!-- end page container -->
 

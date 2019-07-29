@@ -1,6 +1,6 @@
 <style>
     .site-header-page.header-purple {
-    background-color: #51426b;
+    background-color: #1e1e1e;
 }
 </style>
 
@@ -286,7 +286,7 @@
 </header>
 
 <script>
-    if($("body").attr("id") == "development" || $("body").attr("id") == "custom-shopify-design-by-ecommerce-experts" || $("body").attr("id") == "marketing") {
+    if($("body").attr("id") == "custom-shopify-design-by-ecommerce-experts" || $("body").attr("id") == "custom-shopify-development-by-experts" || $("body").attr("id") == "marketing-services-for-shopify-stores") {
         document.querySelector('.site-header-page').classList.add('header-purple');
     }
 </script>
@@ -309,7 +309,11 @@
                 $('header.site-header.f--main.site-header-fixed').removeClass('show');
             }
         });
+
+        //$(".multiversePage").parent("main").prevAll(".section-site-header").hide();
     });
+
+    
 
 {% endjavascript %}
 
