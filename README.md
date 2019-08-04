@@ -1,2 +1,0 @@
-# ProWebs
-Custom ProWebs theme
